@@ -1,0 +1,10 @@
+﻿  converter.cpp
+C:\Users\hobbit\Documents\GitHub\GameEngine\GAME\converter\converter\rgb.h(35): warning C4244: return: преобразование "int64_t" в "uint32_t", возможна потеря данных
+C:\Users\hobbit\Documents\GitHub\GameEngine\GAME\converter\converter\converter.cpp(24): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\hobbit\Documents\GitHub\GameEngine\GAME\converter\converter\converter.cpp(25): warning C4244: =: преобразование "int64_t" в "char", возможна потеря данных
+C:\Users\hobbit\Documents\GitHub\GameEngine\GAME\converter\converter\converter.cpp(26): warning C4244: =: преобразование "int64_t" в "char", возможна потеря данных
+C:\Users\hobbit\Documents\GitHub\GameEngine\GAME\converter\converter\converter.cpp(27): warning C4244: =: преобразование "int64_t" в "char", возможна потеря данных
+C:\Users\hobbit\Documents\GitHub\GameEngine\GAME\converter\converter\converter.cpp(70): warning C4018: >: несоответствие типов со знаком и без знака
+C:\Users\hobbit\Documents\GitHub\GameEngine\GAME\converter\converter\converter.cpp(104): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\hobbit\Documents\GitHub\GameEngine\GAME\converter\converter\converter.cpp(113): warning C4267: инициализация: преобразование из "size_t" в "uint16_t"; возможна потеря данных
+  converter.vcxproj -> C:\Users\hobbit\Documents\GitHub\GameEngine\GAME\converter\Debug\converter.exe
