@@ -19,28 +19,22 @@ public:
 		f = f_;
 	}
 
-	RGB operator+(RGB const& other) const {
+	inline RGB operator+(RGB const& other) const {
 		return RGB(r + other.r, g + other.g, b + other.b);
 	}
 
-	RGB operator-(RGB const& other) {
-		return RGB(r - other.r, g - other.g, b - other.b);
-	}
-
-	RGB operator/(uint32_t other) {
+	inline RGB operator/(uint32_t other) {
 		return RGB(r / other, g / other, b / other);
 	}
 
-	uint32_t operator*(RGB const& other) const {
-		return this->r * other.r + this->g * other.g + this->b * other.b;
+	inline bool operator<(RGB const& other) const {
+		return r * r + g * g + b * b < other.r * other.r + other.g * other.g + other.b * other.b;
 	}
 
-	bool operator<(RGB const& other) const {
-		return (*this)* (*this) < other* other;
-	}
-
-	uint32_t dist(RGB& other) {
-		return (*this - other) * (*this - other);
+	inline uint32_t dist(RGB& other) {
+		return  (r - other.r) * (r - other.r) +
+				(g - other.g) * (g - other.g) +
+				(b - other.b) * (b - other.b);
 	}
 
 	File* f;
