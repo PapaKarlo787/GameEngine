@@ -16,20 +16,7 @@ uint32_t err;
 
 using namespace std;
 
-vector<RGB> collectRepresentors(vector<vector<RGB>*>& sets) {
-	vector<RGB> represes;
-	for (auto& s : sets) {
-		RGB sum = accumulate(s->begin(), s->end(), RGB());
-		represes.push_back(s->size() ? sum / s->size() : RGB());
-		delete s;
-	}
-	while (represes.size() != PALETE_SIZE) {
-		represes.push_back(RGB());
-	}
-	return represes;
-}
-
-void writeRepreses(int fd, vector<RGB> represes) {
+void writeRepreses(int fd, vector<RGB>& represes) {
 	char data[256 * 3];
 	for (int i = 0; i < PALETE_SIZE; i++) {
 		data[i * 3 + 0] = represes[i].r;
@@ -39,29 +26,37 @@ void writeRepreses(int fd, vector<RGB> represes) {
 	err += write(fd, data, sizeof(data));
 }
 
-void gla(vector<vector<RGB>*>& sets, vector<RGB>& colors) {
-	vector<RGB> represes = collectRepresentors(sets);
-	map<RGB*, vector<RGB>*> tmpSets;
-	for (auto& color : colors) {
-		uint32_t dist = -1;
-		RGB* repres;
-		for (int i = 0; i < PALETE_SIZE; i++) {
-			uint32_t d = color.dist(represes[i]);
-			if (dist > d) {
-				dist = d;
-				repres = &represes[i];
-			}
-		}
-		if (tmpSets.count(repres)) {
-			tmpSets[repres]->push_back(color);
-		}
-		else {
-			tmpSets[repres] = new vector<RGB>{ color };
+inline int findNearestRepresentor(RGB const& color, vector<RGB> const& representors) {
+	int result = 0;
+	uint32_t dist = -1;
+	for (int i = 0; i < PALETE_SIZE; i++) {
+		uint32_t d = color.dist(representors[i]);
+		if (dist > d) {
+			dist = d;
+			result = i;
 		}
 	}
-	sets.clear();
-	for (auto const& s : tmpSets) {
-		sets.push_back(s.second);
+	return result;
+}
+
+void gla(vector<RGB>& represes, vector<RGB> const& colors) {
+	RGB newRepreses[PALETE_SIZE];
+	int cntMembers[PALETE_SIZE];
+	for (int i = 0; i < PALETE_SIZE; i++) {
+		newRepreses[i] = RGB();
+		cntMembers[i] = 0;
+	}
+	for (int i = 0; i < GLA_STEPS; i++) {
+		for (auto& color : colors) {
+			int i = findNearestRepresentor(color, represes);
+			newRepreses[i] += color;
+			cntMembers[i]++;
+		}
+		for (int i = 0; i < PALETE_SIZE; i++) {
+			represes[i] = cntMembers[i] ? newRepreses[i] / cntMembers[i] : RGB();
+			newRepreses[i] = RGB();
+			cntMembers[i] = 0;
+		}
 	}
 }
 
@@ -105,24 +100,23 @@ int main(int n, const char** args) {
 	set<vector<RGB>*> colorSets{ new vector<RGB>(colors.begin(), colors.end()) };
 	medianCut(colorSets);
 
-	vector<vector<RGB>*> colorGroups;
-	colorGroups.reserve(colorSets.size());
-	move(colorSets.begin(), colorSets.end(), back_inserter(colorGroups));
-	for (int i = 0; i < GLA_STEPS; i++) {
-		gla(colorGroups, colors);
+	vector<RGB> represes;
+	for (auto& s : colorSets) {
+		RGB sum = accumulate(s->begin(), s->end(), RGB());
+		represes.push_back(s->size() ? sum / s->size() : RGB());
+		delete s;
 	}
+	gla(represes, colors);
 
-	for (int i = 0; i < colorGroups.size(); i++) {
-		for (auto color : *colorGroups[i]) {
-			color.f->addResData(i, color.pos);
-		}
+	for(auto color : colors) {
+		int ind = findNearestRepresentor(color, represes);
+		color.f->addResData(ind, color.pos);
 	}
-	vector<RGB> finalRepreses = collectRepresentors(colorGroups);
 
 	int fd = open(args[2], O_WRONLY | O_CREAT | O_TRUNC, 0777);
 	uint16_t size = files.size();
 	err += write(fd, &size, sizeof(size));
-	writeRepreses(fd, finalRepreses);
+	writeRepreses(fd, represes);
 	for (int i = 0; i < size; i++) {
 		files[i].writef(fd);
 	}

@@ -23,6 +23,12 @@ public:
 		return RGB(r + other.r, g + other.g, b + other.b);
 	}
 
+	inline void operator+=(RGB const& other) {
+		r += other.r;
+		g += other.g;
+		b += other.b;
+	}
+
 	inline RGB operator/(uint32_t other) {
 		return RGB(r / other, g / other, b / other);
 	}
@@ -31,7 +37,7 @@ public:
 		return r * r + g * g + b * b < other.r * other.r + other.g * other.g + other.b * other.b;
 	}
 
-	inline uint32_t dist(RGB& other) {
+	inline uint32_t dist(RGB const& other) const {
 		return  (r - other.r) * (r - other.r) +
 				(g - other.g) * (g - other.g) +
 				(b - other.b) * (b - other.b);
