@@ -1,9 +1,6 @@
 ﻿#include <iostream>
 #include <set>
-#include <vector>
 #include <stdint.h>
-#include <map>
-#include <algorithm>
 #include <functional>
 #include <numeric>
 

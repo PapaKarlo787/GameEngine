@@ -3,7 +3,6 @@
 
 #include <unistd.h>
 #include <stdint.h>
-#include <vector>
 #include <fcntl.h>
 #include <cstring>
 #include "rgb.h"
