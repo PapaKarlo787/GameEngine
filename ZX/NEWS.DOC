@@ -1,0 +1,694 @@
+Release 2.51. (December 1998)
+=============================
+
+The difference in the release number is small, because the new release has not
+so many new features. However, the difference in the program is not small,
+because more than 20 bugfixes are introduced, some of them was very serious.
+
+- Starting from release 2.51, the Warajevo emulator has the official home page
+  (thanks to Martijn Van Der Heidne), where you can find a lot of interesting
+  things (the most of them are related to the Warajevo, but some of them are
+  not). The URL is:
+
+  http://www.void.demon.nl/warajevo/index.html
+
+- A fatal bug which cause "Runtime error 200" on very fast computers is fixed
+  (in fact, this is a bug in the Turbo Pascal, not in the Warajevo itself).
+
+- Some bugs in TZX loading with the programs which require silence at the end
+  of loading (some speedlocks, like the Arkanoid) are fixed. Thanks to Uros
+  Zupan to noticing this. Before, the success of loading such programs was
+  random (somebody may tell that this was a good emulation, because it is also
+  true on the real Spectrum)...
+
+- Another TZX bug which prevents loading of some tapes with mixture of normal
+  and sampled blocks is also fixed (noticed in Slovenian programs The Drinker
+  and Jamski heroj).
+
+- An ugly bug which may cause loading error during loading from the samples or
+  TZX files if a function key is pressed during the loading (even a harmless
+  key like F4 or F6) is fixed.
+
+- Another stupid bug which cause crash if the help key (F1) is pressed during
+  loading from samples is fixed.
+
+- TZX loading is now much faster when the "Sample standard blocks rather than
+  copy them" checkbox is turned off than in previous release. The same is true
+  for loading from TAP files which are mixture of normal and sampled blocks.
+
+- Loading from the samples now works correctly on the Timex version of the
+  emulator too.
+
+- Very nasty bug which prevents starting programs from the ZIP archives using
+  the 'Start' button is fixed.
+
+- A bug in AY sound using the Sound Blaster when one of the sound registers is
+  set to produce ultrasound is fixed (noticed in Cybernoid 128). Thanks to Lee
+  Tonks for noticing this.
+
+- A bug which stops screen generation if the multicolor and hires border
+  emulation is turned on using command swithches in maximal speed mode or on
+  non-VGA graphic cards is fixed.
+
+- The multicolor emulation is a bit improved: the multicolor effects in the
+  Zynaps now works correctly.
+
+- An user-definable color palette (via the WARAJEVO.PAL file) is included, and
+  the default palette is now much more similar to original Spectrum palette
+  than in previous version.
+
+- A bug which may cause crash if the Z80 interrupt request appears during
+  execution of 80x86 escape sequences is fixed.
+
+- The option "Merge Dock" in the environment did not work. This is fixed now.
+
+- The option "View Dock" in the environment showed incorrect informations. Now
+  fixed.
+
+- The "Object not initialized" bug, when SGD.INI file is not present while
+  converting the data base from the SGD format to the Warajevo format is
+  fixed.
+
+- The conversion from the SGD to the Warajevo now treats correctly non-native
+  Warajevo file formats.
+
+- 3 checkboxes are added in the option for converting the SGD to the Warajevo
+  database, to ignore sorting, producer names and file names if the database
+  is too huge, what is a case with "World of Spectrum" database archive. These
+  items are stored in RAM memory, and without sorting and producer names
+  Warajevo now can handle not only GAMES.DAT, but also complete SGD database
+  (90K still remains free).
+
+- A bug with reclaiming allocated memory in "DockFiles" menu is now fixed.
+
+- The fatal error raporting in the environment now don't cause screen trashing
+  if the environment is in the graphic mode.
+
+- The amount of free RAM in the environment is increased for about 10K.
+
+- On the Timex version of the emulator, you could not load blocks at addresses
+  0-16383 even if there is a RAM there, and everything could be loaded at
+  addresses above 16384 even if there is a ROM there. This is now fixed.
+
+- Some I/O ports on the Timex emulator could not be virtualized (247, 239 and
+  231 for both reading and writting, and 31 and 245 for reading) using the
+  external drivers. This is fixed now.
+
+- One ugly bug in ZXCOMP is fixed: starting from ZXCOMP release 2.0, the extra
+  instructions for saving/loading blocks does not work and causes a crash. This
+  is now fixed.
+
+- Another ZXCOMP bug is fixed: switch /Q in the ZXCOMP now works...
+
+- The ZXCOMP block load instruction is improved: when DE=0, the whole block
+  will be loaded from the disc regardless of its actual length.
+
+- File WARICONS.ZIP is replaced with ICO&PIFS.ZIP, and it now contains also
+  PIF files for better working under Windows 95.
+
+- Some errors in the documentation (not gramatic but principal errors) are now
+  fixed, and the FAQ list is updated.
+
+- The documentation in Bosnian language is not longer supported with the
+  Warajevo package. Instead, it can be downloaded separately from the Warajevo
+  home page.
+
+
+Release 2.5. (October 1998)
+===========================
+
+As usual, Warajevo 2.5. introduced a lot of new features:
+
+- Warajevo 2.5. includes emulation of the American release of the Spectrum,
+  the Timex Sinclair 2068. Nearly all of the features of this computer
+  (except disk interfaces) are implemented, including extra video modes,
+  joystick interface, sound chip, bank switching hardware, RAM/ROM cartridge
+  expansions, LROS and AROS programs, TS 2048 printer and AERCO printer
+  interface, etc.
+
+- Improved TZX file compatibility: all tested TZX files (about 500) now work.
+  Warajevo can now handle TZX files with blocks longer than 64K (Skool Daze
+  for example). A very serious bug which sometimes caused the loss of one bit
+  at TZX block boundaries (the main reason for TZX incompatibility) is now
+  removed (noticed in Robocop, 10th Frame etc.). The TZX Select block is
+  still not implemented, but now it will not fool the emulator (noticed in
+  Batman 3).
+
+- Much faster TZX conversion. The rules of TZX conversion may be customized,
+  so you may decide between maximal compatibility and slower loading, or
+  fast loading with less compatibility...
+
+- Switch /%LMAX is implemented, which makes loading using non-standard
+  loaders (TZX files, tone samples, edge recognizer etc.) much faster (on
+  100 MHz machine four times faster or more) without any degradation in
+  compatibility.
+
+- Improved AY sound emulation on Sound Blaster: exact emulation of the AY
+  chip is implemented, including the variable-frequency noise generator,
+  digital sound effects and speech generation. In most cases, the sound is
+  the same as in the X128 emulator (SAOM version) which needs higher hardware
+  requirements on your computer than the Warajevo emulator. AdLib
+  compatibility is improved: a switch (/SO) is introduced to achieve maximal
+  compatibility with very old sound cards which use the OPL2 chip for FM
+  synthesis.
+
+- Warajevo 2.5. implements one exotic sound emulation mode: with the switch
+  /SX it tries to emulate all of the AY features (noise, digital sound etc.)
+  using only the PC beeper! Sometimes it sounds quite good.
+
+- Emulation of multicolor effects (switch /QX) is implemented: the well-known
+  Overscan demo and many other multicolor programs now work quite well. At
+  the moment, there is only one emulator which has a better emulation of
+  such effects: ZX32 for Windows 95 by Vaggelis Kapartzianis.
+
+- Warajevo 2.5. allows direct loading and saving from the emulator kernel
+  using a real tape recorder through a LPT1 port (both loading and saving) or
+  a Sound Blaster card (loading only), like the registered version of
+  Lunter's Z80 emulator. But unlike Lunter's program, in the Warajevo
+  emulator you can see the loading screens etc. during loading!
+
+- The environment of Warajevo 2.5. has an option for sampling the tone record
+  from a real tape into a TAP file, regardless of the structure of the tone
+  record and loading routine. In other words, you can transfer any program
+  from real tape to a TAP file!
+
+- The conversion between the SpecBase and the Warajevo database format is
+  implemented.
+
+- A switch (/EO) is implemented which allows programs which need the old ZX
+  Interface 1 ROM (like Trans Express, Easyuse Microdrive Utility, Beta Basic
+  3.0 etc.) to work correctly.
+
+- The 'Start' button does not allow selection of a file which is not a
+  Spectrum-related file.
+
+- 48K snapshot files may be loaded into the 128K version of the emulator
+  without errors and conversions. Also, switching from the 48K version to the
+  128K version may be done without resetting the emulator.
+
+- The utility MAKEREG is introduced which helps by registering Spectrum files
+  with the emulator in Windows 95. Also, a separate icon file for each file
+  type category has been designed.
+
+- Task switching to the emulator on MS Windows will not cause trash on the
+  screen (if you select the appropriate option to enable this feature). Also,
+  some options are introduced for better MS Windows compatibility.
+
+- The command Dx y z 1 in the built-in monitor now also displays ASCII
+  characters and BASIC tokens, which is very useful for analysing protected
+  BASIC programs. The monitor may access all the Timex extra memory banks,
+  and some small improvements are also introduced.
+
+- Exact behaviour of the self-modified Z80 CALL instruction is implemented,
+  so some more programs now work (Batman DE).
+
+- The switches /@ and /@@ which help various kinds of batch testing are
+  introduced.
+
+- Warajevo 2.5. can disable picture generation using Shift+F6, which helps
+  loading from real tape on slower computers.
+
+- The switch /H is now obsolete; loading from emulated tape is quite
+  aesthetic, regardless of the setting of the /H switch, without any
+  drawbacks.
+
+- You can exit the emulator pressing Alt+F4, like in Windows.
+
+- The help screen (F1) is much nicer, and it is now colourful.
+
+- A very dangerous bug in the envelope generator which could hang-up and
+  totally lock the emulator has been removed (noticed in War Cars and
+  Brain Crash).
+
+- A nasty bug which destroys the DE register after returning from the Tape
+  Manager has been fixed.
+
+- A bug which trashed the alternative register set on start-up when the
+  option /A is given has been fixed (noticed in RamPage and FireFly).
+
+- The option /K in the 48K version of the emulator now works correctly
+  (fixed, but useless).
+
+- The bug which prevented working with read-only files in the environment is
+  now fixed.
+
+- Updating of alternate video memory on the 128K now works correctly in all
+  cases (noticed in the Hercules demo).
+
+- A bug in the envelope generator which sometimes trashed some melodies is
+  removed at last (we've searched for this bug since release 1.1)!
+
+- Lunter TAP files which are shorter than 12 bytes now cannot cause a crash
+  in the emulator like in release 2.0.
+
+- A bug which caused screen flashing during loading in synchronous border
+  emulation mode has been fixed.
+
+- Conversions to and from the ZXS and ZXT formats, and from the TRD to TAP
+  format now works correctly. Thanks to Vaggelis Kapartzianis.
+
+- The option /S<filename> when <filename> does not exist will not cause a
+  crash like in release 2.0.
+
+- Different video timing in the 128K version is implemented, and some bugs in
+  the timing calculation are fixed, so 128K programs which use border effects
+  (El Loco for example) now work correctly (thanks to Miodrag Stancevic).
+
+- In release 2.0. the ULA delay estimation was very often overestimated,
+  which may have caused some programs to crash. This is now fixed.
+
+- Bugs in instructions like RRCP (IX+nn),reg are now fixed (noticed in Songs
+  In Line 5)
+
+- SA_BYTES routine now returns the correct value of the IX register (noticed
+  in one copy program, thanks to Miodrag Stancevic).
+
+- Working with the emulator across the midnight boundary will update the date
+  correctly after exiting the emulator (thanks to Daniel Herak).
+
+- The command switch /?86 is now parsed correctly (thanks to Philip Pogosov)
+
+- The environment is now optimized for 286+ processors (and cannot be started
+  with an 8086). The design of the items in the help system in the
+  environment is closer to the items in the environment itself.
+
+- Many users asked us about the organization of the compressed Warajevo TAP
+  files, so information about exact TAP file organization is included in the
+  manual.
+
+- The documentation and FAQ list are updated.
+
+
+Release 2.0. (February 1998)
+============================
+
+Release 2.0. had a lot of great and radical improvements:
+
+- Warajevo 2.0. is, at least, real-time emulator, so speed of emulated
+  Spectrum programs is like on real Spectrum, independently of speed of your
+  machine (no more ugly /W switch)!!! Also, ZXCOMP 2.0. creates executable
+  files which are independent of machine speed too.
+
+- Emulation of AY sound chip on 128 version of the emulator is now allowed
+  using AdLib compatible sound cards (Sound Blaster for example).
+
+- Warajevo 2.0. supports (without conversion) tape files in Lunter TAP format,
+  which now has nearly equality of right with native Warajevo format!
+
+- Command parameter which suppress mixing of 8088 machine code with Z80
+  machine code (for users which are afraid about possibility of infiltrating
+  a "Trojan horse" into a snapshot file) is implemented.
+
+- Video emulation is improved: Warajevo 2.0. now supports wide class of high
+  resolution BORDER effects, and probability of sprite flickering is reduced
+  to very low value (for very fine adjustment, switch /Q is implemented).
+
+- The environment of the emulator now can optionally work in graphic mode (put
+  command SET WARAJEVO=G into AUTOEXEC.BAT file to do it), which gives more
+  professional looking and allows new possibilities like displaying content of
+  the emulated screen in the environment window.
+
+- In addition to Lunter TAP support, Warajevo TAP format is also expanded to
+  support blocks which contain tape record samples. Indirect support of TZX
+  and VOC files are also implemented!
+
+- 128 version of the emulator now emulates MIDI interface using Sound Blaster
+  compatible card. So, Warajevo is now the only emulator which emulates MIDI!
+
+- One more exotic thing: Warajevo 2.0. emulator emulates Sinclair Network!
+
+- Interrupt generation is synchronized with real emulator speed, so interrupt
+  congesting is impossible, and interrupt frequency has no influence to sprite
+  flickering (no more /I switch).
+
+- The environment now may be called from the emulator using right mouse click.
+
+- Options 'Convert' in the environment now supports very wide range of
+  different snapshot, tape and mixed formats. Options for converting Warajevo
+  databases into (or from) other Spectrum-related databases (for example, ZX
+  Rainbow) are now implemented too.
+
+- Converting of snapshot files into TAP file is now much easier to use, and
+  supports many new options. Between others, conversion may be performed on
+  such way that converted program will be compatible with Lunter's Z80
+  emulator (in earlier releases manual modifications into loader was
+  necessary), and in some cases, screen corrupting can be totally suppressed.
+
+- Conversion 'Warajevo <-> Lunter' is now less confuse for many users.
+
+- The environment supports Start button (like Windows 95), which allows quick
+  running of ZX Spectrum programs independently of their format (Z80, TAP, SNA,
+  SLT, BLK, TZX, VOC etc.), even running programs from ZIP archives! So,
+  working with Warajevo is no more tedious with non-Z80 files (like SNA).
+
+- Yellow color is now really yellow color...
+
+- Working with Warajevo database is drastically faster. Entering and editing
+  linked data in the database is incomparably easier. Database now has some
+  new possibilities. Requirements for the free memory space in the environment when
+  during tape imploding or during working with the database are reduced.
+
+- Swap files for communications between emulator kernel and the environment
+  (SPECSIM.CFG and TEMP.Z80) now may lay on arbitrary drive and directory
+  (which allows making runable version of the emulator on CD-ROM). Switching
+  between the kernel and the environment is now drastically faster, especially
+  when tape file which is currently in use lays on floppy disc.
+
+- Internal monitor has now help page, one new command (N), and some useful
+  improvements in the search command (F).
+
+- Opcode #ED #FB (and also #ED #F6) which is so-called Multi-level Load Trap
+  on many other emulators (including Lunter's Z80, XZX etc.) is implemented,
+  although on one specific way. So, Warajevo 2.0. now indirectly supports SLT
+  format too.
+
+- Sound during loading using non-standard loaders (and with standard loaders
+  in SLOW tape emulation mode) is more realistic (like on original Spectrum).
+  Border effects during slow loading are implemented too.
+
+- Edge recognizer algorithm is a bit improved, so it can recognize broader
+  class of loaders.
+
+- Program ZXCOMP now has switch /? for getting a quick help. Compiled programs
+  also support switch /? which shows list of other possible switches.
+
+- One bad point in release 2.0: this release needs a bit faster computer than
+  release 1.5. (33 MHz or more) for correct working.
+
+- Bug which makes impossible loading programs from tape using Sound Blaster is
+  now removed.
+
+- Very serious bug which destroys cartridge file from time to time (but very
+  often, in according with Murphy's law) is now removed.
+
+- A stupid bug which corrupt carry flag after tape saving (due to this reason,
+  program 'Turbo imploder', when save is requested, save only a header) is now
+  removed.
+
+- We believe that bug which sometimes cause crash during palette changing (F5)
+  on some computers is removed.
+
+- Bug which causes message 'Internal error - unexpected wrapping' in some cases
+  with programs created using ZXCOMP is now removed.
+
+- MS Windows compatibility is quite improved, so programs like 'Dynamite Dan',
+  'Galactic Gunners' etc. now works under MS Windows.
+
+- Under Windows 95, Spectrum files (Z80 etc.) may be registered, so double
+  click on such files will load and run them.
+
+- Some harmless bugs into the environment are removed. Many options are
+  improved and easier to use.
+
+- A lot of other (mostly aesthetic) bugs are removed (but, maybe, a lot of new
+  bugs are introduced).
+
+- The documentation is expanded (oh, no), and FAQ list is updated with new
+  questions and answers.
+
+- The documentation on Bosnian language now contains Bosnian-specific letters
+  (using code page 852).
+
+- Our E-mail addresses in the documentation are changed.
+
+- Icon WARAJEVO.ICO is redesigned.
+
+- This program is still freeware, but now if you donate 80 DM or more, you can
+  get source files of whole emulator!
+
+
+Release 1.5. (July 1996)
+========================
+
+Release 1.5. was radically new:
+
+- The most important thing is that emulator, ZXTOOLS and ZXSHELL now makes one
+  compact, completely redesigned, logical unit. You now can do all things
+  directly from emulator, with user-friendly user interface (without needs for
+  command switches), including loading programs through menus. User interface
+  supports mouse.
+
+- Now it is possible to load programs directly from a real tape using a real
+  tape recorder.
+
+- Completely new method of picture generation success to remove flickering
+  practically in all programs (using simple changes of some parameters). Sound
+  quality is retained. Picture repainting on old graphic cards (Hercules) is
+  drastically faster, especially with /VX parameter. Option /X no longer
+  exists.
+
+- Kernel of emulator is rewritten, so on slower machines emulator is about
+  30-60 % faster. This improves range of machines on which emulator is usable.
+  Also, /I option is less needed now.
+
+- ZXCOMP is also rewritten, so we think that now there is no some ugly bugs
+  into it.
+
+- Shades for monochromatic graphic card are redesigned, so many games which
+  was unplayable on such cards are now playable.
+
+- Microdrive emulation on I/O level (very realistic) is implemented, with
+  variable size cartridge files (5-126 KB).
+
+- ZX printer is now emulated on HP Laser Jet printer too. Also, in earlier
+  releases of emulator, on some computers emulator wrongly detects presence of
+  printer which is not present. Sometimes that may cause problems. Now,
+  printer emulation is disable by default, and must be enabled (if need) using
+  appropriate command.
+
+- MS Windows compatibility is improved. Now it is possible to have color
+  picture in window (unfortunately not in natural Spectrum colours, in fact
+  this is color CGA mode). Three different color combinations are supported.
+
+- On CGA card FLASH is now implemented as inverse character (so option /K is
+  useless). CGA card is now not in usage, but this feature is important for
+  windowed running on MS Windows, because only CGA mode may be used in
+  windowed mode.
+
+- A method which supports adding external drivers for emulation of peripheral
+  devices which are not initially emulated by emulator is implemented. As
+  example, driver for Kempston parallel Centronics interface emulation came
+  with emulator (with object and source code in assembler).
+
+- Emulator now implements method which allows mixing of 8088 machine code with
+  Z80 code (Who will use it? Somebody who want to modify Sabre Wulf to save
+  high score to disk, for example). It is now possible to patch into Z80 code
+  sequence of instructions which will be execute directly in 8088 code, so
+  user may implement things which cannot be implemented directly in emulator
+  (for example, screen saving directly into disk file). This is very useful in
+  compiled snapshots (ZXCOMP).
+
+- Emulator now correctly emulate all Z80 flags which is marked as '?' in Z80
+  manual, for example S flag after BIT instruction (Sabre Wulf now works as on
+  original Spectrum). Also, partially emulation of bits 3 and 5 in F register
+  is implemented (so now Ghost'n Goblins works). These things are implemented
+  without any losing of emulator performances.
+
+- Configuration file SPECSIM.CFG now may have more than one line, and may be
+  longer than 128 bytes. This file now has locally nature, and globally
+  configuration file DEFAULT.CFG is implemented.
+
+- Now there is different error message when snapshot file is absent and when
+  snapshot file has wrong format.
+
+- Critical error handler is improved, so message 'Critical error was fatal' no
+  longer exists.
+
+- Keys PageUp and PageDown in tape manager will not hang up emulator if TAP
+  file format is wrong. Tape Manager now displays block position in tape
+  (useful for /F option), and some small bugs are removed.
+
+- Background colour for Tape Manager and machine monitor is changed. We seen
+  on color monitor that new background is better for eyes.
+
+- We hope that keyboard problems on some machines no longer exists.
+
+- Method for initialization graphic mode on EGA and VGA card is improved, so we
+  hope (but there is no guarantee) that emulator now works on all EGA and VGA
+  graphic cards.
+
+- Bug into emulation of seventh bit of R register which block some games is
+  now removed (for example, Bruce Lee).
+
+- Some small bugs into I/O ports emulation are removed. BUS IDLE port
+  emulation is improved.
+
+- Option /W is improved and now not interfere with BUS IDLE port emulation and
+  R register emulation.
+
+- Documentation is about 60% longer. A list FAQ (Frequently asked questions)
+  is added into the package (but list TESTED.LST is removed).
+
+
+Release 1.4. (March 1996)
+=========================
+
+This was one internal release (incomplete release 1.5.) which was Samir's
+graduate thesis.
+
+
+Release 1.2. (December 1995)
+============================
+
+Release 1.2. was mostly a bugfixed version with new ZXTOOLS:
+
+- Removed bug with keyboard hanging on some controllers and BIOS-es. The bug is
+  removed by Rui Fernando Ribeiro from Portugal.
+
+- ZXTOOLS is completely redesigned. It has new user interface with windows and
+  menus. It is much more easy to reach most of options (for example, in
+  version 1.1. the option 'Copy to New' was real nightmare). The user
+  interface is similar to one in Borland's compilers or Norton utilities. We
+  supported conversion to formats of many other PC based Spectrum emulators,
+  but also conversion from them. Other than TAP files, ZXTOOLS supports also
+  snapshot files, changing of them and conversion to snapshot formats of other
+  emulators. Conversion of snapshot files to TAP format is supported. The
+  loader is flexible and allows easy transferring of program in tape file to
+  disc or microdrive.
+
+- The list TESTED.LST enlarged for 35 new programs.
+
+
+Release 1.11. (May 1995)
+========================
+
+In this version we removed some bugs noticed into release 1.1.:
+
+- Option Z in monitor (screen copy) now works with any graphic cards and with
+  any Epson compatible printer too.
+
+- ZX printer emulation now works with any Epson compatible printer.
+
+- Emulator now can correctly load .Z80 snapshots which are in old Lunter's
+  format (i.e. created using Lunter's emulator version 1.45 or older).
+
+- Option for converting screens to color TIFF format into ZXTOOLS now works.
+
+- Compiling snapshots which have BASIC part using ZXCOMP was practically
+  impossible, due to bug into ZXCOMP. This bug is removed now.
+
+- E-mail addresses in documentation are changed.
+
+- Additional informations for Windows users and added Windows icon.
+
+
+Release 1.1. (March 1995)
+=========================
+
+Release 1.1. had a great improvements:
+
+- Full emulation of memory management on Spectrum 128 is implemented,
+  including two algorithms for emulating alternative video bank (option /X).
+  Emulation of AY sound chip through PC beeper (pseudo 3-channel sound) is
+  implemented, with corresponding command line option (option /S). Emulator now
+  supports emulation of Spectrum +2 (option /2).
+
+- KEYPAD emulation is implemented in 128 version of emulator. Keyboard is
+  expanded with keys 'Esc' (acts as BREAK) and '~' (acts as FIRE button on
+  joystick, same as grey '+' key).
+
+- Emulator now detects presence of 80386 processor and speed up twice memory
+  paging if 80386 is present. Emulator more rarely cause conflict with
+  programs like EMM386, Windows, etc. Warning message will be displayed if
+  processor works in 'Virtual 8086' mode, and it may be suppressed (using
+  option /!).
+
+- We now make program ZXCOMP which can compile Z80 snapshot files into EXE
+  programs which can work totally independently of the emulator.
+
+- Tape emulation is improved. Fast block loading returns more accurately
+  register values than in previous release of emulator. During slow loading,
+  you now can break loading using BREAK if recognized routine is breakable, or
+  not if recognized routine is not breakable. Option /L is implemented, which
+  allows setting algorithm for tape emulation at start of the emulator. Option
+  /O, which sets 'filter' for active tapes is implemented. We now deliver
+  'Turbo copy' program for cracking some protected programs with emulator.
+
+- Option /M, which allows setting algorithm for attributes emulation at start
+  of the emulator is implemented. Treatment of keys F5 and F6 is improved. On
+  Hercules card now exist extended mode (option /VX). Command V in monitor now
+  do not deactivate FLASH.
+
+- Greatest improvements are done in the monitor. Command B without parameters
+  now clears breakpoint. Command A (Abort) is improved very much, especially
+  in 128 version of the emulator. Commands Y (for memory management) and J
+  (for executing programs till specified address) are implemented. Breakpoint
+  now destroys only one byte in memory, when you leave the monitor. Command E
+  now may have parameter. ARG field now will be empty if current instruction
+  has no memory arguments, and monitor displays state of '48K Lock' bit too.
+  Command A now cause error message if you try to put RAMPTOP at too low
+  address. Break point now may be put into any memory page (and it will be
+  displayed on front panel). Treatment of inline parameters after instructions
+  RST is implemented, and accordingly command D got fourth parameter. Command
+  T now makes difference between codes below and above 128 while displaying
+  them on the screen. Command ! which sets interrupt flip-flops and interrupt
+  mode is implemented. Command S now can save parts of memory with header, not
+  only as headerless files. Command Z is implemented, which gives great
+  possibilities for dumping screens to the printer, in different shapes and
+  sizes. Finally, using command O you can now redirect output from monitor to
+  file 'MONITOR.OUT' so results of working into monitor need not be captured
+  in it.
+
+- Automatic loading of programs from TAP files is improved very much,
+  especially in 128 version of emulator. The most important thing is that user
+  now can not press BREAK before ROM changes is cancelled. For pedant users we
+  implemented options /Y and /H.
+
+- We now implemented RS232 emulation through Interface 1 (earlier we have only
+  emulation through 128 RS232 port) to LPT1 port. For ZX printer emulation we
+  implemented option /P (earlier it was default). Option /EX is implemented
+  too.
+
+- Option /B is expanded, so it has influence to RST 40 in Derby ROM on 128
+  version of the emulator, and now may be used together with option /E. Option
+  /I now may have parameter, and has no influence to flashing speed. Option /C
+  now may be used together with other options.
+
+- Errors treatment is improved. Emulator now displays more detail informations
+  about place where the error occurred. Greater improvements are done with DOS
+  critical errors, so critical errors more rarely cause stopping of the
+  emulator.
+
+- Speed adjustment is now implemented (option /W), but on relatively primitive
+  way. Auxiliary program MEASURE.COM is included in the package, as a help for
+  correct using of option /W.
+
+- In program ZXSHELL we expanded field for start-up options, support of many
+  printers is included, and we implemented commands for easier adding or
+  deleting initial switches. Entering some fields in the database is improved.
+  Displaying of troubles in reports is improved.
+
+- Emulator now can load snapshot files created by version 3.0. of Lunter's
+  'Z80' emulator, not only by version 2.0.
+
+- Calibration of analogue PC joystick is implemented. Options for joystick
+  emulation which may exist together now don't exclude one another.
+
+- Detailed documentation on Bosnian and (not very good) English language is
+  included in the package. Also, some lectures in messages in ZXTOOLS and
+  ZXSHELL programs are made.
+
+
+Release 1.01. (January 1995)
+============================
+
+In this version we removed a lot of bugs which was in version 1.0. The
+greatest bugs was:
+
+- Bugs with breakpoints and I command into monitor, as bugs with changing of A
+  register into monitor.
+
+- Some dangerous bugs in 'edge recognizer' algorithm and loading of snapshot
+  files.
+
+- Problems with blocking if you wait too long while title picture is shown of
+  screen.
+
+- Some command line options (for example, /B) very often didn't work.
+
+
+Release 1.0. (November 1994)
+============================
+
+This release was the first complete version of this program. In this release
+we completed some half-implemented features and sent program to Gerton Lunter.

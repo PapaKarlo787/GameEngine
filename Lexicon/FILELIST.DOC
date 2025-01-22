@@ -1,0 +1,481 @@
+
+СОСТАВ ФАЙЛОВ КОМПЛЕКТА ПОСТАВКИ СИСТЕМЫ ЛЕКСИКОН 1.3
+──────────────────────────────────────────────────────────────────────
+
+Большинство файлов комплекта упакованы на дистрибутивных дисках в виде
+самораскрывающихся архивных модулей,  созданных  с  помощью  программы
+LHA 2.12 (c) Haruyasu Yoshizaki,1988-1991.
+
+READ     ME      Информация, дополняющая печатную документацию.
+INSTALL  BAT     Командный файл, запускающий процесс установки.
+INSTALL  DOC     Дополнительные сведения по установке.
+FILELIST DOC     Данный файл.
+CODE_TAB DOC     Таблица кодировки символов; пример набора формул.
+~        BAT     Служебный файл.
+~DEL     BAT     Служебный файл.
+ASK      COM     Служебный файл.
+ASKSPACE COM     Служебный файл.
+MAIN     EXE     Архив: основные файлы.
+FN_CGA   EXE     Архив: экранные шрифты CGA.
+FN_EGA   EXE     Архив: экранные шрифты EGA.
+FN_VGA   EXE     Архив: экранные шрифты VGA.
+PR_9     EXE     Архив: шрифты 9-игольных принтеров.
+PR_24    EXE     Архив: шрифты 24-игольных принтеров.
+PR_LJ    EXE     Архив: драйверы лазерных принтеров.
+LJ_TW    EXE     Архив: шрифты набора МАШИНОПИСЬ.
+LJ_CR    EXE     Архив: шрифты набора КУРЬЕР.
+LJ_HM10  EXE     Архив: шрифты набора ГАРМОНИЯ-10.
+LJ_HM12  EXE     Архив: шрифты набора ГАРМОНИЯ-12.
+LJ_NV10  EXE     Архив: шрифты набора НОВОСТИЛЬ-10.
+LJ_NV12  EXE     Архив: шрифты набора НОВОСТИЛЬ-12.
+LJ_HD    EXE     Архив: шрифты набора ЗАГОЛОВКИ.
+PCX      EXE     Архив: рисунки.
+PR_DJ    EXE     Архив: шрифты принтеров DeskJet.
+UTILS    EXE     Архив: утилиты.
+PROSA    EXE     Архив: дополнение к пакету ПРОЗА.
+
+
+Содержание архива: MAIN.EXE
+
+HELP_ENG.LEX
+HELP_RUS.LEX
+KEYMACRO.LEX
+LEXICON.EXE
+
+Содержание архива: FN_CGA.EXE
+
+CGA0.SFN
+CGA1.SFN
+CGA2.SFN
+CGA3.SFN
+CGA4.SFN
+CGA5.SFN
+CGA7.SFN
+CGA8.SFN
+CGA9.SFN
+CGAA.SFN
+CGAB.SFN
+
+Содержание архива: FN_EGA.EXE
+
+EGA0.SFN
+EGA1.SFN
+EGA2.SFN
+EGA3.SFN
+EGA4.SFN
+EGA5.SFN
+EGA7.SFN
+EGA8.SFN
+EGA9.SFN
+EGAA.SFN
+EGAB.SFN
+
+Содержание архива: FN_VGA.EXE
+
+VGA0.SFN
+VGA1.SFN
+VGA2.SFN
+VGA3.SFN
+VGA5.SFN
+VGA7.SFN
+VGA8.SFN
+VGA9.SFN
+VGAA.SFN
+VGAB.SFN
+VGA4.SFN
+
+Содержание архива: PR_9.EXE
+
+TW_0.FN9
+TW_1.FN9
+TW_2.FN9
+TW_3.FN9
+TW_6.FN9
+TW_7.FN9
+TW_G.FN9
+TW_GR.FN9
+HD_0.FN9
+HD_1.FN9
+HD_2.FN9
+HD_3.FN9
+NV10_0.FN9
+NV10_1.FN9
+NV10_2.FN9
+NV10_3.FN9
+HM10_0.FN9
+HM10_1.FN9
+HM10_2.FN9
+HM10_3.FN9
+HM_GR.FN9
+NV12_0.FN9
+HM12_0.FN9
+NV12_1.FN9
+HM12_1.FN9
+NV12_2.FN9
+HM12_2.FN9
+NV12_3.FN9
+HM12_3.FN9
+LQ9NV.PDR
+LQ9HM.PDR
+LQ9HD.PDR
+LQ9M.PDR
+MQ9.PDR
+DR9.PDR
+
+Содержание архива: PR_24.EXE
+
+TW_0.FN2
+TW_1.FN2
+TW_2.FN2
+TW_3.FN2
+TW_4.FN2
+TW_5.FN2
+TW_7.FN2
+TW_8.FN2
+TW_9.FN2
+TW_A.FN2
+TW_B.FN2
+TW_GR.FN2
+TW_6.FN2
+TW_G.FN2
+HD_0.FN2
+HD_1.FN2
+HD_2.FN2
+HD_3.FN2
+HM_GR.FN2
+MQ_0.FN2
+MQ_1.FN2
+MQ_2.FN2
+MQ_3.FN2
+MQ_8.FN2
+MQ_9.FN2
+MQ_A.FN2
+MQ_B.FN2
+NV12_0.FN2
+NV10_0.FN2
+NV12_1.FN2
+NV10_1.FN2
+NV12_2.FN2
+NV10_2.FN2
+NV12_3.FN2
+NV10_3.FN2
+HM10_0.FN2
+HM10_1.FN2
+HM10_2.FN2
+HM10_3.FN2
+HM12_0.FN2
+HM12_1.FN2
+HM12_2.FN2
+HM12_3.FN2
+LQ24HD.PDR
+LQ24HD_I.PDR
+LQ24M.PDR
+LQ24M_I.PDR
+LQ24HM.PDR
+LQ24NV.PDR
+LQ24HM_I.PDR
+LQ24NV_I.PDR
+DR24.PDR
+MQ24.PDR
+MQ24_I.PDR
+
+Содержание архива: PR_LJ.EXE
+
+MK_TMP.BIN
+DEL_TMP.BIN
+LOADENG.BAT
+LOAD.BAT
+3LJHD.PDR
+3LJM.PDR
+3LJNV.PDR
+3LJHM.PDR
+
+Содержание архива: LJ_TW.EXE
+
+TW_0.ID
+TW_0.SFP
+TW_1.ID
+TW_1.SFP
+TW_2.ID
+TW_2.SFP
+TW_3.ID
+TW_3.SFP
+TW_4.ID
+TW_4.SFP
+TW_6.ID
+TW_6.SFP
+TW_7.ID
+TW_7.SFP
+TW_8.ID
+TW_8.SFP
+TW_9.ID
+TW_9.SFP
+TW_A.ID
+TW_A.SFP
+TW_B.ID
+TW_B.SFP
+TW_D.ID
+TW_D.SFP
+TW_DG.ID
+TW_DG.SFP
+TW_G.ID
+TW_G.SFP
+TW_GR.ID
+TW_GR.SFP
+
+Содержание архива: LJ_CR.EXE
+
+CR_0.ID
+CR_0.SFP
+CR_1.ID
+CR_1.SFP
+CR_2.ID
+CR_2.SFP
+CR_3.ID
+CR_3.SFP
+TW_GR.ID
+TW_GR.SFP
+
+Содержание архива: LJ_HM10.EXE
+
+HM10_0.ID
+HM10_0.SFP
+HM10_1.ID
+HM10_1.SFP
+HM10_2.ID
+HM10_2.SFP
+HM10_3.ID
+HM10_3.SFP
+HM10_4.ID
+HM10_4.SFP
+HM10_GR.ID
+HM10_GR.SFP
+
+Содержание архива: LJ_HM12.EXE
+
+HM12_0.ID
+HM12_0.SFP
+HM12_1.ID
+HM12_1.SFP
+HM12_2.ID
+HM12_2.SFP
+HM12_3.ID
+HM12_3.SFP
+TW_GR.ID
+TW_GR.SFP
+
+Содержание архива: LJ_NV10.EXE
+
+NV10_0.ID
+NV10_0.SFP
+NV10_1.ID
+NV10_1.SFP
+NV10_2.ID
+NV10_2.SFP
+NV10_3.ID
+NV10_3.SFP
+NV10_4.ID
+NV10_4.SFP
+HM10_GR.ID
+HM10_GR.SFP
+
+Содержание архива: LJ_NV12.EXE
+
+NV12_0.ID
+NV12_0.SFP
+NV12_1.ID
+NV12_1.SFP
+NV12_4.ID
+NV12_2.ID
+NV12_2.SFP
+NV12_3.ID
+NV12_3.SFP
+TW_GR.ID
+TW_GR.SFP
+
+Содержание архива: LJ_HD.EXE
+
+HD_0.ID
+HD_0.SFP
+HD_1.ID
+HD_1.SFP
+HD_2.ID
+HD_2.SFP
+HD_3.ID
+HD_3.SFP
+
+Содержание архива: PCX.EXE
+
+DECOR1-1.PCX
+DECOR1-2.PCX
+DOT.PCX
+F1_034.PCX
+SOVA.PCX
+TELEF1.PCX
+DECOR1-3.PCX
+F1_033.PCX
+F1_044.PCX
+F1_045.PCX
+F1_046.PCX
+F1_058.PCX
+F1_059.PCX
+F1_063.PCX
+F1_141.PCX
+F1_143.PCX
+F1_147.PCX
+F1_148.PCX
+F1_150.PCX
+F1_151.PCX
+F1_152.PCX
+F1_153.PCX
+F1_154.PCX
+F1_155.PCX
+F1_156.PCX
+F1_157.PCX
+F1_158.PCX
+F1_159.PCX
+F1_C.PCX
+F1_D.PCX
+F1_F.PCX
+F1_G.PCX
+F1_I.PCX
+F1_J.PCX
+F1_L.PCX
+F1_N.PCX
+F1_O.PCX
+F1_P.PCX
+F1_Q.PCX
+F1_R.PCX
+F1_036.PCX
+F1_T.PCX
+F1_U.PCX
+F1_V.PCX
+F1_W.PCX
+F1_X.PCX
+F1_Y.PCX
+F1_Z.PCX
+F1_129.PCX
+F1_037.PCX
+F1_038.PCX
+F1_134.PCX
+F1_135.PCX
+F1_136.PCX
+F1_137.PCX
+F1_040.PCX
+F1_A.PCX
+F1_B.PCX
+F1_E.PCX
+F1_041.PCX
+F1_M.PCX
+F1_042.PCX
+F1_043.PCX
+F1_047.PCX
+F1_048.PCX
+F1_049.PCX
+F1_050.PCX
+F1_051.PCX
+F1_052.PCX
+F1_053.PCX
+F1_054.PCX
+F1_055.PCX
+F1_056.PCX
+F1_057.PCX
+F1_131.PCX
+F1_132.PCX
+F1_139.PCX
+F1_K.PCX
+F1_S.PCX
+ABC_PCX.TXT
+DECOR1-4.PCX
+FLASH1.PCX
+FLASH2.PCX
+HAND1.PCX
+HAND2.PCX
+HAND3.PCX
+HAND4.PCX
+MARKER1.PCX
+MARKER2.PCX
+MARKER3.PCX
+MARKER4.PCX
+TELEF2.PCX
+TELEF3.PCX
+DECOR2-1.PCX
+DECOR2-2.PCX
+DECOR3.PCX
+DECOR4.PCX
+DECOR5.PCX
+DECOR6.PCX
+DECOR7.PCX
+DECOR8.PCX
+DECOR9.PCX
+PICT_1.TXT
+PICT_2.TXT
+
+Содержание архива: PR_DJ.EXE
+
+CR_0.FN3
+CR_1.FN3
+CR_2.FN3
+CR_3.FN3
+TW_0.FN3
+TW_1.FN3
+TW_2.FN3
+TW_3.FN3
+TW_4.FN3
+TW_5.FN3
+TW_7.FN3
+TW_8.FN3
+TW_9.FN3
+TW_A.FN3
+TW_B.FN3
+TW_G.FN3
+TW_GR.FN3
+NV10_0.FN3
+NV10_1.FN3
+NV10_2.FN3
+NV10_3.FN3
+NV10_4.FN3
+NV10_5.FN3
+NV12_0.FN3
+NV12_1.FN3
+NV12_3.FN3
+CD_0.FN3
+DJM.PDR
+TR10_GR.FN3
+NV12_2.FN3
+TR12_GR.FN3
+TR10_0.FN3
+TR10_1.FN3
+TR10_2.FN3
+TR10_3.FN3
+TR12_1.FN3
+TR12_3.FN3
+TR12_0.FN3
+TR12_2.FN3
+DJCOND.PDR
+DJHM.PDR
+DJNV.PDR
+
+Содержание архива: UTILS.EXE
+
+RUSCOD.COM
+OKI.COM
+EURORUS.KDR
+LEXEVA.COM
+ISKRA.KDR
+TYPIST.KDR
+OKI.DOC
+ES1841.KDR
+ENGLISH.LIN
+RUSSIAN.LIN
+UNDO.MAC
+RUSCOD.DOC
+ES1842.KDR
+LEXVENT.EXE
+LEXWPTF.EXE
+
+Содержание архива: PROSA.EXE
+
+LEXDRTR2.DOC
+LEXDRTR.EXE
+

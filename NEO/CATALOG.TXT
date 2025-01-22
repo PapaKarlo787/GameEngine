@@ -1,0 +1,352 @@
+                          -------------------
+                             NeoSoft Corp.
+                          Catalog of Products
+                          -------------------
+
+NeoSoft products are recognized among the best in the industry. Our
+software products have been highly praised by users and magazine
+editors for their innovative design and ease-of-use, awarded top
+industry honors, and frequently top sales lists in their
+categories.
+
+The following premium products are available from NeoSoft. You may
+obtain fully working evaluation copies of most NeoSoft products,
+which you may use for up to 30 days before purchasing. Evaluation
+copies are available directly from NeoSoft and through catalogs,
+on-line services, bulletin boards, and resellers worldwide. Our
+evaluation disks are fully functional and not crippled in any way.
+If you like the evaluation version and intend to use it beyond the
+30 day inspection period, you should call, fax or write to order
+the product and receive the very latest version, a printed manual,
+technical support, access to product upgrade offers and more.
+
+
+  ---------------------- Windows Applications ----------------------
+
+QuikMenu 4 Windows
+------------------
+
+Replace your inefficient, boring desktop with an exciting custom
+environment for your Windows 3.x and Windows 95 sessions! QuikMenu
+allows you to easily set up buttons, icons and hot spots to launch
+your favorite applications. Related programs may be conveniently
+grouped on their own screen "pages", along with text and graphics.
+Multi-level password protection is included to limit access to the
+desktop, individual pages and programs.
+
+QuikMenu features its own set of powerful utilities, including a
+superior File Manager, Calculator, Text Editor, Calendar and
+PhoneBook database. The Professional version adds an Icon Editor,
+a superb File Viewer, a desktop Clock, an internal E-Mail
+application, plus a library of icon and wallpaper images.
+
+And if you have a mix of Windows and DOS systems, QuikMenu 4
+Windows, together with QuikMenu III, can be used to provide a
+consistent interface between these platforms. QuikMenu 4's
+PhoneBook and Calendar databases and internal E-Mail are compatible
+with those in QuikMenu III for DOS (see below). $39.00+S&H, Pro
+version $69.95 (includes additional utilities and icons) 
+
+NeoDraw
+-------
+NeoDraw is an affordable, vector-based drawing application for
+Windows 3.x and Windows 95 that lets you quickly and easily add
+attractive line drawings to all your document and illustration
+projects. You can even include bitmap pictures from your scanner or
+paint program to produce professional-quality results. Constructing
+charts, brochures, invitations, catalogs, and other projects is
+easier than ever. 
+
+NeoDraw allows import of bitmap, plotter and other files. Features
+include: standard drawing tools, clip art stamp pad, dimensioning,
+shape warping, masking, distortable text, align objects to path,
+vector splatter, multiple drawing layers, morph/blend between
+shapes, assemble hollow and complex shapes, star/ray shape tools,
+guidelines, skew, and much more. And you can customize the
+on-screen toolbars to fit the way you work. Requires Windows 3.x,
+95 or +, mouse, 4MB+ RAM. Only $49.95!
+
+NeoSoft Viewer
+--------------
+Now it is easier than ever before to examine the files on your
+disks. NeoSoft Viewer allows you to look at files (or groups of
+files) and examine them in ASCII and Hexadecimal format, to quickly
+identify their contents. NeoSoft Viewer detects many common image
+formats (BMP,PCX,GIF,PNG,TIF,JPEG,ICO,WMF) and can display these as
+pictures. The NeoSoft Viewer also plays your AVI video and WAV
+audio files. NSView even lets you peer inside ZIP and LZH
+compressed files to view files archived within them and to extract
+and view their contents - no longer need you wonder what is inside
+a ZIP file, just load it into the viewer before deciding if you
+wish to uncompress it onto your hard disk. An extremely powerful
+disk search function is also available to help you locate misplaced
+files. Comparing files is now easier than ever with the included
+file compare tool. Documents which are associated with other
+programs present on your system may be edited using those
+applications with a click of the mouse. You can even launch EXE,
+COM, BAT or PIF files directly from the viewing screen. NeoSoft
+Viewer also supports the Windows clipboard, so you may copy
+sections of text to other documents. You'll wonder how you ever
+lived without it! And NeoSoft Viewer is only $19.95
+
+QuikMenu Mailbox
+----------------
+Now networked users can send and receive e-mail messages from
+within Windows to others on their network, including those who are
+running QuikMenu III under DOS, with its built-in e-mail utility. 
+QM Mail contains its own mail editor with spelling checker, or can
+send external text files. A very convenient and easy to use way of
+communicating between systems, especially if you have both Windows
+and DOS users on your network. $19.95 (single user) $69 (5 user)
+Call for other quantities.
+
+NeoSoft Icon Editor
+-------------------
+One of the best utilities available for creating and editing
+Windows-format icons. Tools include: brush, line, circle, square,
+flood fill, cut/paste, nudge, and text. Transparent areas may be
+easily painted onto the icon image to allow background colors to
+show through, and Zoom, Grid and other functions make painting your
+own icon pictures a snap! The NeoSoft Icon Editor imports BMP
+format bitmapped images and even imports icons contained within
+Windows program EXE and DLL files. $19.95
+
+
+  ------------------------ DOS Applications ------------------------
+
+QuikMenu III
+------------
+Selected by PC Journal as the "Best DOS Graphics Menu Program",
+QuikMenu III is a powerful desktop environment for your computer.
+Update your plain DOS screen with icons, buttons, background
+wallpaper, etc. This sophisticated menuing system launches your DOS
+programs with a single keystroke or click of the mouse. QuikMenu
+also contains a powerful file manager for copying, moving and
+deleting files and a full set of desktop utilities including
+network E-Mail, computer usage tracking, multilevel security
+features, appointment calendar, calculator, and much more. You may
+never need to see the DOS prompt (C:\) again. Not memory resident.
+$35 (basic version), $45 with 500 additional icons.
+
+PhantomScreen
+-------------
+PhantomScreen may very well be the worlds finest DOS screen saver.
+This memory resident screen saver for your DOS programs detects
+when your computer is inactive and displays your choice of colorful
+animated images. PhantomScreen includes multi-level password
+security which may be enabled to protect the system while you are
+away from your desk. When you wish to use your computer again,
+simply press a key or move your mouse and the screen is restored.
+Many of the included animated screens may be customized to display
+in a variety of ways -- including allowing you to use your own
+scanned photos or art work. Features: messaging, individual and
+master passwording, choice of hot keys, etc. Compare with the
+others and you'll find out why PhantomScreen is the best. $25 
+
+
+  -------------- Applications for DOS, Windows or OS/2 --------------
+
+      These programs may be run under DOS, or as DOS apps under
+      Windows or OS/2.
+
+NeoBook
+-------
+The latest in state-of-the-art electronic publishing, NeoBook is a
+multimedia authoring system which produces disk-based interactive
+newsletters, books, electronic catalogs, educational materials,
+etc. The integrated compiler allows you to produce stand-alone
+executable publications which can be distributed royalty-free. 
+NeoBook's intuitive interface and free-form layout makes it easy to
+create electronic publications with images, text, windows,
+buttons,etc. NeoBook even integrates with your favorite text and
+image editors. NeoBook is as powerful as your imagination. NeoBook,
+and compiled programs created with NeoBook, may be run under DOS,
+or as DOS apps under Windows or OS/2, for wide distribution
+opportunities. $45 (basic version), add $10 for templates/wallpaper
+disk.
+
+NeoBook Professional
+--------------------
+In addition to the great features found in NeoBook, the
+Professional version adds support for playing sound through the
+PC's internal speaker, Sound-Blaster compatible audio cards,
+linking to outside sound editing software, playing Flic animation
+files and the ability to run other programs from within a compiled
+publication. Winner of the SIA Foundation and PC
+Magazine/Ziff-Davis awards for "Best Presentation or Multimedia"
+application. NeoBook Professional itself, and compiled programs
+created with NeoBook Professional, may be run under DOS, or as DOS
+apps under Windows or OS/2 for broad distribution opportunities.
+$89.95 (basic version), $99.95 (boxed version with templates,
+wallpaper, etc.)
+
+NeoPaint
+--------
+Simply one of the best paint programs you'll find. NeoPaint
+continues to receive rave reviews from numerous publications, and
+has quickly become one of the most popular DOS paint programs in
+the world. NeoPaint is extremely easy to use, yet includes features
+which would cost hundreds of dollars more with other programs. 
+NeoPaint's abundance of drawing tools makes it easy to create
+illustrations for desktop publishing projects, edit digitized
+photos or just explore your artistic side. NeoPaint reads and
+writes 2, 16, 256 and 16 Million color PCX, TIFF, BMP and GIF
+files, includes dozens of drawing tools, special effects, stamp pad
+and more. NeoPaint is also ideal for editing images used by
+NeoBook, NeoShow, PhantomScreen, and QuikMenu. $45
+
+NeoShow Professional
+--------------------
+NeoShow Pro contains many of the same visual effects found in
+high-end presentation software. Now that power can be yours - at a
+fraction of the price. Use NeoShow to assemble PCX and BMP format
+computer images into effective computer-based presentations,
+self-running exhibits, group presentations, etc. Add fades, wipes
+and other animated special effects between images. Includes support
+for Sound Blaster and compatible audio VOC files, and sound
+recording. Contains an integral compiler with image compression to
+produce stand-alone executable presentations, and a run-time
+license which allows royalty-free distribution of stand-alone
+presentation programs. Simple to use, but surprisingly powerful. 
+NeoShow Pro, and compiled programs created with NeoShow Pro, may be
+run under DOS, or as DOS apps under Windows or OS/2, so the
+programs you create can be distributed for a wide variety of
+systems. $89.95
+
+
+   ----------------------- Retail Bundles -------------------------
+
+QuikMenu III & PhantomScreen Bundle
+-----------------------------------
+The QuikMenu III retail package now also contains more icons, plus
+our popular PhantomScreen screen saver utility for the DOS
+environment (includes colorful animations, customization,
+messaging, security, and more. $69.95 (suggested retail)
+
+NeoPaint Presentation Pack
+--------------------------
+The Presentation Pack combines the superior image editing and 
+illustration capability of NeoPaint with powerful multimedia
+presentation tools of NeoShow Pro (create and distribute your own
+stand-alone multimedia presentations, royalty-free). These two
+powerful products make it easy to create sales tracts, audio-visual
+aids, video catalogs, and more. Supports Sound Blaster and
+compatible audio. Includes NeoPaint and NeoShow Pro - a $135 value!
+$69.95 (suggested retail)
+
+NeoBook Multimedia Pack
+-----------------------
+The MultiMedia Pack combines the extensive multimedia capabilities
+of NeoBook Pro and NeoShow Pro with the superior image editing and
+illustration capability of NeoPaint. These three powerful products
+make it easy to create electronic publications, interactive
+newsletters, books, sales tracts, audio-visual aids, computer-based
+catalogs, and more. Supports Sound Blaster and compatible audio.
+Text font and Template disk included. Includes NeoBook Pro, NeoShow
+Pro and NeoPaint - a $245 value! $169.95 (suggested retail)
+
+
+  ---------------------- Ordering & Information ---------------------
+
+To locate a dealer in your area, to order, or to obtain more
+information please contact:
+
+   NeoSoft Corp.
+   354 NE Greenwood Avenue, Suite 108
+   Bend, OR 97701-4631
+
+   VOICE: (541) 389-5489
+   FAX:   (541) 388-8221
+   BBS:   (541) 383-7195
+   WWW HOME PAGE: http://www.neosoftware.com/~neosft/
+   INTERNET E-MAIL: sales@neosoftware.com
+   COMPUSERVE: type GO NEOSOFT at any ! prompt
+   FTP SITE: ftp://ftp.neosoftware.com/vendors/neosft/
+
+Fully functional evaluation copies of all NeoSoft products are
+available 24 hours a day from CompuServe (GO NEOSOFT), our Web
+page, the NeoSoft BBS, as well as other popular BBS and online
+services.
+
+For your convenience, we gladly accept VISA, MasterCard, Discover
+and American Express. If you send your order through the mail, we
+also accept checks and money orders provided they are in U.S. funds
+and drawn on a U.S. bank.
+
+Corporations, government agencies, educational institutions, and
+other entities may wish to inquire about our site/network license
+pricing. Volume discounts are available.  Educational institutions
+are also entitled to discounts on certain products. Dealer inquires
+are welcomed.
+
+Copyright 1990-1996 NeoSoft Corp. All Rights Reserved.
+
+  ------------------------------------------------------------------
+
+To order NeoSoft products by mail, please complete the following
+form and return it to: 
+
+NeoSoft Corp.
+354 NE Greenwood Ave., Suite 108
+Bend, OR  97701-4631
+
+To order by phone call: (541) 389-5489  (Hrs: 8:00-5:00 Pacific
+M-F) or FAX us your order: (541) 388-8221
+  ------------------------------------------------------------------
+         YES! I would like to purchase the following programs:
+
+   Name:___________________________________________________________
+
+Company:___________________________________________________________
+
+Address:___________________________________________________________
+
+   City:____________________________ State: ________ Zip:__________
+
+Country: ______________________ Telephone:_________________________
+
+1. Indicate number of units and shipping method below:
+
+___  QuikMenu DOS                       $ 35.00           $__________
+___    500 Icons for QuikMenu DOS       $ 10.00           $__________
+___  QuikMenu 4 Windows                 $ 39.00           $__________
+___  QuikMenu 4 Windows Pro             $ 69.95           $__________
+___  PhantomScreen                      $ 25.00           $__________
+___  NeoDraw                            $ 49.95           $__________
+___  NeoSoft Viewer                     $ 19.95           $__________
+___  NeoSoft Icon Editor                $ 19.95           $__________
+___  QuikMenu Mailbox (single user)     $ 19.95           $__________
+___    Five (5) User                    $ 69.00           $__________
+___  NeoPaint                           $ 45.00           $__________
+___    NP Stamp Collection              $ 10.00           $__________
+___    NP/NB Font Pack (3.9MB)          $ 20.00           $__________
+___    NP Coloring Book                 $ 10.00           $__________
+___  NeoShow Pro                        $ 89.95           $__________
+___  NeoBook/NeoBook Pro                $ 45.00/$ 89.95   $__________
+___    NeoBook Templates/Samples        $ 10.00           $__________
+___  QuikMenu/PhantomScreen bundle      $ 69.95           $__________
+___  NeoPaint Presentations pack        $ 69.95           $__________
+___  NeoBook MultiMedia                 $169.95           $__________
+
++ Shipping: 
+
+    United States: $5 US Mail, $9 FedEx
+    Canada/Mexico: $7 Air Mail, $17 FedEx
+    Other Nations: $12 Air Mail, $19 FedEx                $__________
+
+    NOTE: FedEx cannot deliver to P.O. Boxes
+
+*Call for additional units shipping cost, dealer          ===========
+ inquires and site license info.
+                                                  Total:  $__________
+
+2. Indicate payment method below:
+
+___ I've enclosed a check or money order payable to NeoSoft Corp.
+    (must be drawn in U.S. funds on a U.S. bank)
+
+___ VISA  ___ MasterCard  ___ Discover  ___ American Express
+
+Card #:_________________________________________ Expires:__________
+
+Signature:_________________________________________________________

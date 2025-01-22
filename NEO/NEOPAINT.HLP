@@ -1,0 +1,3333 @@
+{H000 (Table of Contents)
+
+^RTable of Contents^r
+
+
+^LColor Palette=H550^l
+
+^LCurrent Color and Pattern Selections=H530^l
+
+^LDrawing Board=H570^l
+
+^LHollow/Solid Buttons=H540^l
+
+^LMain Menu=H139^l
+
+^LMouse=H131^l
+
+^LPatterns=H560^l
+
+^LUsing with NeoBook=H129^l
+
+^LLoading from QuikMenu=H130^l
+
+^LSize Selector=H520^l
+
+^LTool Bar=H510^l
+
+^LVideo Mode=H125^l
+}
+{H129 (NeoBook)
+
+^RUsing with NeoBook^r
+
+
+If you are using the NeoBook electronic publishing program, you may
+jump to NeoPaint directly from your NeoBook editing screen to edit
+an illustration, background, etc. This lets you perform image edits
+without losing your place while creating your publication, plus you
+don't have to waste time exiting the programs and reloading files.
+
+
+To enable use of NeoPaint from within NeoBook, you must first tell
+NeoBook where you have installed NeoPaint. Under NeoBook's OPTIONS
+button, use the Set Preferences command and select Directories. You
+will see a field titled "Image Editor." Use the button at the right
+of the field to browse through your disk, until you find the
+NEOPAINT.EXE file listed. Click on NEOPAINT.EXE, then click on
+the OK button. Once you have done this, you can create an image or
+edit the currently selected image by choosing "Create/Edit Image"
+from NeoBook's Edit menu button.
+}
+{H130 (QuikMenu)
+
+^RLoading from QuikMenu^r
+
+
+Users of QuikMenu (a graphical Desktop Menu program from NeoSoft) may
+start NeoPaint by depressing the NeoPaint icon or button. If you
+purchased NeoPaint after installing QuikMenu the first time, you must
+first set up a NeoPaint program icon using the Modify/Add/Software Icon
+feature in QuikMenu. The Location line should read C:\NEOPAINT and
+the Command line should read NEOPAINT
+
+
+^BNOTE:^b If you installed NeoPaint to a different directory during
+installation, substitute the name of the directory you've created on the
+Location line. Refer to your QuikMenu documentation or QuickMenu's
+context sensitive Help function (F1) if you need more information on
+setting up a software icon/button for NeoPaint.
+}
+{H131 (Mouse)
+
+^RMouse Actions^r
+
+
+NeoPaint will work with a Microsoft, Logitech or fully compatible
+mouse. Other pointing devices, such as trackballs, which are compatible
+with the above mice should work as well. Your mouse driver (usually
+MOUSE.COM) must be loaded before running NeoPaint. Please refer to
+your mouse's user manual for more information.
+
+
+The position of the mouse on your screen is shown by a moving cursor,
+and by the ^LXY=H172^l Coordinates box in the upper right portion of the screen.
+
+
+Generally, mouse buttons are used as described below:
+
+
+^T2 ^LLeft button=H133^l^T15 ^LRight button=H132^l
+
+^T2 ^LDragging=H134^l^T15 ^LDouble Clicking=H135^l
+
+^T2 ^LLeft Handed=H645^l^T15 ^LMouse Cursor Position=H172^l
+}
+{H132 (Mouse - Left Button)
+
+^RLeft Mouse Button^r
+
+
+This button is used for selecting items from menus and palettes,
+pressing command and menu buttons, positioning items such as text,
+drawing, erasing, selecting areas, and moving nodes on polygons.
+
+
+See also: ^T6 ^LMOUSE=H131^l
+}
+{H133 (Mouse - Right Button)
+
+^RRight Mouse Button^r
+
+
+Used to choose line colors from the palette, to exit from dialogs, or
+to use a second color when painting, and when using ^LZoom=H200^l or ^LFill=H240^l.
+
+
+See also: ^T6 ^LMOUSE=H131^l
+}
+{H134 (Mouse - Dragging)
+
+^RDragging the Mouse^r
+
+
+You usually click once to select or position. Some actions and tools
+require that you drag the mouse cursor. To drag, you position the cursor
+over the object or starting point and press the left mouse button.
+Holding down the left mouse button, move the cursor to the ending
+position before releasing the button.
+
+
+See also: ^T6 ^LTOOL BAR=H510^l
+
+^T6 ^LMOUSE=H131^l
+}
+{H135 (Mouse - Double Click)
+
+^RDouble Click^r
+
+
+Some features in NeoPaint are accessed by clicking twice on an icon,
+color, etc. You needn't worry about clicking twice quickly as in some
+programs. In NeoPaint, the first click selects an item, the second click
+on an already selected item will allow you to edit or make a further
+selection.
+
+
+See also: ^T6 ^LMOUSE=H131^l
+}
+{H139 (Menu - Main)
+
+^RMain Menu Bar^r
+
+
+This is a list of option buttons at the top of the screen ^LFile=H140^l, ^LEdit=H150^l, ^LPicture=H160^l,
+^LOptions=H170^l, ^LHelp=H180^l). Note that a letter is underlined in the title of each button.
+
+
+You may pull down a menu from each button by either clicking on the
+button with your mouse, or by holding down the ALT key and pressing the
+underlined letter corresponding to the button you wish to select. This
+principle works for other NeoPaint menu functions as well, and can be a
+real time saver.
+
+
+^BFor example:^b to activate Help, either click the Help button, or press
+ALT and the H key (ALT/H).
+}
+{H125 (Video Mode Menu)
+
+^RChanging the Video Mode^r
+
+
+This menu box is located at the top, center portion of the NeoPaint
+screen. It can be used to change the monitor resolution to expand or
+limit your working surface and color choices. NeoPaint automatically
+includes as selections, only the screen resolutions and colors supported
+by your monitor and graphics card hardware. The menu will drop down when
+you click on the arrow at the right side of the box showing the
+currently selected resolution. Note: when changing resolutions, any
+drawing currently loaded must be closed. NeoPaint will prompt you to do
+this. Once the screen display has been switched to the new resolution,
+you may then reload any drawings and convert them to the new mode.
+
+
+See also: ^T6 ^LColor Palette=H550^l
+}
+{H500 (XY Mouse Coordinates)
+
+^RThe Mouse Coordinate Display^r
+
+
+At the upper right corner of the screen are two boxes which display
+the position of the ^Lmouse=H131^l cursor/pointer. The position is measured in
+the number of pixels relative to the upper left corner (i.e., 0, 0) of
+the drawing on which you are working. The Y position is the number of
+pixels down from the top, and the X position represents the number of
+pixels from the left. This is very useful for precise sizing and
+placement.
+
+
+See also: ^T6 ^LSHOW MOUSE POSITION=H172^l
+}
+{H510 (Tool Icons)
+
+^RThe Tool Bar^r
+
+
+Immediately below the Menu Bar, a selection of tool icon buttons is
+displayed. The tool displayed on a button can be selected by clicking
+on that button with the mouse. Note that some of these icons contain a
+small arrow at the lower right corner. This indicates that you may
+modify how that tool functions by clicking a second time on that icon.
+
+
+See also: ^T6 ^LScissors Selector=H370^l^T20 ^LEraser=H380^l
+
+^T6 ^LText Tools=H390^l^T20 ^LSyringe/Color Selector=H210^l
+
+^T6 ^LSpecialty Tools=H221^l^T20 ^LZoom=H200^l
+
+^T6 ^LBrush=H230^l^T20 ^LFill=H240^l
+
+^T6 ^LAirbrush=H122^l^T20 ^LRubber Stamp=H260^l
+
+^T6 ^LLine=H270^l^T20 ^LRectangle=H280^l
+
+^T6 ^LRounded Rectangle=H290^l^T20 ^LCircle=H300^l
+
+^T6 ^LPolygon=H310^l^T20 ^L3-D Objects=H320^l
+}
+{H520 (Size of Tool)
+
+^RSize Selector^r
+
+
+This box is located on the left side of the NeoPaint screen. Clicking
+on the arrow will drop down a menu containing a range of sizes for the
+tool selected. The tools affected by this box include the erasers, the
+highlighter and other specialty brushes, the brushes, airbrushes, and 
+the thickness of the lines used to form straight lines, squares, 
+circles, polygons and 3D objects.
+
+
+See also:^T6 ^LCUSTOM SIZE=H704^l for selecting other sizes.
+
+^T6 ^LTOOLS=H510^l.
+}
+{H704 (CUSTOM SIZE)
+
+^RCustom Tool Sizes^r
+
+
+Tools may be configured in sizes from 1 to 40 pixels using the
+CUSTOM SIZE selection at the bottom of the ^LSize=H520^l Selector menu.
+A preview window allows you to preview the actual size of your
+selection.
+}
+{H530 (Color & Pattern Box)
+
+^RThe Color/Pattern Status Box^r
+
+
+The currently selected line color, fill color, gradient and pattern
+are displayed in the box immediately below the Size Selector. The
+outside border of the box represents the color and pattern of any lines
+being drawn, while the interior shows the color currently selected to
+fill the interior of ^Lobjects=H510^l being drawn or filled. If a pattern has been
+selected, this will be also be shown, in the currently selected color.
+
+
+See also:^T6 ^LColors=H550^l and ^LPatterns=H560^l.
+}
+{H540 (Hollow & Solid Buttons)
+
+^RThe Hollow/Solid Selector^r
+
+
+You may choose whether the fill of an object being drawn will obscure
+figures directly underneath it. Click on the Hollow button to draw
+hollow shapes. Click on the Solid button to fill the object drawn with
+the selected color. Also, clicking with the right mouse button will
+choose whether the line will be Hollow or Solid.
+
+
+^BNote:^b To allow the background to show through a pattern, use the
+^LTransparent=H401^l Patterns option, and not the Hollow/Solid Selector. If
+you select a ^Lpattern=H560^l when the Transparent Patterns mode is selected
+from the OPTIONS Menu, the texture will overprint the background,
+revealing areas not covered by dots in the pattern.
+}
+{H560 (Patterns)
+
+^RThe Pattern Window^r
+
+
+Directly below the Hollow/Solid selector, a small window is displayed
+which contains a selection of patterns and textures. A thumbnail bar
+appears on the right side of the window which allows you to scroll
+through the selection of patterns currently loaded. You move through the
+selections by clicking on the thumbnail button and moving the button up
+or down while depressing the mouse button. Alternatively, you may click
+on the arrows at the top and bottom of the thumbnail scroll bar to
+advance through the selections one frame at at time, or click on the 
+fly-out button just above the scroll bar to display all of the patterns
+at once. Use the left mouse button to select a pattern to be used for 
+Fills and Brushes; use the right mouse button to select a pattern for 
+lines and outlines.
+
+
+You may edit individual patterns by clicking a second time on the
+currently selected pattern (either in the Pattern Window, or in the
+Color/Pattern Status Box).
+
+
+See also:^T6 ^LEditing Patterns=H127^l.
+}
+{H127 (Pattern Editor)
+
+^RPattern Editor^r
+
+
+In the center of the editing window, is the pattern editing work-
+space. To the right is a preview of the effect your edits have over
+a large area.
+
+
+You draw your pattern/texture by clicking on individual squares in
+the central editing screen. A click on a white pixel will change it
+to a black pixel. Clicking on black will change it to white. Four
+command buttons are at the top of the window. The File button allows
+you to Load another, previously saved, group of patterns and to 
+permanently ^LSave=H106^l the edits you make. The Edit button contains an
+UNDO button, and commands which allow you to rearrange the order
+in which the pattern selections appear. The Pattern button contains
+functions to clear the pattern being edited, to invert the pixels in
+the current pattern (change black pixels to white and white pixels to
+black), and to Reset the pattern(s) to their original
+status. Finally, the Shift button allows you to adjust the position
+of the pixels within the pattern being edited.
+
+
+At the lower-right, the OK button saves your changes and returns you 
+to the drawing screen. The Cancel button returns you to your drawing 
+without saving your changes to the pattern. Note: White areas in your 
+pattern will remain white unless ^LTransparent=H401^l Patterns is selected 
+from the ^LOptions=H170^l Menu. The Black areas in your pattern will be shown 
+in the currently selected ^LFill=H530^l Color when used in your picture. Your 
+pattern, used in the transparent mode may be used to produce interesting 
+effects with many of the tools.
+}
+{H550 (Color Palette)
+
+^RThe Color Palette^r
+
+
+The bottom, left section of the screen is occupied by the Palette
+window. In 16-million color modes, this space is occupied by a rainbow 
+from which you may select colors. In 2, 16 and 256 color modes, a 
+thumbnail scroll bar on the right side of the window allows you to 
+scroll through the colors available from the currently loaded palette 
+file. At the top/right corner of the Palette window, is a button which
+allows you to display and select from a larger group of colors.
+
+
+You may select a background color by moving the cursor over the
+desired color and clicking the left mouse button. The line color (or
+second paint color) may be selected by clicking the right mouse button. 
+The number of pure colors with which you may work is determined by your 
+system's monitor/video card configuration and the resolution selected 
+in the ^LVideo=H125^l Mode box. When limited to 2, 16, or 256 pure colors, 
+NeoPaint approximates other shades by mixing the available colors. 
+Colors may be ^LEdited=H126^l individually by clicking a second time on 
+any color in either the palette, the ^LColor/Pattern=H530^l Status Box, or by
+selecting Edit Palette from the File Menu. 
+
+
+Note that (except for 2-color and 16-million color modes) a small "L" 
+will appear on the Palette to indicate the currently selected Line (or 
+second paint) color, and a small "F" will designate the active Fill 
+color.
+
+
+See also:^T6 ^LSave=H104^l Palette and ^LLoad=H103^l Palette
+}
+{H126 (Palette Editor)
+
+^RPalette Editor^r
+
+
+Clicking a second time on any color (except in black & white and 640x
+350x16 EGA modes, which do not allow editing) will allow you to adjust 
+that color. The Palette Editor dialog box will be displayed. Four 
+sliding bars representing the ^LValue=H551^l of each of three colors and the 
+brightness level are displayed at the top of the editing screen. You 
+may use your mouse to scroll each bar to a new value. Finer increments 
+can be made by using the left and right arrow keys on your keyboard. Use 
+the TAB key to switch between scroll bars when using the keyboard. A 
+preview of the effect of your changes is shown in a small window on the
+left side of this dialog window.
+
+
+Three command buttons also are arranged at the top of this window. The 
+File command allows you to Load colors from an existing image or from 
+a Palette which has been previously Saved, while the ^LSave=H104^l command may
+be used to save your edits in a named file. The Edit button allows you
+to Undo an operation and to rearrange the order of colors on the palette. 
+Under the Color button are Reset commands to return the color(s) and 
+brightness values to the state which existed when you began editing. The 
+Color button also contains a ^LTest=H577^l Colors function which permits
+you to detect colors in the palette which are not being used.
+
+At the bottom of the window is a sample of the color currently being
+edited, and its number within the palette. The OK button saves your 
+changes to the palette (for this drawing only) and returns you to the 
+drawing. Pressing the Cancel button ignores any changes you have made to 
+the color and returns you to the drawing. Note: Any changes to the palette 
+affect the current drawing only. If you wish to also create or alter a
+palette file for future use, select the File/Save command in this window.
+
+
+Changes to the ^Lpalette=H550^l are only saved within the image when you 
+save the drawing file. Except for 24-bit images (16-million color mode), 
+each drawing contains an internal palette.
+}
+{H577 (Test Colors)
+
+^RTest Colors^r
+
+
+When working within the limitations of 16 or 256 color palettes, you
+may often find yourself needing to insert a new shade. The Test Colors
+function allows you to identify unused or seldom used colors (which can 
+be replaced in the picture with a similar shade). Once you have 
+identified unused/seldom colors, you can use Edit Palette to insert
+new colors in these locations.
+
+
+When converting an image from 16-million colors to 16 or 256 color mode,
+very similar colors can be converted to shades having the same RGB values.
+Since these identical colors can appear in more than one location on the
+palette, the Test Colors function allows you to identify duplicate colors
+(designated with an *) which appear in the palette. You may then use the
+Color ^LEraser=H380^l or Color ^LReplacement=H242^l Fill to eliminate duplicate
+shades, thus freeing up positions on the palette for inserting new colors.
+}
+{H551 (Color Value)
+
+^RColor Value Settings^r
+
+
+NeoPaint uses the RGB color model to control color balance and
+brightness. This is the same model used on color monitors and expresses
+each color as combination of Red, Green and Blue values. The following
+table shows how to set the three color values to produce common pure
+colors. An enormous range of additional tints may be obtained through
+adjustments made to the color balance using this function.
+
+
+^T5 Red=Red to right, other bars to left
+
+^T5 Green=Green to right, other bars to left
+
+^T5 Blue=Blue to right, other bars to left
+
+^T5 Yellow=Red and Green to right, Blue to left
+
+^T5 Magenta=Blue and Red to right, Green to left
+
+^T5 Cyan=Green and Blue to right, Red to left
+
+^T5 White=All colors to right
+
+^T5 Black=All colors to left
+
+
+See also:^T6 Color ^LPalette=H550^l
+
+^T6 ^LColor/Pattern=H530^l Selection
+
+^T6 Color ^LSimilarity=H703^l
+}
+{H570 (Drawing Surface)
+
+^RThe Drawing Board^r
+
+
+The drawing workspace occupies most of NeoPaint's screen. This is the
+area where you will do most of the drawing and editing of your images.
+You may open several drawing board windows at one time, each containing
+a different image. The image window in which editing is taking place
+will be shown with active scroll bars and command buttons. The other,
+inactive image windows will not show these features, and may be
+overlapped by the active window, or switched completely to the
+background.
+
+
+Window Components:
+
+
+^T5 ^LTop Title Bar=H571^l^T20 ^LCorner Buttons=H572^l
+
+^T5 ^LOuter Borders=H573^l^T20 ^LScroll Bars=H574^l
+
+^T5 ^LMenu=H139^l^T20 ^LTools=H510^l
+}
+{H571 (Window Title Bar)
+
+^RWindow Title Bar^r
+
+
+At the top of the active window are two buttons and a bar containing
+the name of the currently loaded image. The X button on the left side of
+the window's title bar will close the window. The title bar of a small
+image window can be dragged with the mouse to move the window to a new
+location.
+
+
+The square button to the left of the X button may also be accessed from 
+the keyboard by holding down the ALT key and pressing the Space key. 
+This will present you with a menu containing five choices. Using the 
+keyboard, you may select any command by highlighting it using the arrow 
+keys (or by typing the first letter in a command's title) and pressing 
+the Enter key to accept or the ESC key to cancel. The choices are: Switch, 
+Move, Size, Zoom, Iconized and Close. Note: when working on a new drawing, 
+the title bar for the image will be labeled "untitled" until you Save the 
+image.
+
+
+^BSwitch^b lets you jump between image files, when multiple files
+are open, without resizing the window on top to get at an image which
+lies underneath the active image. When you select Switch, a list of all
+opened image files appears. Select the image to which you wish to go, by
+clicking on its file name.
+
+
+^BMove^b allows you to move the entire window containing your image to
+another position on your screen. Use the arrow keys on your keyboard to
+reposition the window. This is handy when displaying more than one image
+file at one time. Note: the window must be smaller than the workspace
+area in order to move it.
+
+
+^BSize^b allows you to shrink or expand the window. Use the keyboard
+arrows to resize the window to the desired size.
+
+
+^BZoom^b switches your current drawing from a small sized window to a
+large window occupying the entire workspace (and back), by selecting
+this option.
+
+
+^BIconize^b reduces the current image to a small icon which you may drag
+out of the way. 
+
+
+^BClose^b will exit the current window. If the image in the window has
+changed since last being saved, you will be given the option of saving
+your changes. If you do not save your changes, they will be lost and the
+image will remain as it was when last saved.
+
+
+See also:^T6 ^LDrawing Board=H570^l
+}
+{H572 (Window Corner Buttons)
+
+^RWindow Corner Buttons^r
+
+
+The Zoom button in the upper right corner (square dotted box) can be 
+used to maximize or minimize the size of the current window. To the left
+of the Zoom button, is the Iconize button, which will reduce the window to 
+a small icon. The resize button at the lower right corner can be used to 
+simultaneously size any window both horizontally and vertically.
+
+
+See also:^T6 ^LDrawing Board=H570^l
+}
+{H573 (Window Outer Borders)
+
+^ROutside Window Borders^r
+
+
+The narrow frames surrounding small windows can be used to resize a
+window on one side at a time. Click the mouse on one side of the frame,
+then drag the border to the desired size.
+
+
+See also:^T6 ^LDrawing Board=H570^l
+}
+{H574 (Scroll Bars)
+
+^RScroll Bars^r
+
+
+Along the right and bottom of this window are two sets of scroll
+bars. You will note that the thumbnail buttons on each bar will change
+size to show what percentage of the entire drawing is displayed within
+the window. As with scroll bars on other windows, you may hold down the
+thumbnail button while moving the mouse to scroll around your drawing.
+The image in the window will move along with the button to reflect your
+current position on the page. Alternatively, you may click on the arrows
+at the ends of the bars to scroll through the image.
+
+
+See also:^T6 ^LDrawing Board=H570^l
+}
+{H700 (Image Conversion)
+
+^R Converting Image Resolution^r
+
+
+NeoPaint looks at each image file it is asked to load to determine
+the number of colors it uses. To change the number of colors
+available, use the ^LVideo=H125^l Mode selector at the top of the NeoPaint
+screen to select a mode containing a different number of colors. Next,
+after the screen has changed to the new resolution, use the ^LOpen=H101^l
+command to load the picture. If the image contains a different number of
+colors, you will be asked if you wish to Convert the picture to the new
+mode. If you choose to convert the image, and this will result in fewer
+colors being used, you will be asked if you wish to use one of several
+dithering methods to approximate colors and shades not available in
+the reduced-color image version.
+
+
+You may need to experiment by reloading the image several times to
+see which method (or palette) produces the best results with a particular 
+picture. The image is not permanently altered until you ^LSave=H102^l it in 
+the new format, so you may load it several times and only Save the version
+which works out best. Each dithering method has its own merits and
+which one you use depends on what you want to do with the final product.
+
+
+Note that image file format conversions are accomplished using the
+NeoPaint ^LSAVE=H601^l ^LAS=H601^l command. Also note, that when converting from
+24-bit images to 16 or 256 colors, some shades may be repeated more
+than once within the palette. These may be detected using the ^LTest=H577^l Colors
+option in the ^LFile/Edit=H103^l ^LPalette=H103^l dialog. 
+}
+{H140 (File Menu)
+
+^RThe FILE Menu^r
+
+
+The File menu contains functions related to importing, exporting,
+printing and saving files.
+
+
+The File commands are:
+
+
+^T2 ^LNEW=H100^l^T17 ^LOPEN=H101^l
+
+^T2 ^LSAVE=H102^l^T17 ^LSAVE AS=H601^l
+
+^T2 ^LCLOSE=H602^l^T17 ^LCLOSE ALL=H603^l
+
+^T2 ^LEDIT PALETTE=H103^l^T17 ^LDELETE IMAGE=H578^l
+
+^T2 ^LEDIT PATTERNS=H105^l^T17 ^LDOS SHELL=H187^l
+
+^T2 ^LPRINT=H107^l^T17 ^LEXIT=H108^l
+}
+{H100 (NEW Command)
+
+^RNew^r
+
+
+Selecting this command will load a blank, untitled drawing into a
+window. NeoPaint will suggest default dimensions for your new image,
+which you may override by typing in a preferred size.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H101 (OPEN Command)
+
+^ROpen^r
+
+
+If you wish to edit a pre-existing drawing, you should select this
+command from the menu. You will be presented with the Open dialog which
+lists available image files in a window to the right. If there are more
+image files on the list than will fit in the space allowed, you may
+scroll through the list using the scroll bar provided. In most cases,
+you will simply click on the image's title in the list to open an image.
+
+
+The files which are listed have been sorted from your DOS directory
+using the three letter DOS extension. They are sorted alphabetically
+and limited to files that match the file mask. The current mask being
+used by NeoPaint is displayed on Open's title bar. You may display
+files using other three letter file extensions or, list all files, by
+pressing the Search button and selecting another file type from the drop
+down menu (click on the arrow to display choices). You may search for
+image files having one of the standard file masks from the list, or you
+may type in a filename directly.
+
+
+File Search Shortcut: The drop-down File Type listing at the bottom of
+the window keeps track of where on the disk you last Opened images in 
+each of the file formats supported by NeoPaint. If you check one of these,
+NeoPaint will automatically jump to the DOS subdirectory in which that
+type file was last Opened, and list files found at that location. To open
+a file from another drive accessible by your computer, you may select
+the corresponding drive letter from the list of drives recognized by
+NeoPaint. Click on the arrow under Drives: to drop down the list of
+available choices.
+
+
+You may also click through subdirectories to search for an image
+file. Subdirectories branching off from the current directory are listed
+by name in the Directories box. You may click on one of these to log on
+to that subdirectory. If you wish to go back one step in the DOS
+Directory tree, click on the folder next to the two dots (..). If you
+wish to return all the way to the drive's root Directory, click on the
+folder next to the (\) backslash. Any image files matching the file mask
+(specified in Search) will have their names displayed as you go from
+subdirectory to subdirectory.
+
+
+Note: Typically, PCX format files end in .PCX, TIFF format files end in 
+.TIF, Windows and OS/2 bitmaps end in .BMP, etc.
+
+
+See also:^T6 ^LMENU=H139^l^T12 ^LIMAGE CONVERSION=H700^l
+}
+{H102 (SAVE Command)
+
+^RSave^r
+
+
+Selecting Save will write your image to the disk. Any changes you
+have made to the image will overwrite the original copy stored in the
+file. If you wish to save both the original file as well as your latest
+modified copy, you should save using the ^LSAVE=H601^l ^LAS=H601^l function.
+}
+{H601 (SAVE AS Command)
+
+^RSave As^r
+
+
+Save As allows you to assign a name to a new, untitled image you have
+just created; to save your edited version under a different name, thus
+preserving the original file; and to make a copy of the image in a
+different file format. To SAVE an edited image into a file other than
+the original, you must supply a filename at the line prompt. NeoPaint
+supplies you with the current subdirectory path and all you need type is
+a one to eight character name for the file to be created. If you wish to
+store the new file in a different subdirectory, you may use either your
+mouse or the arrow keys on your keyboard to move the cursor to the left
+and edit the PATH to direct the file to the proper directory.
+
+
+A drop down menu at the bottom of the Save As dialog allows you to
+save your work in a different image format. The Options button allows
+you to specify from sub-formats available for the selected File Type. 
+
+
+You are limited to eight characters when naming your image file. You
+need not type in the three letter DOS extension as NeoPaint will assign
+these for you. NeoPaint will not allow you to use the following
+characters in the name you type as DOS reserves these characters for
+other purposes. Acceptable characters:
+
+
+a-z, A-Z, 0-9, _, ^^, $, ~, !, #, %, &, -, (), @, ', `.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H602 (CLOSE Command)
+
+^RClose^r
+
+
+Choosing Close will unload the current image from NeoPaint. If you
+have made any edits to the image, NeoPaint will ask if you wish to save
+these changes or if you would rather leave the image in its original
+state.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H603 (CLOSE ALL Command)
+
+^RClose All^r
+
+
+If you have several image windows loaded into NeoPaint, you may close
+them all at once by using Close All. Again, you will be prompted to save
+any edits you have made, before NeoPaint clears the workspace.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H578 (DELETE IMAGE Command)
+
+^RDelete Image^r
+
+
+Use this function to erase the currently loaded image from your disk
+drive. You can use this to get rid of unwanted files or to free up
+space on your drive. Be sure that you no longer need the image, or
+have previously backed up the file, before using this function.
+
+See also:^T6 ^LMenu=H139^l
+}
+{H103 (EDIT PALETTE Command)
+
+^REdit Palette^r
+
+
+A palette consists of the selection of colors available within an image. 
+These colors may edited for use in the current image, saved in an external
+palette file, loaded from a previously saved NeoPaint palette file, or 
+loaded from another image file. See ^LPalette=H550^l for further information 
+on this option.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H104 (SAVE PALETTE Command)
+
+^RSave Palette^r
+
+
+If you have altered the colors on NeoPaint's ^LPalette=H550^l, you may
+use this option to save them for use in other pictures. You may give the
+new palette a file name consisting of up to eight characters. NeoPaint
+will assign the DOS extension .PAL to the name you supply.
+
+
+Checking the Make Default box will cause this palette to be used when
+starting a NEW image or converting an image to a resolution with this
+number of colors.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H105 (EDIT PATTERNS Command)
+
+^REdit Patterns^r
+
+
+You may edit, save in a file, and import previously saved patterns into 
+the current image using this function. Doing this will replace the patterns 
+available in the Pattern Window with the new selection. Pattern file 
+names on your drive will end with the DOS extension .PAT and should have 
+been generated by NeoPaint. NeoPaint cannot use pattern files generated by 
+other programs. For more information on editing patterns, see the 
+^LPattern=H127^l ^LEditing=H127^l topic.
+
+
+See also:^T12 ^LMENU=H139^l
+^T12 ^LPattern Window=H560^l
+}
+{H106 (SAVE PATTERNS Command)
+
+^RSave Patterns^r
+
+
+If you have customized the ^LPattern=H560^l in NeoPaint, you may wish to
+save your changes for use in creating future images. Selecting this
+option will allow you to assign a name of up to eight characters to your
+pattern file. NeoPaint will automatically add the DOS extension .PAT
+to the file's name.
+
+
+Checking the Make Default box will cause these patterns to be loaded
+each time you start NeoPaint.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H107 (PRINT Command)
+
+^RPrint^r
+
+
+Selecting Print will cause a dialog box to appear. Five drop down
+menus are used to select the type of printer connected to your computer,
+size, quality, DOS output port information, and paper orientation. You
+may use graphics printers compatible with devices listed in the menu.
+Note that not every printer is capable of printing graphic images. In
+addition, dot matrix graphics printers do not support halftones. Half-
+tone printing improves image quality by converting colors into grey dot
+patterns. Consult the printer's documentation for compatibility
+considerations.
+
+
+The Printer menu allows you to select from the printers which you
+installed using the Installation program. If you need to add a new
+printer to the list, you must run the INSTALL program from your
+NeoPaint INSTALLATION diskette.
+
+
+The Port menu lists the DOS printer ports. You may also write the
+image to a print file by selecting the File option from the list. The
+direction at which your picture is to be printed on the paper is
+controlled using the Orientation menu just below the Port menu.
+
+
+The Scale Factor controls the size of the printed image. Generally,
+a size of 300% will fit a 640x480 image onto a page printed in landscape
+mode. 400% is very close to the size at which the picture appears on
+your screen. You may adjust this percentage to obtain better resolution
+and to better match your printer's capabilities.
+
+
+Use the Print Quality menu to select a Dark or Light mode.
+Usually, the Dark setting will produce a higher quality image, though
+it may take longer to print.
+
+
+Finally, the Copies field lets you specify the number of copies to
+be printed. Note that once the first copy is sent to the printer,
+succeeding copies do not need to be re-transmitted and should print 
+much more quickly than the original.
+
+Once you have finished configuring the settings for your printer, you
+may start printing by clicking on the Print button. If you wish to exit
+the Print dialog without printing, click on the CANCEL button. To view
+your image on the screen, use ^LShow=H166^l Preview command.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H108 (EXIT Command)
+
+^RExit^r
+
+
+Exit will return you to the operating system. If any files are still 
+open in which edits have taken place, NeoPaint will give you an 
+opportunity to Save the changes before these files are closed.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H187 (DOS SHELL Command)
+
+^RDOS Shell^r
+
+You can jump to the DOS operating system prompt using this option,
+then jump back to where you left off in NeoPaint. This can save
+time in unloading and reloading files. When you use the DOS Shell
+command, you must type "EXIT" at the DOS prompt in order to return
+to NeoPaint. Note that if you have not saved the work you are doing
+in NeoPaint and turn off your system before returning and saving
+your work, your edits will be lost.
+
+If you have a program (such as a scanner utility, file converter, 
+ASCII text editor, etc.) which you frequently use along with NeoPaint,
+you can create a small batch file which will switch between that
+application and NeoPaint. Simply use an ASCII editor (such as EDIT.COM 
+which is included with DOS) to create a file named NPDOS.BAT. The
+file should contain a line with the path location and command used to
+start the program (e.g., to start EDIT.COM, you might have this line
+read "C:\DOS\EDIT.COM"). That's all you need. Once you've created
+NPDOS.BAT, whenever you select "DOS Shell," you will jump to that
+program, and once you exit the program, you'll automatically be
+returned to NeoPaint.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H150 (EDIT Menu)
+
+^RThe EDIT Menu^r
+
+
+Edit includes several functions usually used along with the ^LScissors=H370^l
+selection tool.
+
+
+The EDIT commands are:
+
+
+^T2 ^LUNDO=H151^l^T17 ^LCUT=H152^l
+
+^T2 ^LCOPY=H153^l^T17 ^LCOPY TO=H109^l
+
+^T2 ^LPASTE=H154^l^T17 ^LPASTE FROM=H110^l
+
+^T2 ^LDELETE=H155^l^T17 ^LSHOW CLIPBOARD=H156^l
+
+^T2 ^LCROP=H157^l ^T17 and ^LMOUNT=H580^l
+}
+{H151 (UNDO Command)
+
+^RUndo^r
+
+
+This will remove your last edit to the image. Use this immediately
+when you make a mistake such as using the wrong tool, erasing more than
+you meant, etc. This may be ^LDisabled=H644^l to conserve memory. The
+Undo command is available by using the UNDO button at the top of the
+screen, by selecting Undo from the Edit menu, or by typing ALT/U.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H152 (CUT Command)
+
+^RCut^r
+
+
+Once you have selected an area with the ^LScissors=H370^l tool, you may
+use this option to Cut the area from your drawing. The area is placed,
+temporarily, onto the NeoPaint ^LClipboard=H156^l. If desired, you may use
+the ^LPaste=H154^l command to re-insert this area into another image or onto
+the same image. Use the ^LCopy=H153^l command if you wish to leave the original
+area intact.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H153 (COPY Command)
+
+^RCopy^r
+
+
+Selecting this command will make a Copy onto the ^LClipboard=H156^l of the
+area selected by using the ^LScissors=H370^l tool. This area is then available
+for use by the ^LPaste=H154^l command.
+
+
+See also:^T6 ^LCOPY TO=H109^l
+}
+{H109 (COPY TO Command)
+
+^RCopy To^r
+
+
+After selecting an area using the ^LScissors=H370^l tool, you may copy
+this area into its own image file. You will be asked to supply a name,
+consisting of up to eight characters, for this file . This file will not
+be overwritten by subsequent ^LCut=H152^l or ^LCopy=H153^l commands.
+
+
+See also:^T6 ^LPASTE FROM=H110^l.
+}
+{H154 (PASTE Command)
+
+^RPaste^r
+
+
+The Paste command inserts the image stored on the ^LClipboard=H156^l into
+the current image window. Once the area appears on the screen, it will be
+shown surrounded by a dotted line. You may reposition it by immediately
+positioning the mouse cursor in the center of the pasted area. The mouse
+cursor will change to a small hand when the cursor is over the area to
+be moved. At this point, you may press down on the left mouse button and
+drag the Pasted area to a new location. Note: if you intend to move an
+item pasted into the current image, you must do so immediately. Using or
+selecting a tool or menu item (other than from the Picture menu) will
+cause NeoPaint to assume that you have decided to leave the pasted area
+in its current location.
+
+
+At any time between pasting the area and going on to another tool,
+the pasted area may be ^LFlipped=H163^l, ^LInverted=H162^l, ^LRotated=H112^l, or manipulated
+with other ^LSpecial Effects=H115^l. You may repeatedly Paste the same item from
+the clipboard. To paste from another image  file, see ^LPaste=H110^l ^LFrom=H110^l.
+
+
+See also:^T6 ^LTransparent Cutouts=H178^l
+
+^T6 ^LCut=H152^l
+
+^T6 ^LCopy=H153^l
+
+^T6 ^LPaste From=H110^l
+}
+{H110 (PASTE FROM Command)
+
+^RPaste From^r
+
+
+If you have used the ^LCopy To=H109^l function, to copy an area, you may
+use this command to Paste the image file you created into the active
+image window. You will be asked to supply the name of the file you
+created using the Copy To command. You may also Paste From using an
+entire normal image file, though these may be so large that they blot
+out much or all of the current image.
+
+
+See also:^T6 ^LMENU=H139^l
+
+^T6 ^LCut=H152^l
+
+^T6 ^LCopy=H153^l
+
+^T6 ^LPaste=H154^l
+}
+{H155 (DELETE Command)
+
+^RDelete^r
+
+
+Choosing this command will cause the area within a rectangular
+portion selected by the ^LScissors=H370^l tool to be wiped clean.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H157 (CROP Command)
+
+^RCrop^r
+
+
+This command allows you to extract a rectangular area from a larger
+picture, trimming away the unwanted portions. Use the ^LScissors=H370^l tool
+to surround the area you wish to retain, then select the Crop function
+and the image outside the selected area will be discarded.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H580 (MOUNT Command)
+
+^RMount^r
+
+If you wish to add extra room to an image, use this command to "mount"
+your picture onto a larger, blank workspace. You will be asked for the
+dimensions (in pixels) of the larger space. You may wish to use the
+^LPicture=H116^l ^LInfo=H116^l to determine the current size of the image, prior
+to using the Mount command. Once you have specified a new size, your
+picture will be mounted in the center of a blank workspace having the
+new dimensions.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H156 (SHOW CLIPBOARD Command)
+
+^RShow Clipboard^r
+
+
+You may display the NeoPaint Clipboard as a reminder of its current
+contents. The clipboard only holds the last item placed there using
+either the ^LCut=H152^l or ^LCopy=H153^l command.
+}
+{H160 (Picture Menu)
+
+^RThe PICTURE Menu^r
+
+
+The commands:
+
+
+^T2 ^LADJUST CONTRAST=H113^l^T15 ^LADJUST PALETTE=H114^l
+
+^T2 ^LSHOW SCREEN=H165^l^T15 ^LSHOW PREVIEW=H166^l
+
+^T2 ^LPICTURE INFO=H116^l^T15 and ^LEDIT SCREEN=H168^l
+
+
+are related strictly to the overall image in the current window.
+
+
+Other items under the PICTURE button:
+
+
+^T2 ^LCLEAR=H161^l^T15 ^LINVERT=H162^l
+
+^T2 ^LFLIP HORIZ=H163^l^T15 ^LFLIP VERT=H164^l
+
+^T2 ^LROTATE=H111^l^T15 ^LSCALE=H112^l
+
+^T2 ^LEFFECTS=H115^l^T15 and ^LDISTORT/SKEW=H167^l
+
+
+allow you to manipulate sections selected with the ^LScissors=H370^l tool,
+^LPaste=H154^l command; as well as the entire image. One use for the various
+flip, rotation and scale functions is for producing a great number of
+variations of a single item in the ^LClipboard=H156^l.
+}
+{H161 (CLEAR Command)
+
+^RClear^r
+
+
+Choosing this option will erase the entire image, leaving you with a
+blank drawing board window. You also have the option of clearing the image
+with the current fill color or white.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H162 (INVERT Command)
+
+^RInvert^r
+
+
+You may produce an opposite for your entire image, a freshly ^LPasted=H154^l
+item, or just that part selected with the Scissors tool. Depending on
+the colors available, each color will be changed to its ^LRGB=H551^l opposite
+(i.e., black will become white, red will become blue-green, etc.), or an
+approximation. The ^LPalette=H550^l will remain the same. This can produce
+very interesting effects.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H163 (FLIP HORIZONTAL Command)
+
+^RFlip Horizontal^r
+
+
+The entire image, a freshly ^LPasted=H154^l item, or area selected by the
+^LScissors=H370^l tool, can be flipped, left to right.
+
+
+See also:^T6 ^LFLIP VERTICAL=H164^l
+
+^T6 ^LMENU=H139^l
+}
+{H164 (FLIP VERTICAL Command)
+
+^RFlip Vertical^r
+
+
+Using this command, you can flip either your entire image, or just a
+^Lselected=H370^l area, upside down.
+
+
+See also:^T6 ^LFLIP HORIZONTAL=H163^l
+
+^T6 ^LMENU=H139^l
+}
+{H111 (ROTATE Command)
+
+^RRotate^r
+
+
+This command turns the ^Lselected=H370^l area (or whole image, if no area
+is selected). You may use one of the preset rotations, or specify another
+angle in single degree increments. A dialog box will let you rotate the
+selected area by pressing the arrow buttons (use the arrow keys on the
+keyboard for finer increments).
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H705 (PICTURE ROTATE Command)
+
+^RRotate^r
+
+
+This command turns the ^Lselected=H370^l area (or whole image, if no area
+is selected). You may use one of the preset rotations, or specify another
+angle in single degree increments. A dialog box will let you rotate the
+selected area by pressing the arrow buttons (use the arrow keys on the
+keyboard for finer increments).
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H112 (SCALE Command)
+
+^RScale^r
+
+
+You may stretch or shrink the size of your image, or a ^Lselected=H370^l
+area, by using the Scale command. You have several pre-set sizes from
+which to choose. Simply click on the check box next to the desired new
+size. If you choose Custom Size, you should type in the size, in pixels.
+The first number represents the new width and the second, the new height
+of the image. See the ^LCROP=H157^l command for trimming an image, and
+^LMOUNT=H580^l for adding more blank space to the picture.
+
+
+The Maintain Aspect Ratio check box stops the image from being
+distorted. When this box is checked, NeoPaint will come as close as
+possible to the size specified, without stretching the picture out of
+shape.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H113 (ADJUST CONTRAST Command)
+
+^RAdjust Contrast^r
+
+
+This command adjusts the overall contrast of the picture currently
+being edited. Click to the right side of the scroll bar to increase the
+contrast. Click to the left side to decrease the image contrast. You may
+use the mouse to hold down and slide the thumbnail button. Your image in
+the background will be updated as you decrease or increase the values.
+If you wish to make finer adjustments, use the left and right ARROW keys
+on the keyboard to move in single unit increments. Pressing the Preview
+button will show in the window (at the left side of the dialog) the 
+effect your changes will have. Note that you can use your mouse to drag
+the preview image to show a different part of your picture.
+
+
+See also:^T6 ^LADJUST PALETTE=H114^l command for brightness controls
+
+^T6 ^LMENU=H139^l
+}
+{H114 (ADJUST PALETTE Command)
+
+^RAdjust Palette^r
+
+
+The color balance and brightness across the entire palette may be
+adjusted using the four thumbnail scroll bars in this dialog. Just as
+for your color monitor, NeoPaint uses a ^LRGB=H551^l color model, which means
+that colors are expressed as values of Red, Green and Blue. You may
+change these by using either the mouse to move each thumbnail button, or
+by using the Arrow keys on your keyboard to move in finer increments.
+When using the keyboard, you can switch between scroll bars by using the
+TAB key.
+
+
+The effect of each change made to the current palette is reflected in 
+the preview window on the left side of the dialog. Simply click on the 
+Preview button to show the changes. Note that you can use your mouse
+to drag the image in the preview window to show a different portion of
+your picture.
+
+
+Note: As changes you make in Adjust Palette will affect all of the
+colors in both your image and palette, you will usually want to make
+only very fine adjustments to the overall color balance. You may adjust
+individual colors on the palette using the Palette ^LEditor=H126^l feature.
+
+
+Use the Reset command button at the bottom of the dialog to clear
+your changes and start again.
+
+
+Click on the OK button to save your changes to the palette, and return to 
+editing your image.
+
+
+Choose the Cancel button to return to your picture without saving the
+color changes you have made.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H115 (EFFECTS Command)
+
+^RSpecial Effects^r
+
+
+A variety of effects allow you to alter a selected area of your
+picture or, if no area has been selected with the ^LScissors=H370^l tool (in
+^Lrectangle=H371^l mode), to apply the effect to the entire image.
+
+
+A descriptive name of each special effect may be selected from the
+drop down menu (click on the Arrow button to display). Once the desired
+effect has been highlighted, press the Apply button.
+
+
+Depending on the effect, the number of colors on your display, the
+size of the area being transformed, the operating speed of your
+computer, etc., the time involved in processing your image may vary
+greatly. A graph showing the percentage completed will be displayed
+while the calculations for the effect are processed.
+
+
+If you are new to NeoPaint, you may wish to experiment with each
+effect on a small area of an image. Although most effects will vary,
+depending on the characteristics of the selected area, you will be
+generally familiar with what results to expect. You may ^LUndo=H151^l any
+special effect by immediately selecting the UNDO command from the ^LEdit=H150^l
+Menu, or by clicking on the UNDO button or pressing ALT/U.
+}
+{H165 (SHOW SCREEN Command)
+
+^RShow Screen^r
+
+
+Choosing this command will use your entire screen to display the
+active image. If the image will not fit into the area available on your
+monitor, a small Hand cursor will appear. You may use this cursor to
+drag the image, revealing portions lying outside the limits of your
+screen. Exit from this mode by pressing the right mouse button, or
+hitting a key on the keyboard. The command to view the entire image at
+one time, is ^LShow=H166^l Preview.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H166 (SHOW PREVIEW Command)
+
+^RShow Preview^r
+
+
+Use this feature to view the entire image. The current image will be
+loaded into a window and completely displayed. Use this to view your
+entire picture at once, no matter what the size.
+
+See also:^T6 ^LShow Screen=H165^l
+
+^T6 ^LMENU=H139^l
+}
+{H167 (DISTORT/SKEW Command)
+
+^RDistort/Skew^r
+
+
+This command is used to stretch and add perspective to rectangular
+areas ^Lselected=H370^l using the Scissors tool. After clicking on this
+command, node handles will appear along the edge of the selected area.
+Use your mouse to drag each node in the direction which you wish to
+stretch that part of the image. If you need to have a handle in another
+spot, click on the dotted area outline to add a new node. Once you have
+adjusted the area to your satisfaction, click on the OK button in the
+dialog box at the top of the screen.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H168 (EDIT SCREEN Command)
+
+^REdit Screen^r
+
+
+If you need to use the entire screen as a workspace, select this
+command from the menu, or press the F3 key. You will be using the last
+tool selected when editing in full screen. The F and ALT keys are still
+functional for calling up commands in full screen mode. Use the F3 key
+to return to normal editing mode - with the menu, tool bar and palette
+shown.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H116 (PICTURE INFO Command)
+
+^RPicture Info...^r
+
+
+Selecting this command will present you with the filename, file size,
+picture dimensions, memory used when file opened, and number of colors
+in the image's palette.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H170 (OPTIONS Menu)
+
+^RThe OPTIONS Menu^r
+
+
+The selections found under this menu allow you to set constraints on
+how various NeoPaint features will work. The commands are:
+
+
+^T2 ^LSNAP TO GRID=H171^l^T21 ^LSHOW MOUSE POSITION=H172^l
+
+^T2 ^LTRANSPARENT PATTERN=H401^l^T21 ^LSET GRID=H117^l
+
+^T2 ^LTRANSPARENT CUTOUTS=H178^l^T21 ^LDRAW FROM CENTER=H179^l
+
+^T2 ^LSET TILE FILL=H118^l^T21 ^LGRADIENT OPTIONS=H701^l
+
+^T2 ^LCLONE OPTIONS=H702^l^T21 ^LCOLOR SIMILARITY=H703^l
+
+^T2 ^LSET PREFERENCES=H119^l^T21 ^LSET COLOR CONVERT=H579^l
+}
+{H171 (SNAP TO GRID Command)
+
+^RSnap to Grid^r
+
+
+If Snap to Grid is enabled, a check mark will appear next to the menu
+selection. This will cause the cursor to snap to the nearest point on a
+grid as specified in the ^LSet=H117^l Grid command. Click on the menu command
+to enable or disable this function.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H172 (SHOW MOUSE POSITION Command)
+
+^RShow Mouse Position^r
+
+
+This selection turns the: Mouse ^LCoordinate=H500^l ^LDisplay=H500^l on and off.
+When this feature is enabled, two boxes will appear at the upper left of
+the screen. The box labeled X shows the cursor position as a number of
+pixels from the left The box labeled Y shows the position as a number of
+pixels from the top. You may switch the Mouse Coordinate Display on or
+off, by clicking on the menu command.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H178 (TRANSPARENT CUTOUTS Command)
+
+^RTransparent Cutouts^r
+
+
+Enabling this mode allows the image underneath to show through when
+you cut and ^Lpaste=H154^l a section of an image onto another portion. Any areas
+which contain the mask color (white) will become transparent, and the
+image underneath will show through.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H179 (DRAW FROM CENTER Command)
+
+^RDraw from Center^r
+
+
+^LCircles=H300^l, ^Lrectangles=H280^l and ^L3-D objects=H320^l will normally be drawn from a
+corner and dragged to the opposite corner to produce a shape of the
+correct size. If you would rather start in the center and drag to an
+outside edge for these objects, enable this mode. A check mark will
+appear to show that this mode has been activated.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H401 (TRANSPARENT PATTERN Command)
+
+^RTransparent Pattern^r
+
+
+The white background of any Pattern Fills will become transparent
+when this function is enabled. The background will show through and the
+pattern the black portion when shown in the ^LPattern=H560^l window will be
+added in the currently selected color.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H117 (SET GRID Command)
+
+^RSet Grid^r
+
+
+You may specify the width of a grid for use with the ^LSnap=H171^l to Grid
+selection. You will be prompted to designate the size of the grid in
+terms of horizontal and vertical measurements. When you are satisfied
+with the size of the new grid, click on the OK button. When you click on
+OK in Set Grid, the Snap to Grid feature will be turned on auto-
+matically. You will only see the effect of your settings when drawing
+with Snap to Grid enabled.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H118 (SET TILE FILL Command)
+
+^RSet Tile Fill^r
+
+
+Use this command to specify a file to use with the ^LTile=H240^l Fill
+tool. You may use any of the image file types supported by NeoPaint.
+Two check boxes allow you to choose whether the fill image will use the
+cursor position, or the upper, left hand corner of your picture as a
+reference point in positioning the fill.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H579 (SET COLOR CONVERT Command)
+
+^RSet Color Convert^r
+
+
+Use this Option to specify whether the Color ^LReplacement=H242^l Fill
+tool will replace just the color within the editing window, or whether
+the color will be replaced wherever it occurs throughout the image.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H119 (SET PREFERENCES Command)
+
+^RSet Preferences^r
+
+
+This command brings up a sub-menu of configuration choices.
+Typically, you will seldom need to reset these items:
+
+
+^T2 ^LPICTURE=H641^l
+
+^T2 ^LDIRECTORIES=H642^l
+
+^T2 ^LMISCELLANEOUS=H643^l
+}
+{H701 (GRADIENT OPTIONS Command)
+
+^RGradient Options^r
+
+
+This command is used to specify the type of gradient used with the
+Gradient ^LFill=H243^l, Gradient ^LRectangle=H284^l and Gradient ^LCircle=H303^l tools.
+
+
+Use the scroll bar in the Style option to set the orientation of the
+fill. The Direction option tells NeoPaint where to place the colors in
+the fill. You also have the option of using one of four Dithering
+Methods to smooth or coarsen transitions between the selected colors.
+
+
+An approximation of the effect of your selections will be shown in
+the window in the Style box. If you wish to change the Line and Fill
+colors being used, simply select new colors from the palette.
+
+
+Note that the smoothness of the transition between the two colors will
+depend upon the palette currently being used, as well as your selections
+using this command.
+
+
+Once your choices have been made, click the OK button. The selections
+you've made will remain in effect until you use this command to make
+changes to them.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H702 (CLONE OPTIONS Command)
+
+^RClone Tool Options^r
+
+
+The ^LCloning=H227^l tool may be used in two modes. Use this command to
+select the mode you prefer. The first mode always snaps the source back
+to the point of origin once the mouse button is released. The second mode
+allows the point being cloned to trail the mouse cursor, pantograph
+fashion, at a fixed distance.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H703 (COLOR SIMILARITY Command)
+
+^RColor Similarity Settings^r
+
+
+This command allows you to ^LErase=H380^l and ^LFill=H240^l a range of
+closely related colors. Click on the arrow buttons to choose a value for
+the degree of difference which will be allowed. The value may range from
+zero (only the selected color or shade of grey will be affected) to 63
+(all colors and grey shades will be affected).
+
+
+The formula used to determine Color Similarity is based on the values
+selected using in producing ^LRGB=H551^l colors and greys.
+
+
+One common use for this function is to aid in deleting or changing
+monochromatic backdrops in scanned images. This allows another image
+to be easily substituted for a background using the ^LTile=H241^l Fill tool.
+Another use is for removing off colors or producing interesting effects
+with the Eraser tool.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H641 (PREFERENCES/PICTURE Command)
+
+^RPicture^r allows you to set the Default ^LVideo=H125^l Mode the program
+will use when you load NeoPaint. You may also specify the dimensions and
+file format for new images opened using the ^LNew=H100^l command under the
+^LFile=H140^l button.
+}
+{H642 (PREFERENCES/DIRECTORIES Command)
+
+^RDirectories^r 
+
+
+NeoPaint may need to use your hard disk to temporarily store image 
+information. You can specify a certain directory, or indicate that 
+NeoPaint should use an existing Temporary subdirectory for this purpose. 
+If the directory you specify does not exist, NeoPaint will not create 
+this directory or move files for you.
+
+
+Click on the OK button to accept your changes, or Cancel to exit the
+dialog without making changes to your configuration.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H643 (PREFERENCES/MISCELLANEOUS Command)
+
+^RMiscellaneous^r contains switches for the following options:
+
+
+^T2 ^LUndo=H644^l on/off.
+
+^T2 ^LSwap=H645^l left/right mouse buttons.
+
+^T2 ^LBackup=H646^l previous version of image file.
+
+^T2 ^LBeep=H647^l warning on/off.
+
+^T2 ^LZoom Gridlines=H648^l on/off.
+
+^T2 ^LMemory=H649^l usage controls.
+}
+{H644 (PREFERENCES/MISC/UNDO)
+
+^RUndo On/Off^r
+
+NeoPaint's ^LUndo=H151^l feature allows you to restore your image to its
+state prior to your last edit. This is a convenient feature for recover-
+ing from mistakes, however it does take up memory and may slow your
+system slightly. If you have either a slow system, or a system with
+limited memory, you might wish to turn this feature off to improve
+performance.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H645 (PREFERENCES/MISC/SWAP)
+
+^RLeft Handed Operation^r
+
+
+The Swap check box allows you to use the Left mouse ^Lbutton=H131^l in place
+of the Right, and the Right mouse button in place of the Left. Left-
+handed and ambidextrous persons may find operating with the button
+functions switched to be more intuitive. The Swap feature is on when
+this box is checked.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H646 (PREFERENCES/MISC/BACKUP)
+
+^RAutomatic Image File Backup^r
+
+
+Backup files enable you to recover an image file when the last saved
+version has been corrupted or contains unwanted edits. If this feature
+is enabled, NeoPaint will write a copy of the file to the disk in its
+original state, prior to saving the latest edited version (using the
+^LSave=H102^l command under the ^LFile=H140^l menu button). Note, however, that
+image files tend to be very large, and unless you regularly erase old
+backup files (files ending in the DOS extension .BAK), even large hard
+drives can quickly become filled. If you decide to leave Create Backup
+(BAK) Files ^Boff^b, you can still keep backup copies of any file you
+wish by using the ^LSave=H601^l ^LAs=H601^l function instead of Save, and giving
+your edited file a name different from that of the original image. If
+this box is checked, NeoPaint will write a backup copy of each edited
+file you Save.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H647 (PREFERENCES/MISC/BEEP)
+
+^RBeep Warning^r
+
+
+NeoPaint will beep when you try to perform an invalid action. You may
+switch this off. If the Beep When Error Occurs box is checked, NeoPaint
+will beep.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H648 (PREFERENCES/MISC/SHOW ZOOM GRID)
+
+^RShow Zoom Mode Gridline Aid^r
+
+
+You may turn off the Show Gridlines In Zoom Mode feature. The
+gridlines allow for more accurate editing when using the ^LZoom=H200^l tool,
+but lends a slightly washed-out look to some colors.
+
+
+NeoPaint is installed with this feature disabled. If you need the
+grid lines, click on the checkbox to turn this feature on.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H649 (PREFERENCES/MISC/MEMORY)
+
+^RMemory Usage Controls^r
+
+
+NeoPaint will attempt to use all the free Memory which is available
+in your system. If for some reason you need to keep NeoPaint from
+accessing one of the types of memory available on your system, you may
+do so by deselecting the corresponding box. Note: It is strongly
+recommended that you NOT limit NeoPaint's access to memory. Doing
+this may slow down your system while working in NeoPaint. In any case,
+NeoPaint needs some memory, you cannot uncheck all the memory boxes.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H180 (HELP Menu)
+
+^RThe HELP Menu^r
+
+
+Clicking on the Help Menu Button will present you with NeoPaint's
+program information functions.
+
+
+The selections are:
+
+
+^T2 ^LHELP=H002^l - using the HELP system.
+
+^T2 ^LVIEW README.DOC FILE=H181^l function.
+
+^T2 ^LSYSTEM INFO=H120^l viewer.
+
+^T2 ^LABOUT NEOPAINT=H121^l screen.
+}
+{H002 (USING HELP Command)
+
+^RUsing the Help System^r
+
+
+If you need information regarding the proper use of a particular
+NeoPaint function, it is often more convenient to first use the Help
+command to search for answers before resorting to NeoPaint's printed
+manual. On entering the Help system, you will be presented with a Table
+Of Contents containing categories of subjects covered. You may click on
+any category to display relevant subjects contained under that heading.
+You may also click on Index to show an alphabetized listing of all
+subjects in the Help system. Clicking on any item will bring up
+information regarding that subject. If there are related topics within
+the informational text, these will appear as ^Lunderlined=H900^l words or
+phrases. You may click on any related topic displayed to switch to a
+display of the information relating to that topic.
+
+
+You may also search for a specific topic by clicking on the Find
+button. You will be asked to indicate the subject for which you are
+searching, and NeoPaint will then try to match your request.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H181 (VIEW README.DOC FILE Command)
+
+^RView README.DOC File^r
+
+
+Late breaking information and features becoming available after the
+production NeoPaint's documentation, will be included on the disk as an
+ASCII file named README.DOC. You may view this text from within NeoPaint
+by selecting this command.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H120 (SYSTEM INFO Command)
+
+^RSystem Information^r
+
+
+This command will detail some of the hardware which NeoPaint has
+found present on your computer system.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H121 (ABOUT NEOPAINT Command)
+
+^RAbout NeoPaint^r
+
+
+Selecting this command causes a screen to be displayed which shows
+copyright and version information about NeoPaint.
+
+
+See also:^T6 ^LMENU=H139^l
+}
+{H370 (SCISSORS TOOL)
+
+^RThe SCISSORS Selection Tools^r
+
+
+The Scissors Icon is used to ^BSelect^b specific areas of your picture
+for further modification, as well as to cut and paste. Using this tool,
+select an area by ^Ldragging=H134^l the mouse cursor from one side of an area
+to its opposite side. A dotted outline (or marquee) will surround the
+selected part of the image. To ^BDeselect^b an area, simply move the
+mouse cursor off to the side and click once.
+
+
+Once the desired area has been selected, you may ^BMove^b this piece from
+your picture by positioning your mouse cursor in the center of the
+selected area. The cursor will change to a small hand. Hold down the
+left mouse button and drag the cut piece to a new location and release.
+If you drop the piece in the wrong spot, use the ^LUndo=H151^l command to
+restore the picture. You may ^Bshrink^b, ^Benlarge^b or ^Bdistort^b the selected
+area by using the mouse to ^Ldrag=H134^l the nodes (or handles), which appear
+as small boxes at the angles of the dotted line. When your mouse is
+properly positioned over one of these nodes, the cursor will change to a
+pointing hand. Press down on the left mouse button and drag the node to
+a new position. As you move these, the marquee will stretch or shrink.
+
+
+If you wish to Copy the area (i.e., move a copy of the area yet
+leaving the original surface intact) hold down the CTRL key while
+dragging the selected area to the desired location. Holding down the
+Shift key while moving the mouse will leave a trail of paint, allowing
+you to use the selected area as a paint brush.
+
+
+Note: When selecting a ^Lrectangular=H371^l area, part of which lies ^Boutside^b
+the image area displayed in the screen's workspace, simply continue
+holding down the mouse button and drag to the edge of the window nearest
+to the destination. The image will scroll underneath the cursor until
+you move the mouse off the window's edge, or until you reach the edge
+of the picture.
+
+
+A selected area may be ^LCut=H152^l or ^LCopied=153^l to the NeoPaint
+^LClipboard=H156^l, Copied to a ^LFile=H109^l, or ^LDeleted=H155^l. Once a portion of your
+picture has been selected, these options are available under the ^LEdit=H150^l
+menu button. Areas selected with these tools may also be modified using
+the commands listed under the ^LPicture=H160^l menu button.
+
+
+Clicking a second time on the Scissors icon will drop down a menu
+containing three tool types:
+
+
+^T2 ^LSTRAIGHT LINE=H371^l
+
+^T2 ^LZIGZAG LINE=H372^l
+
+^T2 ^LUNDULATING LINE=H374^l
+
+^T2 ^LELLIPSE=H376^l
+}
+{H371 (RECTANGULAR SELECTION TOOL)
+
+^RSelecting Rectangular Areas^r
+
+
+The topmost icon (^LScissors=H370^l next to a straight line) selects or
+cuts rectangular areas.
+
+
+Note: You must select a rectangular area using the straight line
+Scissors tool in order to use the ^LPicture/Effects=H115^l command. If you
+need to apply a particular Effect to an irregular area, try dividing the
+area into sections and use several small rectangles to modify in more
+than one operation.
+}
+{H372 (POLYGONAL SELECTION TOOL)
+
+^RSelecting Polygonal Areas^r
+
+
+The middle icon (^LScissors=H370^l next to a zigzag) selects or cuts
+polygonal areas. Click to draw line segments around the area you wish to
+select. You may complete the boundary by clicking a final time close to
+your starting point, or by clicking the right mouse button. At this
+point, a dialog window will allow you to make changes (see ^LEdits=H375^l).
+}
+{H374 (FREEFORM SELECTION TOOL)
+
+^RSelecting Areas Freehand^r
+
+
+The lower icon (^LScissors=H370^l next to an undulating line) selects or
+cuts free form areas. Simply ^Ldrag=H134^l the mouse around the area to be
+selected. You will be given an opportunity to change your outline (see
+^LEdits=H375^l topic).
+}
+{H375 (EDITS - SELECTED AREAS)
+
+^REditing a Selected Area^r
+
+
+Area boundaries delineated with the ^LPolygonal=H372^l, ^LFreeform=H374^l and ^LEllipse=H376^l 
+Scissors may be edited once the area has been selected. If you wish to
+make minor adjustments to include or exclude areas, you are given an
+opportunity to use the mouse to reposition the nodes (or handles) which
+appear as small boxes at the angles of the border line. When your mouse
+is properly positioned over one of these nodes, press down on the left
+mouse button and drag the node to a new position. As you move these, the
+border will stretch or shrink. You may add or delete nodes by clicking
+with the left mouse button to add, or delete by holding down the CTRL key
+while clicking with the left button. The entire selected area may also be
+rotated by clicking on the Rotation buttons in the dialog box at the top
+of the screen.
+
+
+Once the boundaries of the area are in place, click on the OK button
+in the dialog window. A marquee will appear around the entire area,
+which may then be Moved, Stretched, Distorted, Copied, etc. as for any
+selected area (see ^LScissors=H370^l tool).
+}
+{H376 (Ellipse Scissors)
+
+^RElliptical Scissors^r
+
+
+You can use this tool to select an ellipse or other rounded shape.
+Simply drag out a circle or oval. You will be given an opportunity
+to stretch, move and reshape the selected area. Reshape the area using
+the handles and nodes. Move the shape to cover a different area by
+dragging the centerpoint. Once you have surrounded the desired area,
+press the OK button, and you may Move, Distort, etc. as for any
+selected area (see ^LScissors=H370^l tool).
+}
+{H380 (ERASER Tool)
+
+^RERASER Tools^r
+
+
+The Eraser consists of two tools. You may choose between the tools by
+clicking a second time on the Eraser icon. The size of the cursor is
+controlled by the ^LSize=H520^l Selector box. The Eraser will be three to
+four times the selected line width.
+
+
+The topmost tool will erase everything under the cursor when the
+mouse is clicked or dragged. 
+
+The second tool will erase only the current color selected in the 
+^LColor/Pattern=H530^l Selection Box (or shades which are similar to 
+this, as specified using the Color ^LSimilarity=H703^l command) wherever the 
+left mouse button is clicked or dragged. In this mode, clicking or 
+dragging with the right mouse button will only erase the current line 
+color as shown in the border around the Color/Pattern Selection Box. If
+you hold down the Shift key while dragging the color eraser with the left 
+mouse button, all occurances of the fill color will be replaced with the 
+currently selected line color.
+}
+{H390 (TEXT Tool)
+
+^RThe TEXT Toolbox^r
+
+
+Text in a variety of styles and fonts may be placed within your
+picture. When you click on the Text icon, a text cursor appears. Move
+the cursor to the location at which you wish your text line to begin,
+and click to begin typing. You may change the ^LFont=H124^l, color, size and
+style, either prior to typing your text or at anytime before selecting
+another tool or starting a new line of text.
+
+
+By clicking a second time on the Text icon, you will be presented
+with a choice of text styles (e.g., Bold, Italic, etc). You may select
+to apply one or a combination of these styles to your text. Your text
+will be drawn in the current fill color selected in the ^LColor/Pattern=H530^l
+Selection Box. The current line color will be used for drop shadowing,
+when choosing the Shadow command.
+
+
+When entering text, you may use the Backspace key to erase and Enter
+to start a new line. The ESC key cancels the entry.
+
+You can also import text from an ASCII file by dragging the Text cursor
+to frame the area in which you wish the text to appear. You will be asked
+to select the file to import, and will be given an opportunity to resize
+the frame, change the font, color, or scroll through the text to find a
+particular portion.
+
+
+See also:^T6 ^LFONTS=H124^l
+}
+{H124 (FONT Selector)
+
+^RSelecting Fonts^r
+
+
+The font and size are changed by clicking on the FONTS... function
+at the bottom of the menu. The Font dialog window will be displayed with
+the current font selected. The selections may be viewed by clicking on
+the individual font names. The font will be previewed in the Example
+window at the lower, left corner. Font and size choices may be scrolled
+using the scroll bars. Not every font comes in every size (though you
+may stretch or shrink any size using the ^LScissors=H370^l tool).
+}
+{H200 (ZOOM Tool)
+
+^RZOOM^r
+
+
+When it comes time to touch up the details in your picture, you will
+probably want to get a closer look at the part of the image being
+modified. You can exercise precise, pixel level control by switching
+into the Zoom editing mode. To do this, first click on the Zoom icon.
+Move your cursor near to a corner (or to the center if you have
+activated the Draw from ^LCenter=H179^l mode) of the area which to be magnified.
+Hold down the left mouse button and ^Ldrag=H134^l the mouse to
+surround the area. A marquee will appear showing the boundary of the
+area selected. When you have enclosed the desired area, release the
+mouse button.
+
+
+See also:^T6 ^LThe ZOOM Editing Window=H201^l
+
+^T6 ^LGridline Editing Aid=H648^l
+
+^T6 ^LTools Available in ZOOM=H206^l
+
+
+To exit from the Zoom edit window, click on either the small preview
+window on the left side, click on the image in the background, or click
+on the X button at the upper left corner of the window.
+}
+{H201 (ZOOM Window)
+
+^RThe ZOOM Editing Window^r
+
+
+The Zoom window consists of a pair of thumbnail ^Lscroll=H574^l bars along
+the right and bottom allowing movement to other points within your
+picture without exiting the ^LZoom=H200^l mode. On the left side is a scroll
+bar which permits you to increase or decrease the magnification factor.
+The magnification factor is displayed above the scroll bar and just
+above this is an actual size (1:1) view of the section of the image on
+which you are working. This small window will show the effect of your
+edits as you make them.
+
+
+The main part of the Zoom edit window is occupied by a magnified,
+editable view of a part of your picture. If there is any pattern in the
+section being edited, you will be able to distinguish the individual
+pixels which make up the image. You edit the image by clicking on
+individual pixels. Clicking the left mouse button will place the
+currently selected fill color, while clicking on the right button will
+place the currently selected line color. You may change colors at any
+time.
+}
+{H206 (ZOOM Tools In)
+
+^RTools Available Within ZOOM^r
+
+
+^LERASER=H380^l^T15 ^LBRUSH=H230^l
+
+^LFILLS=H240^l^T15 ^LHIGHLIGHTER=H220^l
+
+^LSTRAIGHT LINE=H270^l^T15 ^LRECTANGLE=H280^l
+
+^LGRID=H171^l^T15 ^LGRADIENT RECTANGLE=H284^l
+
+^LROUND RECTANGLE=H290^l^T15 ^LCIRCLE=H300^l
+
+^LGRADIENT CIRCLE=H303^l and^T15^LCOLOR SAMPLER=H210^l
+
+
+The above tools can be used in ^LZoom=H200^l mode. The Eraser and
+Brush may be used to click on individual pixels, or may be dragged
+across an area.
+
+
+The Fill tool will either fill an enclosed area (of one color) with
+another color or tile pattern, or may be used to replace one color (as
+selected in the ^LColor/Pattern=H530^l Selection Box) with another throughout
+the Zoom edit window.
+
+
+The Highlighter works by changing the color value of any pixel to
+which it is applied.
+
+
+The Color Sampler is extremely useful in Zoom mode, particularly when
+working with 24-bit, greyscale or 256 color images. Instead of scrolling 
+through the ^LPalette=H550^l, you can simply select the color you need 
+directly from the ^LZoom=H201^l screen. 
+
+
+Line, Rectangle, Grid, Rounded Rectangle, and Circle tools are
+dragged to produce these forms. You may also paint using ^LPatterns=H530^l, as
+well as colors from the palette, while in Zoom. This allows you to
+precisely apply a pattern/texture to a specific area
+}
+{H210 (COLOR SAMPLER Tool)
+
+^RThe Syringe COLOR SAMPLER^r
+
+
+The color sampler may be used to select a color directly from the
+surface of the picture, rather than from the ^LPalette=H550^l. This feature
+is particularly handy when working with 24-bit, 256 color or gray scale 
+images, where it is either difficult to distinguish between individual 
+shades, or when it saves time over making a search through the many 
+selections available on the Palette.
+
+
+To use the color sampler, move the cursor directly over the desired
+color. You should be able to spot the color at the center of the
+crosshairs. The color clicked on is placed into the Current ^LColor/=H530^l
+^LPattern=H530^l Selection Box. Press the left mouse button to change the
+current fill color, or press the right mouse button to select a new
+current line color.
+}
+{H221 (SPECIALTY Tools)
+
+^RSpecialty Tools^r
+
+
+Clicking a second time on the icon in this button (located between
+the Syringe and Brush icons on the tool bar) will bring up a selection
+of special purpose tools. The tools available are:
+
+
+^T2 ^Lthe Highlighter Marker=H220^l
+
+^T2 ^LCharcoal pencil=H222^l
+
+^T2 ^LCrayon=H223^l
+
+^T2 ^LWatercolor brush=H224^l
+
+^T2 ^LOil paint brush=H228^l
+
+^T2 ^LQuill pen=H229^l
+
+^T2 ^LSmudge tool=H225^l
+
+^T2 ^LPixel Blender=H226^l
+
+^T2 ^LCloning tool=H227^l
+}
+{H220 (HIGHLIGHTER Tool)
+
+^RThe HIGHLIGHTER Marker^r
+
+
+The Highlighter works in much the same manner as the felt-tipped
+markers used for highlighting text. It adds its color value to the value
+of any color in the image with which it comes into contact. The size of
+the Highlighter tip is controlled from the ^LSize=H520^l Selector box. You
+may also highlight using a ^Lpattern=H560^l.
+
+
+Note: The resulting value will depend on the two colors, and
+availability of suitable colors in the current ^Lpalette=H103^l. Highlighting
+results tend to be most predictable when using 24-bit, greyscale and 
+monochromatic palettes.
+
+
+See also:^T6 ^LSPECIALTY TOOLS=H221^l
+}
+{H222 (CHARCOAL PENCIL Tool)
+
+^RCharcoal Pencil^r
+
+
+The second tool from the top of this menu is the Charcoal pencil.
+^LDragging=H134^l this tool produces a "scratchy" line. Change the shape of
+the tool by first selecting one of the types under the ^LBrush=H230^l icon.
+
+
+Try using the ^LSmudge=H225^l tool to further soften lines made with this
+tool and produce other effects.
+
+
+See also:^T6 ^LSPECIALTY TOOLS=H221^l
+}
+{H223 (CRAYON Tool)
+
+^RCrayon^r
+
+
+^LDragging=H134^l the crayon tool produces a solid line with a "clumpy" edge
+Try using the ^LSmudge=H225^l tool to further soften the lines produced
+by this tool.
+
+
+Change the shape of the tool by first selecting one of the types
+under the ^LBrush=H230^l icon.
+
+
+See also:^T6 ^LSPECIALTY TOOLS=H221^l
+}
+{H224 (WATERCOLOR Tool)
+
+^RWatercolor brush^r
+
+
+This tool allows the loaded color to "bleed" into surrounding areas,
+producing a soft effect. Other interesting effects may be obtained by
+using this tool along with a ^Lpatterned=H560^l fill. You can also
+select the ^LHollow=H540^l button when using this tool to give a watercolored
+effect to an existing image.
+
+
+Change the shape of the tool by first selecting one of the types
+under the ^LBrush=H230^l icon.
+
+
+See also:^T6 ^LSPECIALTY TOOLS=H221^l
+}
+{H225 (SMUDGE Tool)
+
+^RSmudge tool^r
+
+
+This tool is used to blend areas of colors into one another, much
+like smearing together oil pastels. The number of intermediate colors
+which are able to be produced depends in great part on the colors
+available in the ^Lpalette=H550^l you are using in a particular image.
+
+
+See also:^T6 ^LSPECIALTY TOOLS=H221^l
+}
+{H226 (BLENDER Tool)
+
+^RPixel Blender^r
+
+
+This tool is used to produce a homogenous mix of the colors in a
+particular area. You may also use this along with the ^LSmudge=H225^l tool
+to retouch coarse areas or to produce finer gradations between areas.
+
+
+See also:^T6 ^LSPECIALTY TOOLS=H221^l
+}
+{H227 (CLONE Tool)
+
+^RCloning Tool^r
+
+
+The Clone brush allows you to "paint" an exact duplicate of one area
+onto another. Popular uses for this include taking one area of skin in
+a photo and using it to remove wrinkles or blemishes, or cloning an area
+of landscape to paint out an offending feature.
+
+
+Click once on the area you wish to duplicate, then move the mouse
+to the spot at which you wish to start copying. ^LDrag=H134^l the mouse to
+copy as much of the original area as needed.
+
+
+If you wish to move the origin point for the area being copied,
+either move the mouse cursor over the point and drag to a new location,
+or click again on the Cloning Tool icon and designate a new origin.
+
+
+See also:^T6 ^LSPECIALTY TOOLS=H221^l
+}
+{H228 (OIL Tool)
+
+^ROil Paint^r
+
+
+This tool gives rich, textured strokes which resemble oil painting.
+The paint is slightly changed by adjoining colors, producing a slightly 
+soft edge. You can also select the ^LHollow=H540^l button when using this 
+tool to add stroked effects to an existing image.
+
+
+Change the shape of the tool by first selecting one of the types
+under the ^LBrush=H230^l icon.
+
+
+
+See also:^T6 ^LSPECIALTY TOOLS=H221^l
+}
+{H229 (QUILL Tool)
+
+^RQuill Pen^r
+
+
+This tool produces varying width lines, much like an ink pen. It is
+sensitive to drawing speed, with quicker movement producing thinner
+lines, and slow movement producing thick lines or blotching.
+
+
+Change the shape of the tool by first eslecting one of the types
+under the ^LBrush=H230^l icon.
+
+
+See also:^T6 ^LSPECIALTY TOOLS=H221^l
+}
+{H230 (BRUSH Tool)
+
+^RBRUSH Tools^r
+
+
+These tools are used for most freehand painting operations. Clicking
+on the icon will reveal a menu of the different Brush types from which
+you may select. The Brush size is controlled by choosing a width from
+the ^LSize=H520^l Selector box.
+
+
+Brushes may be used by either clicking at specific points, or by
+^Ldragging=H134^l the mouse to produce a stroke. Color depends on the
+Current ^LColor/Pattern=H530^l Selection Box contents. A ^LPattern=H560^l may be used
+with the color to obtain a textured effect. The left mouse button will
+paint with the current fill color and pattern. Using the right mouse
+button will paint with the currently selected line color.
+
+
+Note: the ^LHighlighter=H220^l and ^LWatercolor=H224^l brush may be used for
+painting with semi-transparent washes. The ^LStamp=H266^l tool may be used
+for painting with pictures and to create custom, multi-color brushes.
+
+
+Also note that some brush tools (such as Watercolor or Stamps) must
+be moved slowly on some older systems in order to prevent the brush from
+"skipping" too much - although this may be used to advantage when such
+an effect is desired (such as when purposely moving the mouse very
+quickly in order to make lots of image duplicates using a Stamp).
+}
+{H240 (FILL Tool)
+
+^RFILL Tools^r
+
+
+Use this tool when you need to Fill large areas with a color,
+pattern, etc. The tool at the top of the menu is the basic Fill tool. It
+will flood any enclosed area containing a single color (or a range of
+colors as specified using the Color ^LSimilarity=H703^l command under the
+Options menu button) with the selected color. The color produced will
+depend on the contents of the Current ^LColor/Pattern=H530^l Selection Box.
+A ^LPattern=H530^l may be used with the color to obtain a textured effect. The
+left mouse button will flood with the current fill color and pattern.
+Using the right mouse button will Fill with the currently selected line
+color. Pressing any key on the keyboard will halt the execution of the
+flood.
+
+
+Note: The basic Fill tool will flood an area containing an existing
+color with a second color. There must be a border of another color which
+completely surrounds the area which you wish to Fill. A gap in this
+border, of even a single pixel, will allow the color to leak and you may
+end up inadvertently flooding a larger area than intended. Should this
+occur, the ^LUndo=H151^l command (ALT/U) will remove the color. Then examine
+the border for gaps (using Zoom if needed) and patch the gap before using
+Fill once again. The extent of the area affected by Fill is also limited
+to the portion of the picture actually displayed within the current
+image editing window. If you desire to use Fill over areas lying outside
+the portion displayed, you will need to scroll to these areas and
+reapply the tool. The Fill tool may be used in ^LZoom=H200^l mode for more
+precise control.
+
+
+The other FILL tools available are:
+
+^LTile=H241^l Fill, ^LGradient=H243^l Fill and Color ^LReplacement=H242^l Fill
+}
+{H241 (TILE FILL)
+
+^RFilling with Tiled Images^r
+
+
+The Tile Fill tool is the middle tool on the ^LFill=H240^l menu. This will
+allow you to fill an area with a ^LSTAMP=H260^l (tile fashion), or even another,
+entire picture. Before applying this tool, be sure to select an image
+for the fill, using the ^LSet=H118^l Tile Fill command.
+
+
+An infinite variety of textures can be had by using this tool to
+import images containing complex textures and using these to fill a
+background masking color. To do this, you will first need to designate
+those areas in which the image will show through, by painting them with
+a color used nowhere else in that area (the mask). Next, select the
+texture image file and Tile Fill that color.
+}
+{H243 (GRADIENT FILL Tool)
+
+^RGradient Fill^r
+
+
+Use this tool to fill an area with two colors (the currently selected
+line and fill colors) which gradually blend into one another. 24-bit 
+(16-million colors) modes, greyscale images, monochromatic pictures, and 
+images with ^Lpalettes=H550^l optimized to contain a good range of intermediate 
+shades between colors will result in the smoothest gradients.
+
+
+The style, direction and method for the gradient is controlled using
+the Gradient ^LOptions=H701^l command under the OPTIONS menu button. These 
+options may be employed to further smooth gradient transitions for 2, 16
+or 256 color modes.
+}
+{H242 (COLOR REPLACEMENT FILL)
+
+^RReplacing A Color^r
+
+
+The last tool in the ^LFill=H240^l menu is the Color Replacement Fill.
+Applying this tool will replace every occurrence of the color on which
+you click with the color contained in the Current ^LColor/Pattern=H530^l
+Selection Box.
+
+
+You may use the ^LSet=H579^l Color Convert option to control whether just
+the color in the editing window are replaced, or whether to replace a
+color throughout the entire image.
+}
+{H122 (AIRBRUSH Tool)
+
+^RThe AIRBRUSH (Spray Can)^r
+
+
+The Airbrush tool is useful for subtle shading, blending and
+producing lines with indistinct edges.
+
+
+If you click a second time on the icon, a dialog window allows you to
+set the spray pattern produced by the nozzle and the rate at which the
+color droplets are sprayed onto your picture. Note: A slower Flow Rate
+will give you more control, while a faster rate will be better for bold
+strokes. 
+
+
+The Fade checkbox changes the color being sprayed from the Fill
+color to the currently selected Line color. You can use this to produce
+some stunning stroked effects. The number of shades produced between
+the two colors will be determined by the colors available on the palette. 
+The speed of the color change is also partially determined by the
+palette, and by the Flow Rate being used.
+
+
+Just as for the ^LBrush=H230^l tools, the size of the area covered is
+controlled through the ^LSize=H520^l Selector box. The color obtained using
+the left button is a current fill color in the Current ^LColor/Pattern=H530^l
+Selection Box. Using the right button will spray the current line color.
+
+
+The Airbrush can be used by clicking once in a particular area, or by
+^Ldragging=H134^l the mouse using either button. Just like a real airbrush or
+aerosol can, the longer you hold the tool over a particular area, the
+denser the paint build up.
+}
+{H260 (STAMP Tool)
+
+^RSTAMPS^r
+
+
+The Stamp icon represents one of NeoPaint's most powerful, yet easy
+to use tools.
+
+
+You can click once to Stamp the current stamp picture onto your
+image, just like a rubber stamp. You may also drag the Stamp cursor like
+a brush to paint with a Stamp image.
+
+
+See also:^T6 ^LPainting with Stamps=H266^l
+
+^T6 ^LImporting Images as Stamps=H265^l
+
+
+You may choose, create and edit Stamp images by clicking a second
+time on the Stamp icon. This will bring up the Stamp ^LPad=H123^l window.
+}
+{H123 (STAMP PAD)
+
+^RThe STAMP PAD^r
+
+
+In the Stamp Pad window, a scroll bar allows you to preview the ^LStamp=H260^l
+images stored on your system. You can load stamps from a different disk 
+directory using the Directory function at the top of the dialog. Clicking 
+once on a stamp image in the selection window will select that
+image and highlight the image's title. Clicking a second time on an
+image (or clicking on the OK button) will load that image onto the Stamp
+and return you to your picture. Along the bottom of the window are a
+series of option buttons:
+
+See also:^T6 ^LADD=H261^l^T15 ^LEDIT=H262^l
+
+^T6 ^LDELETE=H263^l^T15 ^LRENAME=H264^l
+
+^T6 ^LPREVIEW=H267^l
+}
+{H261 (STAMP/ADD)
+
+^RAdding a New Stamp^r
+
+
+To create a ^LStamp=H260^l image, select the Add button from the ^LStamp=H123^l
+^LPad=H123^l. You will be presented with an editing screen measuring 64x64
+pixels. You may paint an image using any of the normal tools. Since the
+area is small, you may prefer to use the ^LZoom=H200^l (when working from a
+small window, be sure and click on the ^LMaximize/Minimize=H572^l button at the
+upper right corner to give you more working space). When done, click on
+the X box at the upper left corner of the window. A dialog box will ask
+you if you wish to save the Stamp, and if so, under what name. Your
+Stamps are saved as image files, and thus, you are limited to eight
+valid DOS ^Lfilename=H601^l characters.
+
+
+Note: Any white areas in the Stamps will be transparent when applied.
+If you do not wish the background to show through the white areas of
+your pattern, you should paint out areas which will lie under the Stamp
+prior to using the Stamp tool.
+}
+{H262 (STAMP EDIT)
+
+^REditing Existing Stamps^r
+
+
+The Edit button allows you to make changes to existing ^LSTAMP=H260^l
+images. Select the image you desire to change by clicking once on the
+image or its title in the preview window. Next click on the Edit button.
+You may make changes to the existing image just as you did when creating
+a Stamp using the ^LAdd=H261^l button.
+}
+{H263 (STAMP DELETE)
+
+^RRemoving Stamps from the System^r
+
+
+To delete a ^LStamp=H260^l image file, click on the unwanted image to
+highlight the title, then click on the Delete button.
+}
+{H264 (STAMP RENAME)
+
+^RRenaming Stamps^r
+
+
+You can Rename a highlighted ^LStamp=H260^l image file by clicking on the
+Rename button. You will be asked to supply a new DOS ^Lfilename=H601^l composed
+of from one to eight characters. Stamps will appear in alphabetical order
+in the Stamp ^LPad=H123^l window.
+}
+{H267 (STAMP PREVIEW)
+
+^RStamp Preview On/Off^r
+
+
+The Preview option check box may be used to display or hide ^LStamp=H260^l
+pictures. Unchecking this box will speed the display on slower computer
+systems.
+}
+{H266 (STAMP - PAINTING WITH)
+
+^RPainting with Stamps^r
+
+
+Any ^LStamp=H260^l may be used as a brush merely by ^Ldragging=H134^l the stamp
+across the screen. Stamps may also be customized to suit particular jobs.
+
+
+Multicolor brushes, textures, and spatters are some of the
+sophisticated, custom tools which you may create with the Stamp ^LPad=H123^l.
+Examples of these are included on your disk. A multicolor brush is a
+circular area containing a combination of colors. When dragged, this can
+produce a rich, often impressionistic effect. Textures are large
+patterns containing a great deal of transparent white. When repeatedly
+stamped over wide area of other colors, this gives a textured effect.
+Splatters are dots of color separated by intervening transparent white
+space. When this Stamp is clicked repeatedly, the effect is somewhat
+like that obtained by ^LAirbrush=H122^l tools, except a combination of colors
+may be used. Dragging spatters will create streaks.
+}
+{H265 (STAMP IMPORT)
+
+^RStamps from Outside the STAMP PAD^r
+
+
+Aside from the Stamp Pad ^LAdd=H261^l command, you may create Stamps using
+a ^LScissors=H370^l tool along with the ^LCopy=H109^l ^LTo=H109^l command to import an area
+from an existing picture. After selecting an area using one of the
+Scissors tools, select Copy To from under the ^LEdit=H150^l menu button. Use
+the File Type drop down menu to select ST for the file type, then type in
+a 1-8 character name for the stamp. If you wish, an entire image file may
+also be saved as a ^LStamp=H260^l, using the ^LSave=H601^l ^LAs=H601^l command.
+
+
+Using the Scissors tool to copy an image (or portion of an image)
+into Stamp format can be used for creating a larger sized Stamp. Images
+beyond the Stamp Pad's 64x64 pixel format may, however, display very
+slowly in the Stamp Pad preview window, so you may want to limit storage
+of larger stamps, or turn off the preview mode altogether. You can
+shrink a larger area to a more manageable size, using the ^LScale=H112^l
+command to resize the image.
+
+
+Note: Try and keep stamps you create small in size. Large Stamp
+images may take up a great deal of disk space, and it is difficult to
+paint with large Stamp images - they tend to drag very slowly.
+}
+{H270 (LINE Tool)
+
+^RLINE Tools^r
+
+
+Use the tools under the Line icon to easily draw various line types.
+Clicking twice on the icon will drop down the tool selections. The width
+of lines is controlled using the ^LSize=H520^l Selector.
+
+
+The line color, as selected in the Current ^LColor/Pattern=H530^l Selection 
+box, will be used for lines drawn with these tools.
+
+The three LINE tools are:
+
+
+^T2 ^LSTRAIGHT LINES=H271^l
+
+^T2 ^LRADIANT LINES=H272^l
+
+^T2 ^LBEZIER CURVES=H273^l
+}
+{H271 (LINE - STRAIGHT)
+
+^RStraight Lines^r
+
+
+At the top of the ^LLine=H270^l menu is the Straight Line tool. When this
+tool is selected, you may draw a line by clicking and holding at one of
+the ends of your line, then ^Ldragging=H134^l the mouse cursor to the point
+where the line should end before releasing. The line will be drawn
+connecting the two points. Repeat this procedure as often as you wish.
+
+
+Note: Holding down the the Shift key while drawing lines will cause
+the line to snap to an angle in 45 degree increments.
+}
+{H272 (LINE - RADIANT)
+
+^RRadiant Lines^r
+
+
+The middle icon in the ^LLine=H270^l menu represents the Radiant Line
+tool. This tool is used to paint with lines to form star bursts and
+elaborate line designs. To use the tool, move the cursor to the point
+where you wish to start the design (the lines will radiate from this
+point). Next click and hold the mouse button and ^Ldrag=H134^l to form the
+first line of the design. When the line reaches the right length and
+position, release the button and move the cursor around the axis to
+form your design. To complete the design, click once more.
+}
+{H273 (LINE - CURVE)
+
+^RBezier Curves^r
+
+
+The tool at the bottom of the ^LLine=H270^l menu is the Bezier Curve tool.
+Use this tool to draw smooth, accurate curves. To draw a curve, move the
+cursor over one of the endpoints. Click and ^Ldrag=H134^l to the point at
+which the curve will end before releasing the button. Two nodes will
+appear at each end of the line. You may move these nodes with the mouse
+to reorient the line, or move the centerpoint to move the whole line.
+Move the handles attached to each node to pull out a curve of the desired
+shape and size. Click once more and the final curve will be drawn.
+}
+{H280 (RECTANGLE Tool)
+
+^RRectangles^r
+
+
+Precisely drawn rectangles and squares may be quickly formed using
+the Rectangle tool. The thickness of the line may be selected using the
+^LSize=H520^l Selector box. The color and/or pattern for the lines and interior
+of the shape will be as in the Current ^LColor/Pattern=H530^l Selection Box.
+Note: Holding down the SHIFT key while drawing will restrict the shape 
+formed to a perfect square.
+
+
+Clicking a second time on the icon will drop down options:
+
+
+^T2 ^LRegular RECTANGLE=H281^l
+
+^T2 ^LGRID=H283^l
+
+^T2 ^LGradient RECTANGLE=H284^l
+
+^T2 ^LEditable RECTANGLE=H282^l
+}
+{H281 (Regular RECTANGLE)
+
+^RNormal Rectangle^r
+
+To use the topmost ^LRectangle=H280^l tool, position the cursor at the
+point at which one of the corners will be located. Press down and hold
+the mouse button and drag the cursor to the opposite corner. When the
+rectangle reaches the correct size, release the mouse button. If you
+would rather draw the shape starting from a center point, use the
+Draw from ^LCenter=H179^l mode under the Options menu button.
+}
+{H282 (Editable RECTANGLE)
+
+^REditable Rectangle^r
+
+You may produce irregular rectangles and polygons using the tool
+containing a ^LRectangle=H280^l with an arrow inside. Either ^Ldrag=H134^l the
+rectangle from one of its corners, or from a center point (if you are
+using the Draw from ^LCenter=H179^l mode under the Options menu button).
+
+
+Once the shape has been drawn, nodes will appear along the sides of
+the figure. You may drag the nodes to modify the shape, add handles by
+clicking along the outline, and/or rotate the figure using the rotation
+buttons in the accompanying dialog box. You may reposition the shape by
+dragging the centerpoint. When you are satisfied with the figure, click
+on the OK button in the dialog, and the figure will be drawn and filled.
+}
+{H284 (Gradient RECTANGLE)
+
+^RGradient Filled Rectangle^r
+
+Use this tool to draw a ^Lrectangle=H280^l filled with two colors which
+gradually blend into one another.
+
+
+The style, direction and method for the gradient is controlled using
+the Gradient ^LOptions=H701^l command under the Options menu button.
+}
+{H283 (RECTANGLE GRID)
+
+^RGridded Rectangle^r
+
+The Grid tool icon is found at the bottom of the ^LRectangle=H280^l menu.
+This tool draws a rectangular Grid. The size of the grid will depend on
+the spacing last selected using the ^LSet=H117^l Grid command. Draw the grid
+just as you would a normal rectangle. If you wish only whole units in the
+grid to appear, make sure ^LSnap=H171^l to Grid is enabled.
+}
+{H290 (ROUNDED RECTANGLE Tool)
+
+^RRectangles with Rounded Corners^r
+
+
+Use this tool to draw squares or rectangles having rounded corners.
+The thickness of the line may be selected using the ^LSize=H520^l Selector box.
+The color and/or pattern for the lines and interior of the shape will be
+as shown in the Current ^LColor/Pattern=H530^l Selection Box. Note: enabling
+the Draw From ^LCenter=H179^l mode under the Options menu button will allow
+you to draw the rectangle from the center instead of from the corner.
+
+
+Use the ^LSnap=H171^l To Grid mode if you need to proportion the object
+in exact increments.
+
+
+Note: Holding down the Shift key while drawing will restrict the
+box to a perfect rounded square.
+}
+{H300 (CIRCLE Tool)
+
+^RCircles and Ellipses^r
+
+
+This tool is used to draw circles and ellipses. You may pull out the
+shape either from a corner or from the center, depending on whether or
+not the Draw From ^LCenter=H179^l mode is selected under the Options menu
+button. Use the ^LSnap=H171^l To Grid command if you need to draw an object
+with exact proportions. The thickness of the line may be selected using
+the ^LSize=H520^l Selector box. The color and/or pattern for the lines and
+interior of the shape will be as in the Current ^LColor/Pattern=H530^l Selection
+Box.
+
+
+Note: Holding down the Shift key while drawing will restrict the
+object to a perfect circle.
+
+
+Clicking a second time on the icon will bring up two additional
+variations of this tool:
+
+
+^T2 ^LGradient Filled Circle=H303^l
+
+^T2 ^LEditable Ellipse=H305^l
+}
+{H303 (Gradient CIRCLE)
+
+^RGradient Circle^r
+
+
+Use this tool to produce an ^Lellipse=H300^l containing a fill consisting of
+two colors which gradually blend into one another.
+
+
+The style, direction and method for the gradient is controlled using
+the ^LGradient=H701^l Options command under the Options menu button.
+These options may be employed to further smooth gradient transitions
+and produce the illusion of depth.
+}
+{H305 (Editable CIRCLE)
+
+^REditable, Irregular Ellipses^r
+
+
+This tool allows you to construct ellipses using bezier mode. Once
+you have used the mouse to ^Ldrag=H134^l out the ^Lcircle=H300^l, nodes will
+appear along the outline of the shape. You may drag the nodes to
+resize the ellipse, drag the centerpoint to move the figure, drag the
+handles attached to each node to distort the circle, and/or use the
+rotate buttons from the accompanying dialog to rotate the shape. Once
+the overall shape, size and placement are satisfactory, click on the
+OK button in the dialog and the shape will be drawn and filled.
+}
+{H310 (POLYGON Tool)
+
+^RPolygons^r
+
+
+Drawing multi-sided figures is greatly simplified by using the tools
+found under this icon button.
+
+
+Clicking a second time on the icon will drop down the Polygon menu.
+
+
+The thickness of the line may be selected using the ^LSize=H520^l Selector
+box. The color and/or pattern for the lines and interior of the shape
+will be as in the Current ^LColor/Pattern=H530^l Selection Box.
+
+
+The Polygon Tools are:
+
+
+^T2 ^LREGULAR POLYGON=H311^l
+
+^T2 ^LFREEFORM POLYGON=H312^l
+
+^T2 ^LEDITABLE REGULAR and FREEFORM=H313^l Polygons
+}
+{H311 (POLYGON - Regular)
+
+^RRegular Polygon^r
+
+
+The selection appearing at the top of the ^LPolygon=H310^l menu is the
+Regular Polygon tool. To construct an object using this tool, move the
+mouse cursor to a point where an angle in your object will occur. Press
+and hold the left mouse button and drag the line for the first side.
+When the line reaches the desired length and position, release the
+mouse. Next, move the mouse to the point where the second side will
+terminate. A rubber-band line will follow the cursor. When the second
+side has been correctly positioned, click once with the left mouse
+button to set the line. Continue constructing the sides of your object.
+
+
+When you click on the point at which you started, the Polygon will
+be complete, and the correct line width, color and object fill will be
+painted. You may also draw the last side by clicking once with the
+right mouse button.
+
+
+Note: Holding down the Shift key at any time while drawing a
+regular Polygon will cause the line being drawn to snap to a 45 degree
+increment.
+}
+{H312 (POLYGON - Freeform)
+
+^RFreeform Polygon^r
+
+
+The second selection from the top of the ^LPolygon=H310^l menu represents
+the Freeform tool. Use this to create complex, irregular shapes. As
+above, you must first determine a starting point. With the mouse cursor
+over this point, press and hold down the left mouse button. While still
+holding down the button, slowly drag the mouse to outline your object.
+When you have come around again to the starting point (or close by),
+release the button and your object will be drawn. NeoPaint will draw a
+straight line between the starting point and the point at which you
+release the mouse button.
+}
+{H313 (POLYGON - Editable)
+
+^REditable Polygons^r
+
+
+The third and fourth icons appearing in the ^LPolygon=H310^l menu are
+versions of the first two which give you a chance to adjust the object's
+outline before the final figure is drawn. To use these two tools, draw
+as for ^LRegular=H311^l and ^LFreeform=H312^l Polygons. Once you have completed the
+object, an outline will appear with a node (shown as small boxes) appear-
+ing at each angle. Use the mouse to ^Ldrag=H134^l the nodes to expand or
+contract the outline as desired. As you move these, the outlines will
+stretch or shrink. Should you need to add a node, simply position the
+mouse cursor over the point on the outline where you would like a new
+node to appear, then press the left mouse button. To delete a node, move
+the mouse cursor over the unwanted node. Holding down the CTRL key,
+press the left mouse button and the node will disappear.
+
+
+You may also drag the centerpoint to reposition the entire shape, and
+use the rotate buttons from the accompanying dialog to rotate the figure.
+}
+{H320 (3-D Tool)
+
+^RThree Dimensional Object Tools^r
+
+
+Clicking a second time on this icon will allow you to quickly and
+easily construct either 3-D rectangles, pyramids, etc.
+
+
+Once you have selected either the cube or pyramid tool, place the
+object onto the drawing board by clicking at one corner and dragging to
+the proper size before releasing the mouse button. You may also draw the
+cubes or pyramids starting from the center point, if the 
+Draw from ^LCenter=H179^l mode has been enabled under the Options menu button. 
+Depending on which tool you have selected, this initial side will be either one
+side of a box, the base of a pyramid, or the first line of a freeform 
+object. If using the freeform tool (the bottom tool on the toolbar),
+continue clicking to establish the perimeter of one face of the object 
+(you will be given an opportunity to edit and position the object before
+continuing). 
+
+
+Line and Fill attributes are determined by values selected in the
+^LSize=H520^l Selector box and the Current ^LColor/Pattern=H530^l Selection Box.
+
+
+Once you have defined the dimensions of the first side, a dialog
+window containing several editing buttons will be presented:
+
+
+^T2 ^LRotation Buttons=H321^l
+
+^T2 ^LExtrude Object=H322^l
+
+^T2 ^LOptions=H326^l
+
+
+Once you have customized the object to the your satisfaction, click on the OK
+button to place the object in your picture.
+}
+{H321 (3-D ROTATE)
+
+^RRotation Buttons^r
+
+
+You can rotate your object along any combination of the X axis
+(vertical through the center from top to bottom), Y axis (horizontal
+through the center of the sides), and/or Z axis (through the center from
+front to back). Use the arrow buttons to rotate the ^L3-D object=H320^l into the
+desired position.
+}
+{H322 (3-D EXTRUDE)
+
+^RExtrude Object^r
+
+
+A pair of buttons allow you to extrude your ^L3-D object=H320^l to make it
+longer or shorter. Use the arrow buttons to increase or decrease the
+length of the object button to make the object thinner.
+}
+{H326 (3-D OPTIONS)
+
+^R3-D Options^r
+
+
+A check-off box allows you to work with your ^L3-D object=H320^l in either a
+"Solid" mode with hidden lines removed and fills shown, in a "Wire
+Frame" mode which presents the object as transparent showing all edges
+while being edited, or in "Actual" mode, which also shows the line
+width, colors and patterns. Note that if, however, you wish to draw a 
+hollow 3-D object, use the ^LHollow/Solid=H540^l Selector box to specify Hollow 
+drawing mode.
+
+
+You can click on the Rotation Angle box to increase or decrease the
+degree the object will move along each axis.
+
+
+Note: You can increase the speed by rotating in Wire Frame rather
+than "solid" mode. Rotations can be further accelerated by specifying
+a Rotation Angle of 45 degree, or a multiple thereof.
+}
+{H001 (INDEX)
+
+^RINDEX^r
+
+
+^L3-D object=H320^l
+
+^BA^b
+
+^LABOUT NEOPAINT=H121^l
+
+^LADJUST CONTRAST=H113^l
+
+^LADJUST PALETTE=H114^l
+
+^LAirbrush=H122^l
+
+^BB^b
+
+^LBlender=H226^l
+
+^LBrushes=H230^l
+
+^BC^b
+
+^LCharcoal=H222^l
+
+^LCircles=H300^l
+
+^LCLEAR=H161^l
+
+^LClone tool=H227^l
+
+^LClone options=H702^l
+
+^LCLOSE=H602^l
+
+^LCLOSE ALL=H603^l
+
+^LColor Palette=H550^l
+
+^LColor Sampler=H210^l
+
+^LCOLOR SIMILARITY=H703^l
+
+^LColor, edit=H126^l
+
+^LCOPY=H153^l
+
+^LCOPY TO=H109^l
+
+^LCrayon=H223^l
+
+^LCROP=H157^l
+
+^LCUT=H152^l
+
+^BD^b
+
+^LDELETE=H155^l
+
+^LDELETE IMAGE=H578^l
+
+^LDISTORT/SKEW=H167^l
+
+^LDOS SHELL=H187^l
+
+^LDrawing board=H570^l
+
+^LDRAW FROM CENTER=H179^l
+
+^BE^b
+
+^LEdit Menu=H150^l
+
+^LEDIT SCREEN=H168^l
+
+^LEFFECTS=H115^l
+
+^LEllipse=H305^l
+
+^LElliptical Scissors/Selector=H376^l
+
+^LErasers=H380^l
+
+^LEXIT=H108^l
+
+^BF^b
+
+^LFile Menu=H140^l
+
+^LFill=H240^l
+
+^LFLIP HORIZ.=H163^l
+
+^LFLIP VERT.=H164^l
+
+^LFont Selector=H124^l
+
+^BG^b
+
+^LGradient Fill=H243^l
+
+^LGradient Options=H701^l
+
+^BH^b
+
+^LHelp Menu=H180^l
+
+^LHighlighter=H220^l
+
+^LHollow/Solid=H540^l
+
+^BI^b
+
+^LImage Conversion=H700^l
+
+^LINVERT=H162^l
+
+^BL^b
+
+^LLines=H270^l
+
+^LLOAD PALETTE=H103^l
+
+^LLOAD PATTERNS=H105^l
+
+^BM^b
+
+^LMain Menu=H139^l
+
+^LMarker tool=H220^l
+
+^LMicroscope=H200^l
+
+^LMOUNT=H580^l
+
+^LMouse=H131^l
+
+^BN^b
+
+^LNEW=H100^l
+
+^LNeoBook=H129^l
+
+^BO^b
+
+^LOil Paint=H228^l
+
+^LOPEN=H101^l
+
+^LOptions Menu=H170^l
+
+^BP^b
+
+^LPaint tube=H240^l
+
+^LPASTE=H154^l
+
+^LPASTE FROM=H110^l
+
+^LPattern, edit=H127^l
+
+^LPatterns=H560^l
+
+^LPICTURE INFO=H116^l
+
+^LPicture Menu=H160^l
+
+^LPolygons=H310^l
+
+^LPRINT=H107^l
+
+^BQ^b
+
+^LQuill Pen=H229^l
+
+^LQuikMenu=H130^l
+
+^BR^b
+
+^LRectangles=H280^l
+
+^LROTATE=H111^l
+
+^LRounded rectangle=H290^l
+
+^BS^b
+
+^LSAVE=H102^l
+
+^LSAVE AS=H601^l
+
+^LSAVE PALETTE=H104^l
+
+^LSAVE PATTERNS=H106^l
+
+^LSCALE=H112^l
+
+^LScissors Selection=H370^l
+
+^LSET COLOR CONVERT=H579^l
+
+^LSET PREFERENCES=H119^l
+
+^LSET TILE FILL=H118^l
+
+^LSHOW CLIPBOARD=H156^l
+
+^LSHOW PREVIEW=H166^l
+
+^LSHOW SCREEN=H116^l
+
+^LSmudge tool=H225^l
+
+^LSNAP TO GRID=H171^l
+
+^LSpecialty tools=H221^l
+
+^LSpray can=H122^l
+
+^LSquares=H280^l
+
+^LStamp Pad=H260^l
+
+^LSyringe=H210^l
+
+^LSYSTEM INFO=H120^l
+
+^BT^b
+
+^LTest Colors=H557^l
+
+^LText Tool=H390^l
+
+^LThree-D object=H320^l
+
+^LTRANSPARENT CUTOUTS=H178^l
+
+^LTRANSPARENT PATTERNS=H401^l
+
+^BU^b
+
+^LUNDO=H151^l
+
+^BV^b
+
+^LVideo Mode=H125^l
+
+^LVIEW README.DOC FILE=H181^l
+
+^BW^b
+
+^LWatercolor tool=H224^l
+
+^BZ^b
+
+^LZoom=H200^l
+
+}
+{H900 (UNDERLINED)
+
+Yep, that was an underlined word all right!
+
+
+^T2 ^LReturn to HELP=H002^l
+}
+

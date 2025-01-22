@@ -1,0 +1,69 @@
+                RAR - What's new in the latest version
+
+
+   Version 3.20
+
+   1. 'rn' command allows to rename files inside of RAR archives.
+
+   2. 'lb' and 'vb' commands list contents of archive in the bare mode -
+      file names without any additional information.
+
+   3. RAR displays the operation percentage when creating recovery
+      volumes or reconstructing missing or corrupt volumes.
+
+
+   Version 3.11
+
+   1. RAR returns the exit code 9 in case of file create errors.
+
+   2. Bugs fixed:
+
+      a) -ag command line switch placed an incorrect value to minutes
+         field.
+
+
+   Version 3.10
+
+   1. New 'i' command allows to search for text string in archives.
+
+   2. Repair command:
+
+      a) "Repair" is able to correct data erasure and insertion
+         errors in RAR archives containing the recovery record.
+         Earlier it was possible to fix only those errors, when
+         an archive size was not changed;
+
+      b) It is allowed to specify wildcards in the archive name
+         and repair several archives at once.
+
+   3. Recovery volumes:
+
+      a) RAR attempts to reconstruct both missing and damaged
+         volumes. Original copies of damaged volumes are renamed
+         to *.bad. Previous version was able to reconstruct only
+         missing volumes;
+
+      b) RAR automatically detects corrupt recovery volumes
+         and ignores them;
+
+      c) Recovery volumes naming scheme changed from <name>N1_N2_N3.rev
+         to less complicated <name>N.rev, where 'N' is the number of
+         volume. Old style recovery volumes are also recognized and
+         supported.
+
+   4. Compression improved when adding small text files to already
+      existing archive using -m5 or -mct+ modes.
+
+   5. New 'N' (archive number) modifier for -ag switch.
+
+      RAR searches for already existing archive with a generated name
+      and if it is found, increments the archive number until generating
+      a unique name. For example, if you use -agyymmdd-nn several
+      times in the same day, every new archive name will include a new
+      increasing number.
+
+   6. If rarfiles.lst contains such two masks that all files matched
+      by first mask are also matched by second, the first mask will
+      have higher priority, even if it is placed after the second.
+      For example, in case of *.cpp and f*.cpp masks, f*.cpp has higher
+      priority.

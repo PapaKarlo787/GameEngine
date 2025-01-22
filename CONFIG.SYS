@@ -1,0 +1,7 @@
+lastdrive=Z
+files=10
+buffers=10
+dos=high,umb
+device=himem.sys
+stacks=9,256
+device=c:\util\gmouse.sys

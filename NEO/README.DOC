@@ -1,0 +1,836 @@
+
+                     NeoPaint - Version 3.2
+                    (C)1992-96 NeoSoft Corp.
+
+                    * IMPORTANT INFORMATION *
+
+--------
+CONTENTS
+--------
+
+* About NeoPaint
+* New Features in Version 3.0/3.1
+* New Features in Version 3.2 - GIF Returns!
+* System Requirements
+* Supported Video Cards
+* Starting NeoPaint
+* Command Line Options
+* NeoGrab Screen Capture Utility
+* Optimizing NeoPaint
+* Acquiring Additional Fonts
+* Acquiring Additional Stamps
+* Special Effect Considerations
+* Mouse Driver Mysteries
+* Problem Images
+* Customer Services & Technical Support
+* Purchasing/Registering NeoPaint
+* Limited Warranty
+* Other Products from NeoSoft
+
+
+--------------
+ABOUT NEOPAINT
+--------------
+
+NeoPaint is the ultimate image editing program for DOS!
+Until now sophisticated image editing has required
+spending hundreds of dollars on software and hardware. At
+$45 (U.S.), NeoPaint sets a new standard in
+price/performance. NeoPaint is as simple to use as any
+paint program, yet with many powerful features usually
+found only in high-end picture publishing systems. Better
+still, NeoPaint is NOT a Microsoft Windows program, so
+it's easy to install, set up and use. NeoPaint's state of
+the art GUI interface allows you to edit and view
+multiple images at the same time in resolutions as high
+as 1024x768.
+
+When you compare NeoPaint with high end graphics packages
+costing hundreds of dollars we think you'll discover that
+NeoPaint gives you tremendous power at any price!
+
+NEOPAINT FEATURES:
+-----------------
+
+o   File Formats: PCX, TIFF, BMP and GIF
+
+o   Video Modes: Hercules (720x348x2), EGA (640x350x16),
+    VGA (320x200x256, 640x480x2, 640x480x16), Super VGA*
+    (640x480x256, 800x600x16, 800x600x256, 1024x768x256)
+
+o   Multiple Images: View and Edit multiple images in
+    adjustable on-screen windows
+
+o   Drawing Tools: Brush, Air Brush, Eraser, Color
+    Eraser, Flood Fill, Tile Fill, Gradient Fill, Color
+    Convert, Text, Line, Bezier Line, K-Line, Rectangle,
+    Rounded Rectangle, Ellipse/Circle, Polygon, Freehand
+    Polygon, Editable Polygon, Grid, 3D Cube, 3D Pyramid,
+    Gradient Rectangle, Gradient Ellipse/Circle, Magic
+    Marker, Smudge Tool, Blend Tool, Charcoal Pencil,
+    Crayon, Water Color Brush, Oil Brush, Quill Pen,
+    Clone, Color Similarity, Stamp Pad, Solid and
+    Transparent Patterns
+
+o   Fonts: Multiple Styles and Sizes with Bold, Italic,
+    Underline, Outline and Shadow effects; Additional
+    fonts available from NeoSoft and third party vendors
+
+o   Selection Tools: Rectangle, Polygon and Freehand
+    Polygon/Lasso, Bezier Ellipse (Transparent and Solid)
+
+o   Effects: Invert, Flip, Rotate, Scale, Stretch, Skew,
+    Distort, Acid Wash, Average, Blend, Border, Emboss,
+    Equalize, Soften, Screen, Smear, Pixelize, Lattice,
+    Blur, Darken, Lighten, Fade, and more.
+
+o   Zoom: Multilevel Zoom allows precise editing;
+    Scrolling and most drawing tools also work in Zoom
+    Mode.
+
+o   Color Control: Works with 2, 16, 256, 32K, 64K and 16
+    Million Color Images; Color Balance, Brightness,
+    Contrast and Color Reduction/Conversion are supported
+
+o   Output: Supports over 300 printers! Produce high
+    quality halftones on HP DeskJet, HP LaserJet and
+    Postscript or compatible printers; Scaling and
+    Orientation controls; also supports Epson/IBM
+    compatible dot matrix and color printers such as HP
+    DeskJet 500/550C.
+
+o   Memory Management: Supports Expanded (EMS), Extended
+    (XMS) and Virtual Disk Memory for working with very
+    large images
+
+
+------------
+NEW FEATURES
+------------
+
+The following features are new to version 3.0:
+
+o   Support for additional video cards and chipsets (see
+    System Requirements below for details)
+o   24-Bit/True Color (paint with 16 million colors on
+    supported video cards)
+o   320x200x256 Mode (256 colors on a standard VGA card)
+o   Read/Write BMP files (Windows and OS/2 formats)
+o   DOS Shell (File menu)
+o   1ø Image Rotation (Picture menu)
+o   Free Form 3D Objects (below 3-D Cube icon)
+o   New Gradient Fill Type (Pyramid)
+o   NeoGrab Screen Capture utility now works in Text Mode
+o   Image Preview added to Palette/Contrast Adjustment
+    tools
+o   Circular Selection Tool (below Scissors icon)
+o   Mount option to change paper size of existing
+    images/cutouts (Edit menu)
+o   Quill Pen Tool (below Marker icon)
+o   Oil Brush Tool (below Marker icon)
+o   Improved Water Color Brush Tool (below Marker icon)
+o   First and last palette colors are no longer required
+    to be black and white
+o   Enhanced Palette Editor (File menu)
+o   Enhanced Pattern Editor (File menu)
+o   Enhanced Special Effect filters (twice as many as
+    before and their faster!)
+o   Image/File Delete Function (File menu)
+o   ASCII Text Import (draw a box with text tool)
+o   Moveable Text Entry Field
+o   Fly-Out Palettes
+o   Window Iconize (new button on window title reduces
+    image to a small icon)
+o   Faster Printing w/multiple copies
+o   Improved/Faster Special Effects
+o   Stamp Directory may be changed from within Stamp Pad
+    dialog. Removed option from Preferences.
+o   Font Directory may be changed from within Font
+    dialog. Removed option from Preferences.
+o   Use the shift key with the Color Eraser to replace
+    target color with the line or fill color instead of
+    white.
+o   Option added to the Airbrush Setup that allows the
+    airbrush to fade from one color to another.
+o   We've also added dozens of other small enhancements
+    not listed here...
+
+The following features are new to version 3.1:
+
+o   Added support for 32K and 64K High Color video modes.
+
+o   Removed support for GIF image files. Unisys, patent
+    holder for the LZW compression used in this format,
+    required that royalties be paid for every copy of
+    NeoPaint sold after January 1, 1995. Since everyone
+    had been led to believe that GIF was a free public
+    domain format, we felt that it was unfair to suddenly
+    require royalties. If royalties had been required
+    since GIF's introduction, it would never have
+    attained the level of popularity it now enjoys.
+
+The following features are new to version 3.2:
+
+o   Restored support for GIF images files. NeoSoft and
+    Unisys, patent holder for the LZW compression used in
+    GIF files, reached an agreement that allows NeoPaint
+    to once again support the popular GIF format.
+
+
+-------------------
+SYSTEM REQUIREMENTS
+-------------------
+
+To use NeoPaint you will need the following:
+
+o   IBM PC, XT, AT, PS/2 or 100% compatible computer. A
+    286 or better CPU is recommended.
+
+o   EGA, VGA, Super VGA, Hercules monochrome or
+    compatible graphics card and monitor. See Supported
+    Video Cards below for information on compatible Super
+    VGA cards.
+
+o   640K minimum RAM
+
+o   A hard disk
+
+o   MS-DOS, PC-DOS 3.1 (or higher) or DR-DOS
+
+o   Microsoft, Logitech or compatible pointing device
+
+o   Printer (optional)
+
+
+---------------------
+SUPPORTED VIDEO CARDS
+---------------------
+
+NeoPaint will run on any computer system equipped with a
+100% compatible EGA, VGA, Super VGA or Hercules graphics
+card. To operate NeoPaint in 256 or 16 Million color
+video modes, you must have a Super VGA video card
+equipped with one of the following chipsets (or a close
+compatible):
+
+Advance Logic
+Ahead Systems
+ATI
+Cirrus Logic
+Compaq QVision
+Oak
+Paradise/Western Digital
+S3*
+Trident
+Tseng ET3000
+Tseng ET4000
+Video Seven
+Weitek
+XGA
+or any VESA compatible chipset.
+
+* Some S3 video cards require special command line
+options in order to work properly with NeoPaint. If you
+have an S3 chipset and you experience problems, contact
+NeoSoft Technical support (541) 389-5489.
+
+NOTE: There may exist either now or in the future, video
+cards based on revisions of the above chipsets which may
+not be recognized by this version of NeoPaint. If you
+experience problems related to your video card, please
+contact NeoSoft Technical support (541) 389-5489.
+
+CGA USERS: Due to severe limitations inherent in their
+design, CGA video cards are not supported. This includes
+many Tandy 1000 systems which are essentially CGA.
+
+
+-----------------
+STARTING NEOPAINT
+-----------------
+
+For the steps below, we assume that you have installed
+NeoPaint in the directory C:\NEOPAINT. If you installed
+NeoPaint in a different DOS subdirectory, then substitute
+that name for C:\NEOPAINT below.
+
+o   Your mouse driver (usually MOUSE.COM) must be loaded
+    before running NeoPaint. Please refer to your mouse's
+    user manual for more information.
+
+o   To change to the NeoPaint directory, at the DOS
+    prompt (C:\), type CD\NEOPAINT and press Enter. This
+    places you in the NeoPaint subdirectory.
+
+o   Once you have switched to the proper directory,
+    NeoPaint can be started from the DOS command line by
+    typing NEOPAINT followed by the Enter key.
+
+
+--------------------
+COMMAND LINE OPTIONS
+--------------------
+
+You can specify several command options when starting
+NeoPaint. An option consists of a slash (/) followed by
+an option letter and information about that option.
+
+LOADING NEOPAINT'S OVERLAY INTO EXPANDED MEMORY
+-----------------------------------------------
+
+USAGE:      /E
+
+EXAMPLE:    NEOPAINT /E
+
+PURPOSE:    NeoPaint's overlay file (NEOPAINT.OVR) can be
+            loaded into expanded memory, thus speeding up
+            execution of some NeoPaint functions. When
+            exiting NeoPaint the overlay is removed from
+            memory. This option requires approximately
+            400K of expanded (EMS) memory.
+
+NETWORK SETUP FILES
+-------------------
+
+USAGE:      /S[file]
+
+EXAMPLE:    NEOPAINT /Sf:\users\cindy.set
+
+PURPOSE:    Normally NeoPaint stores its setup information
+            in the NEOPAINT.SET file in the NeoPaint
+            directory. This file contains information
+            about the default settings such as video mode
+            and memory usage options. In a multi-user
+            environment with PCs of vastly different
+            configurations it is necessary to specify
+            setup files for different users and/or
+            different machine types. The /S option allows
+            users to load NeoPaint with their own
+            personalized setup file.
+
+            For example: if Cindy keeps her personal files
+            in the PAINT directory on her C: drive then
+            she might start NeoPaint by typing:
+
+            NEOPAINT /Sc:\paint\cindy.set
+
+DISABLE DOS SHELL
+-----------------
+
+USAGE:      /H
+
+EXAMPLE:    NEOPAINT /H
+
+PURPOSE:    This option disables the DOS Shell selection
+            from the File Menu.
+
+DISABLE PREFERENCES
+-------------------
+
+USAGE:      /P
+
+EXAMPLE:    NEOPAINT /P
+
+PURPOSE:    This option disables access to the Set
+            Preferences selection in the Options menu,
+            thus preventing a user from changing the
+            setup.
+
+LOADING IMAGES FROM THE COMMAND LINE
+------------------------------------
+
+You can also load images into Neopaint directly from the
+DOS command line. Simply run NeoPaint with the names of
+the files you wish to load as parameters. For example:
+
+NEOPAINT  C:\PCX\VANGOGH.PCX  C:\BMP\IRISES.BMP
+
+You may load as many files as will fit on the DOS command
+line.
+
+
+------------------------------
+NEOGRAB SCREEN CAPTURE UTILITY
+------------------------------
+
+Included as part of the NeoPaint Package is an easy-to-
+use screen capture utility called NeoGrab. NeoGrab will
+capture graphics or text displayed on your monitor and
+convert it into PCX format files which may be used in
+NeoPaint and other programs.
+
+To load NeoGrab, at the DOS prompt type:
+
+NEOGRAB [Options]
+
+To capture a graphics or text screen, press <Ctrl> <Print
+Screen>. A small prompt like the one below will appear in
+the center of your screen:
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³ Press ENTER to capture entire screen, ³
+³ F1 to select area or ESC to cancel.   ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+Press ENTER to capture the entire screen not including
+the NeoGrab prompt. F1 will allow you to select a
+rectangular portion of the screen using your mouse. Two
+short beeps means the screen was captured successfully.
+One long beep means an error occurred and the screen
+could not be captured. An error will occur if you are in
+an unsupported graphics mode or if your disk is full.
+NeoGrab supports all standard video modes and most super
+VGA modes so you shouldn't have any trouble using it with
+popular software. NeoGrab will not, however, work with
+Microsoft Windows.
+
+Screen captures are stored as PCX files and placed in the
+directory where the NEOGRAB.EXE file is located. Files
+are numbered sequentially starting with 00000001. For
+example the first captured screen will be named
+00000001.PCX the second 00000002.PCX and so on. NeoGrab
+will not delete files to make room - it simply selects
+the next available file name in the sequence. Deleting
+files is up to you.
+
+NEOGRAB COMMAND LINE OPTIONS
+----------------------------
+
+You can specify several options when starting NeoGrab. An
+option consists of a forward slash (/) followed by an
+option letter.
+
+ALTERNATE HOTKEY
+----------------
+
+USAGE:      /K
+
+EXAMPLE:    NEOGRAB /K
+
+PURPOSE:    Changes the hotkey from the default <Ctrl>
+            <Print Screen> to <Alt> <Scroll Lock>. This is
+            useful if another program is already using the
+            default hotkey.
+
+SPECIFY CAPTURE PATH
+--------------------
+
+USAGE:      /P[path]
+
+EXAMPLE:    NEOGRAB /Pc:\pcx
+
+PURPOSE:    This option allows you to specify a drive and
+            directory for captured PCX images. By default
+            captured screens are stored in the directory
+            that contains the NEOGRAB.EXE file.
+
+UNLOADING NEOGRAB
+-----------------
+
+USAGE:      /U
+
+EXAMPLE:    NEOGRAB /U
+
+PURPOSE:    Use this option to unload NeoGrab from memory.
+            This will only work if NeoGrab is the last TSR
+            loaded in memory.
+
+BYPASSING THE NEOGRAB PROMPT
+----------------------------
+
+USAGE:      /B
+
+EXAMPLE:    NEOGRAB /B
+
+PURPOSE:    Causes NeoGrab to automatically capture the
+            entire screen and does not display the "Press
+            ENTER to capture the entire screen, or F1
+            to..." message.
+
+
+-------------------
+OPTIMIZING NEOPAINT
+-------------------
+
+NeoPaint has been designed to run acceptably on a wide
+range of DOS based systems and will automatically try and
+take optimal advantage of all supported hardware
+resources available to it. Some machines have processing
+speed, disk space, and memory limitations which will
+affect how NeoPaint can perform. Graphics programs by
+their nature are demanding of system resources. Some
+images, particularly 256 and 16 million color pictures in
+larger sizes, can easily use more than 1 megabyte of
+memory and storage space.
+
+If you have a system with speed and memory limitations,
+one or more of the following suggestions may offer
+relief:
+
+o   If you have a choice between configuring your
+    system's memory as either EMS (expanded memory) and
+    XMS (extended memory) on your system, use EMS for
+    NeoPaint. Using EMS memory can dramatically speed up
+    many NeoPaint functions including rotating, flipping
+    and special effects.
+
+o   If you're using a memory manager (such as QEMM,
+    386Max or EMM386) that draws EMS and XMS from the
+    same pool, turn EMS on and XMS off in NeoPaint.
+    Select Options/Preferences/Miscellaneous from the
+    main menu to modify NeoPaint's memory management.
+    This will free up some valuable conventional memory
+    and speed up many of NeoPaint's functions.
+
+o   Turn off the UNDO command under the SET PREFERENCES
+    selection in the OPTIONS menu. UNDO keeps a record of
+    the image prior to the last change you made. This
+    takes up memory. If your system has limited RAM and
+    disk memory available, you may want to disable this
+    in any case. If your system is limited to 640K of
+    RAM, then UNDO may use your hard disk to store
+    changed items. Using hard disk storage is slower than
+    using RAM, and turning off UNDO will increase
+    NeoPaint's performance.
+
+o   Do not run NeoPaint as a DOS application under
+    Windows. Windows will slow NeoPaint's execution, as
+    Windows will still be using up your system's
+    resources while NeoPaint is running. If you do need
+    to run NeoPaint from Windows, use the included
+    NEOPAINT.PIF file located in your NeoPaint directory.
+    Refer to your Microsoft Windows documentation for
+    more information about PIF files.
+
+o   If disk storage space is a problem (and in many cases
+    even if you have plenty of disk space) turn off the
+    CREATE BACKUP FILES function in the PREFERENCES
+    selection of the OPTIONS menu. Graphic files tend to
+    take up a large amount of disk space, and creating a
+    backup file (.BAK) each time you SAVE a picture can
+    rapidly deplete the free space available on your
+    drive. You might want to turn this feature back on,
+    however, when working with particularly important
+    images.
+
+o   Try using the 640x480 VGA resolution in 16 colors as
+    your default. Some video cards use a TSR program to
+    display VESA compatible higher resolutions. Using a
+    TSR program is a much slower method of interacting
+    with your hardware.
+
+o   When using the 3-D OBJECT icon, use the Wire Frame
+    mode.
+
+o   Turn the PREVIEW option off for STAMP PAD images.
+
+If none of the above seem to help, you may wish to
+consider upgrading your system's hardware. Four hardware
+options are listed below, in ascending order of cost:
+
+o   Add 2 or more megabytes of (RAM) memory to your
+    system. NeoPaint supports both the XMS and EMS
+    specifications.
+
+o   Add a larger, faster hard drive.
+
+o   Upgrade your CPU.
+
+
+--------------------------
+ACQUIRING ADDITIONAL FONTS
+--------------------------
+
+NeoPaint comes with a variety of fonts. Additional fonts
+are available from NeoSoft. Our Font Pack contains three
+720K diskettes full of typefaces. The ORDRFORM.TXT file
+located in your NeoPaint directory contains pricing and
+ordering information for the Font Pack.
+
+Third party software that can generate GEM screen fonts
+(used by the DOS version of Ventura Publisher) may also
+be used to create fonts for NeoPaint. Simply follow the
+program's instructions for generating screen fonts. Copy
+the fonts to your NeoPaint directory and rename them so
+that they use the .GFT extension.
+
+The NeoSoft Bulletin Board also contains a utility
+program that converts Microsoft Windows True Type fonts
+into NeoPaint compatible fonts. Our BBS is open 24 hours
+at (541) 383-7195 (N81,300-14.4)
+
+
+---------------------------
+ACQUIRING ADDITIONAL STAMPS
+---------------------------
+
+If you're interested in acquiring additional stamps for
+NeoPaint's Stamp Pad tool - you're in luck! NeoSoft has
+created a NeoPaint Stamp Collection with tons of high
+quality professional stamps. The ORDRFORM.TXT file
+located in your NeoPaint directory contains pricing and
+ordering information for the Stamp Collection.
+
+
+-----------------------------
+SPECIAL EFFECT CONSIDERATIONS
+-----------------------------
+
+With the advent of 15, 16 and 24 bit color, NeoPaint now
+includes a number a new special effects. Without the
+restrictions of 16 and 256 color fixed palettes these
+effects can produce spectacular results. However, if you
+are working with 16 or 256 color images, the palettes
+used by these images will greatly influence the effect
+and in some cases produce totally unexpected results.
+
+
+----------------------
+MOUSE DRIVER MYSTERIES
+----------------------
+
+If your mouse behaves strangely when using NeoPaint, you
+may need to update your mouse driver software. Problems
+such as an invisible cursor or a pointer that leaves a
+trail of pigment on the screen are typical of certain
+older mouse drivers. Contact the computer store where you
+purchased your mouse or the manufacturer for information
+about updating your mouse driver.
+
+
+--------------
+PROBLEM IMAGES
+--------------
+
+NeoPaint is designed to read and write the popular PCX,
+TIFF, BMP and GIF file formats. We tested literally
+hundreds of images during the design phase of NeoPaint.
+However, even with the best testing, it's entirely
+possible that there are some images that either don't
+follow the rules or employ a compression algorithm that
+is not supported by NeoPaint.
+
+During our research we discovered, much to our surprise,
+that there is no real consensus or standard among
+programs that use 16 Color TIFF images. Images created by
+one program frequently cannot be loaded by another
+program. With NeoPaint we employed what we believed to be
+the most popular format for 16 color TIFF images. If you
+have problems using 16 color TIFF images with other
+programs, try saving them as PCX, BMP or GIF files
+instead. 2 color and 256 color TIFF images are not
+effected by this problem.
+
+Another dilemma facing connoisseurs of TIFF images is the
+fact that there are so many different types. At last
+count there were over 30 distinct dialects of TIFF. It
+would be a tremendous task for NeoPaint to support all
+those varieties. Even the most expensive image processing
+software only support a few TIFF formats. So if you run
+across a TIFF image that is unreadable then you may need
+to translate it into a more basic format first. Better
+yet use PCX, BMP or GIF files! All formats, PCX, BMP,
+TIFF and GIF, are exactly the same when it comes to image
+quality, but vastly different when if comes to
+compatibility.
+
+If you happen to run across an image file in either PCX,
+TIFF, BMP or GIF format that you are unable to load with
+NeoPaint, upload the file to our BBS (541) 383-7195
+(N/8/1/300-14.4) or place the image on a diskette and
+mail it to:
+
+NeoSoft Corp.
+Customer Support
+354 NE Greenwood Avenue, Suite 108
+Bend, Oregon 97701-4631
+
+Include a brief note describing the image, where it came
+from and if possible what program was used to create it.
+
+
+-------------------------------------
+CUSTOMER SERVICES & TECHNICAL SUPPORT
+-------------------------------------
+
+NeoSoft provides its registered software customers with
+free technical support. We also provide limited technical
+support to persons evaluating our products during the 30
+day evaluation period.
+
+We do, however, strongly encourage people to register.
+Software development and support is very expensive and we
+need your help if we are to continue to provide quality
+programs at affordable prices. If you haven't already,
+please take a few moments to register. This will assure
+you of eligibility for technical support, product update
+notification, special discounts, announcements, etc.
+
+If you should encounter a technical problem or question
+not covered in the manual, you may use one of the
+following avenues to obtain technical assistance:
+
+MAIL POSTAL CORRESPONDENCE TO:
+------------------------------
+
+NeoSoft Corp. 
+Customer Support 
+354 NE Greenwood Avenue, Suite 108 
+Bend, OR 97701-4631 
+U.S.A.
+
+TELEPHONE SUPPORT:
+------------------
+
+Technical support and product update information are
+available between the hours of 9:00 AM and 5:00 PM
+(Pacific Standard Time), Monday through Friday.
+
+Please have the following information available for the
+support staff when you call:
+
+o   Brand name and model of your computer system, mouse,
+    video adapter and monitor.
+
+o   Operating system (DOS) version number.
+
+o   A listing of the contents of your AUTOEXEC.BAT and
+    CONFIG.SYS files.
+
+o   A description of the problem, how it occurred, and
+    how to reproduce it.
+
+Telephone support may be obtained by calling (541)
+389-5489. You may also FAX your questions to (541)
+388-8221.
+
+ELECTRONIC BULLETIN BOARD SERVICE:
+----------------------------------
+Technical support, updates, product information and
+evaluation copies of all our products are available from
+the following on-line services:
+
+NeoSoft BBS:
+    (541) 383-7195 (N/8/1/300-14.4 Baud)
+
+CompuServe:
+    GO NEOSOFT
+
+Internet E-Mail:
+    techsup@neosoftware.com
+
+World Wide Web:
+    http://www.neosoftware.com/~neosft/
+
+
+-------------------------------
+PURCHASING/REGISTERING NEOPAINT
+-------------------------------
+
+If you purchased a registered copy of NeoPaint, then a
+registration card was included in the package. Please
+take a moment to fill out the lower portion of the card
+and mail it to: 
+
+NeoSoft Corp.
+Customer Registration
+354 NE Greenwood Ave. Suite 108
+Bend, Oregon 97701-4631.
+
+This will enter you as a registered user in our records
+and insure that you receive technical support, major
+upgrade notices and information about future products.
+
+If you received NeoPaint from a friend, BBS, catalog or
+anywhere other than from NeoSoft or an authorized
+commercial software dealer or distributor, you may
+evaluate the program for a period of up to 30 days before
+registering. To obtain a complete NeoPaint package
+including registration number and typeset manual call
+NeoSoft at (541) 389-5489. We can process your order with
+VISA, MasterCard, Discover or American Express over the
+phone. The purchase price of NeoPaint is $45 + $5 U.S.
+Mail or $9 FedEx 2 Day for shipping & handling. For
+international shipments: please include $7 Air Mail, or
+$19 FedEx for Canada and Mexico; and $12 Air Mail or
+$19 FedEx for all other nations. If you prefer, FAX
+your order to us at (541) 388-8221. If you would like to
+mail a check or money order, make sure it's drawn against
+a U.S. bank in U.S. funds. Our address is:
+
+NeoSoft Corp.
+354 NE Greenwood Ave. Suite 108
+Bend, Oregon 97701-4631.
+
+You may also purchase NeoPaint from any one of our many
+dealers world wide. For a list of dealers see the
+DEALER.DOC file accompanying this program.
+
+If you would like to give a copy of NeoPaint to a friend
+or associate please do so, but you may NOT give anyone
+your registration/serial number. We hope you enjoy the
+program and share it with your friends.
+
+
+----------------
+LIMITED WARRANTY
+----------------
+
+NEOSOFT CORP. WARRANTS THE PHYSICAL DISKETTE(S) PURCHASED
+FROM NEOSOFT TO BE FREE OF DEFECTS IN MATERIALS AND
+WORKMANSHIP FOR A PERIOD OF THIRTY (30) DAYS FROM THE
+DATE OF RECEIPT. IN THE EVENT NEOSOFT CORP. RECEIVES
+WRITTEN NOTICE FROM YOU OF DEFECTS IN MATERIALS AND
+WORKMANSHIP WITHIN THE WARRANTY PERIOD, NEOSOFT CORP.
+WILL REPLACE THE DEFECTIVE DISKETTE(S). DISKETTES MUST BE
+RETURNED TO: NEOSOFT CORP., CUSTOMER SERVICES, 354 NE
+GREENWOOD AVENUE, SUITE 108, BEND, OR 97701-4631. THE
+REMEDY FOR BREACH OF THIS LIMITED WARRANTY SHALL BE
+LIMITED TO REPLACEMENT OF DISKETTES AND SHALL NOT INCLUDE
+ANY OTHER DAMAGES. THE PUBLISHER MAKES NO WARRANTY
+CONCERNING THE FUNCTION OR FITNESS OF THIS PROGRAM AND
+ANY ACCOMPANYING FILES OR DOCUMENTATION. NEITHER NEOSOFT
+CORP., NOR ITS AUTHORIZED AGENTS SHALL BE LIABLE FOR
+CONSEQUENTIAL, SPECIAL, INDIRECT, OR OTHER SIMILAR
+DAMAGES OR CLAIMS, INCLUDING LOSS OF PROFITS OR ANY OTHER
+COMMERCIAL DAMAGES, AND IN NO EVENT WILL THE LIABILITY
+FOR DAMAGES TO YOU OR ANY OTHER PERSON EVER EXCEED THE
+PRICE PAID FOR THE LICENSE TO USE THE SOFTWARE,
+REGARDLESS OF ANY FORM OF THE CLAIM. NEOSOFT CORP.
+SPECIFICALLY DISCLAIMS ALL OTHER WARRANTIES, EXPRESSED OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+TRADEMARKS
+----------
+NeoSoft and NeoBook are trademarks of NeoSoft Corp.
+NeoPaint, NeoShow and PhantomScreen are registered
+trademarks of NeoSoft Corp. Other brand and product names
+mentioned herein are trademarks or registered trademarks
+of their respective companies.
+
+COPYRIGHT
+---------
+(C) NeoSoft Corp. 1993, 1996. All Rights Reserved.
+This software and all accompanying documentation are
+protected by both United States and International
+Copyright laws and treaties.
+
+
+---------------------------------
+OTHER GREAT PRODUCTS FROM NEOSOFT
+---------------------------------
+
+For information on the many exciting products available
+from NeoSoft please refer to the CATALOG.TXT file in your
+NeoPaint directory.
+
+Evaluation copies of most NeoSoft products can be
+obtained from better shareware disk vendors or downloaded
+from most major on-line services such as CompuServe (GO
+NEOSOFT), the Internet (http://www.neosoftware.com
+/~neosft/) or from the NeoSoft BBS service at (541)
+383-7195. For additional information, pricing or dealer
+information contact the NeoSoft Sales Department at (541)
+389-5489.
+
+-----------------------------------------
+Thank you for supporting NeoSoft Products

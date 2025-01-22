@@ -1,0 +1,700 @@
+FREQUENTLY ASKED QUESTIONS AND SOLUTIONS TO COMMON PROBLEMS
+===========================================================
+
+Q: Where is a new Warajevo home page?
+
+A: At http://www.void.demon.nl/warajevo/index.html
+
+---------------
+
+Q: Are there any bad points about Warajevo 2.51. compared to earlier releases?
+
+A: Not compared to releases 2.0. and 2.5. In comparing to 1.5, Warajevo 2.51
+   needs a bit of a faster computer (33 MHz or more) to work correctly.
+
+---------------
+
+Q: Is Warajevo 2.51. still a freeware program?
+
+A: Yes, absolutely, but read the next question.
+
+----------------
+
+Q: Is it possible to get the source files of the emulator?
+
+A: Yes, donate 80 DM or more to us, and you will get the sources.
+
+----------------
+
+Q: I have problems during loading from the tape using a Sound Blaster. Why?
+
+A: You must use a mixer setting program to turn off everything except the
+   line input on one channel (mono). Such programs are probably supplied
+   with your sound card, but loading through Sound Blaster is not very
+   reliable due to the very problematic timing of this sound card.
+
+---------------
+
+Q: How I can get the 'B G Services' tape interface?
+
+A: You can buy this interface from:
+
+   B G Services              Tel: (0181) 287 4180
+   64 Roebuck Road           Fax: (0181) 391 0744
+   Chessington
+   Surrey KT9 1JX
+
+   Or, you can make this interface by yourself using the diagram which may
+   be found in the file DIAGRAM.Z80 which is given with Lunter's Z80
+   emulator or can be downloaded from the following URL address:
+
+   ftp://ftp.nvg.unit.no/pub/sinclair/snaps/games/by-letter/d/diagram.zip
+
+---------------
+
+Q: Warajevo supports mixing of 80x86 machine code with Z80 code. Isn't this a
+   little bit insecure? The idea of downloading a Spectrum snapshot only to
+   find it had an 8086 virus bit in it that formatted my hard drive is a bit
+   worrying. Am I just being paranoid?
+
+A: An option is implemented for switching off the possibility of patching
+   80x86 code into Z80 code, for security (if this option is included, an
+   error message will appear if the emulator tries to switch into 8086 mode).
+   In release 2.0. the option had a bug, but now it works correctly.
+
+---------------
+
+Q: I have TR DOS - it is a disk operating system and is very popular among
+   the Speccy Fans in Russia (in Moscow in any case).  I have almost all
+   information about the hard/software for this DOS and have written some
+   programs which run better on it. There are many disk versions of the games.
+   It is not CP/M and it is not available on tape. Maybe you could include
+   this interface in the Warajevo program?
+
+A: We heard about TR-DOS at the same time we got the emulator SP_UKV.
+   However, we believe that a much better idea is to emulate more "official"
+   drives: microdrive and the disc drives of Spectrum +3 and +2A. Both
+   devices are produced by Sinclair Research and they are better supported
+   by software. Microdrive emulation code is already implemented, while
+   emulation of the Spectrum +3 is planned in the next release.
+
+---------------
+
+Q: I don't think (I don't want to think) that you have ignored the TR-DOS
+   interface due to a political reason...
+
+A: No, we haven't any political reason to ignore it!
+
+---------------
+
+Q: Which is the easiest way to load and run Spectrum-related file formats
+   (like Z80, SNA, BLK, SLT, SNP, TAP, TZX, VOC etc.) in the Warajevo
+   emulator?
+
+A: Enter the environment (by typing WARAJEVO), then click on the 'Start'
+   button (or press Alt+S if you have no mouse), select the file which you
+   want to load, then press 'OK'. The selected file will be immediately
+   loaded into the emulator and started if the file is a Z80, TAP or MDR, or
+   it will be converted into the Warajevo format, loaded and started. The
+   conversion is very fast, nearly instantaneous, except for the TZX and
+   VOC formats (they are a bit slower).
+
+---------------
+
+Q: Warajevo 2.51. now has nearly all the features of the registered version of
+   Lunter's Z80 emulator except the Disciple and Plus D interfaces and
+   Warajevo is free! Why you don't implement Disciple and Plus D emulation?
+
+A: Mainly because the Disciple and Plus D are copyrighted. We have no licence
+   to implement them.
+
+---------------
+
+Q: Why doesn't Warajevo 2.0. support perfect emulation of the AY chip
+   (the changing of noise pseudo-frequency and digital sound), like in the
+   X128 emulator (SAOM version)?
+
+A: We didn't even know about digitized sound effects until a few months ago.
+   In any case, we didn't have enough RAM to allocate buffers for sound
+   samples without various DOS memory extenders (DPMI etc.). We wanted to
+   prevent usage of any such extenders. In the meantime, however, we have
+   discovered one method which allows exact AY emulation without allocating
+   additional memory, so starting from release 2.5. exact emulation of the AY
+   chip is implemented.
+
+---------------
+
+Q: Why does Warajevo 2.0. create a huge temporary file during the loading of
+   TZX files?
+
+A: The reason is simple: shortage of RAM. Also, it is true that creating
+   a temporary file takes time, but loading it later will then be much faster
+   than in any other emulator. In release 2.51. TZX compatibility is
+   drastically improved and many bugs are removed.
+
+---------------
+
+Q: You say that TZX compatibility is improved. But some TZX files still don't
+   work...
+
+A: Be aware of the fact that starting from release 2.5 the rules of TZX
+   loading may be customized. The default settings allow very fast loading of
+   normal programs and slow loading of non-standard saved programs. However,
+   such settings do not achieve full compatibility. To enable full
+   compatibility, mark the checkbox 'Sample normal blocks rather than copy
+   them' in the 'TZX conversion setup' dialog, which is clear by default. Or,
+   put the switch /&T32767 into the main configuration file DEFAULT.CFG. For
+   more information, see the manual. If some TZX file fails after setting
+   this, use the axiom of existence: "There's always exists at least one
+   bug...".
+
+---------------
+
+Q: How I can speed up TZX loading without any loss of compatibility?
+
+A: Mark the checkbox 'Maximal loading speed' in the 'Speed' dialog in the
+   'Setup' menu in the environment, or use the /%LMAX switch.
+
+---------------
+
+Q: I have many programs in TAP formats, but when I try to start them using
+   'Start' button, they crash (especially demos). Why?
+
+A: Some programs need a 128K emulator, and some programs need a 48K emulator.
+   A .TAP file has no information as to which version of the emulator is
+   needed, so you must try both. Be aware of fact that some programs need a
+   128K emulator but load in '48 Basic'. Also, some 128K demos exist which
+   need a very special method for loading: go into '128 Basic', type
+   USR0 [ENTER], then LOAD "" [ENTER].
+
+---------------
+
+Q: A number of programs in TAP, and especially TZX, format crash during
+   loading when I try to load them using the 'Start' button. However, when I
+   then reset the emulator, rewind the tape file to the beginning and try
+   loading using LOAD "", they load and run correctly. Whats happening?
+
+A: Oh, this is a very ugly problem, but fortunately it is easily solvable.
+   Some protected programs expect that the initial screen attribute before
+   loading is black on white. When the 'Start' button is used, we set the
+   initial attributes to white on black (for an aesthetic reason). The
+   solution is easy: put the switch /Y56 into the configuration file
+   DEFAULT.CFG to override our attribute settings if you often have such
+   problems.
+
+---------------
+
+Q: I have a program 'Insane' which crashes on Warajevo, and works on all
+   other emulators. Why?
+
+A: Try loading in '48 Basic'. This program crashes in '128 Basic' even on a
+   real Spectrum 128K, but not on other emulators due to one effect
+   (IN 32765) which is implemented only in the Warajevo emulator and not on
+   other emulators. Silly?
+
+---------------
+
+Q: I try to run the Warajevo 2.51 on my VGA card with the monochrome monitor.
+   Previous releases works correctly, but Warajevo 2.51 does not show any
+   sense picture!?
+
+A: Remove the WARAJEVO.PAL file. This file is optimized for the color monitors
+   and may cause problems on monochrome monitors.
+
+---------------
+
+Q: I wonder if somebody else has problems with Warajevo and Lunter's Z80
+   emulator for PC. The problem is register loading. When I load the D
+   register it always changes its value for 205 (decimal). This is especially
+   terrible when I do compares with the CP opcode.
+
+A: This appears only after drinking a lot of wine (or whiskey). Of course,
+   this answer is a joke, but the question was real!?
+
+---------------
+
+Q: Can I change the emulation speed using the WARAJEVO emulator?
+
+A: Such an option exists, using the /% switch. Notice that Warajevo 2.51. is a
+   real-time emulator.
+
+----------------
+
+Q: I put the switch /%LMAX into a batch file, and the emulator reports
+   'Invalid command parameter'. When I try the same thing outside of a batch
+   file, it works. What's happening?
+
+A: Percent is a reserved character in batch files. Double the percent, e.g.
+   use /%%LMAX instead if you want to use this switch inside a batch file.
+
+----------------
+
+Q: I am running the emulator in native DOS mode (i.e. shutdown & restart in
+   DOS mode under Windows '95). If I try to run it under '95, I get a warning
+   that the processor is in virtual 8086 mode, and if I try to carry on, I get
+   a garbled screen. Why?
+
+A: Don't try to run the emulator in windowed mode, unless you're using the
+   switches which force CGA video mode. The best solution is to make a PIF
+   file which tells the program to use the full screen. Warajevo 2.51 includes
+   such PIF files in the package.
+
+----------------
+
+Q: I run the Warajevo emulator under Windows 95. Usually all works fine, but
+   with some Spectrum programs (for example, Elite) the emulator crashes with
+   the message 'This program has performed an illegal operation and will be
+   terminated'. What happens, and is there some solution?
+
+A: This is a problem which is described in the manual called the 'Wrapping
+   problem', so read the manual for more details. Starting from release
+   2.0. Windows compatibility has improved, but this problem is still
+   present. In such cases, do not run these programs under Windows. Instead,
+   shutdown into DOS mode. We are now working on a solution to this problem,
+   and we hope that it will be solved in release 2.6.
+
+----------------
+
+Q: Why does the documentation in English have so many grammar errors?
+
+A: Because we always write the documentation in a hurry and we are not
+   language experts. If you want, correct it and send the corrected files to
+   us. We will be very happy.
+
+   NOTE:  In the latest release, the documentation has been corrected by
+   Lee Dowling after reading the above question in previous FAQ's.  Lee is
+   English, so the grammar should be a lot better.
+
+   LEE: I find it amazing that the English was so good in the first place, my
+   Sarajevian isn't even close to their English!
+
+----------------
+
+Q: Why do some options in the emulator not work with Lunter TAP files, but
+   only with Warajevo TAP files?
+
+A: Put simply, the Warajevo TAP format is much richer than the Lunter TAP
+   format, so the Lunter TAP format cannot support so many features.
+
+----------------
+
+Q: Can the Warajevo TAP format store all kinds of programs (like TZX files),
+   including speedlock protected programs, etc.
+
+A: This was a frequent question in discussions on the Internet, and we saw
+   many wrong answers. The correct answer is: yes! Starting from Warajevo
+   2.0, the Warajevo TAP format allows the storage of all types of records,
+   including music records.  However, the TZX file format is more compact
+   for storing non-standard saved programs. Before release 2.0, the Warajevo
+   TAP format didn't have any more power than Lunter's TAP format for storing
+   programs. The possibility of loading some non-standard saved programs in
+   release 1.5 was possible due to an intelligent algorithm in the emulator
+   itself, not due to extra information in a TAP file!
+
+----------------
+
+Q: How I can make an empty Warajevo or Lunter TAP file?
+
+A: To make an empty Warajevo tape, use the option 'Select' in the
+   'Tape-files' menu, then enter the filename. If this file doesn't exist,
+   an empty one will be created with that name. There is no option for
+   creating an empty Lunter tape, but this may be easily performed from DOS.
+   For example, the DOS command:
+
+   REM >EMPTY.TAP
+
+   will create an empty tape called EMPTY.TAP in Lunter's format.
+
+----------------
+
+Q: When I try to convert TAP files from Lunter to Warajevo format, the
+   program doesn't allow me to select a Lunter TAP file, or gives the message
+   "End of file passed". Why?
+
+A: Before release 2.0, this was the most common question, and the answer was
+   the old rule: "If nothing else helps, then read the manual". As the users
+   don't read the manual or the help file (these files contain the answer),
+   they don't understand the correct method for performing this task.
+   Starting from release 2.0. we have adapted to most of the users, and
+   implemented two methods for performing this conversion: using the method
+   that we came up with (like in earlier releases), and using the method
+   which the most users thought to be the correct method. We hope that you
+   will be happy.
+
+----------------
+
+Q: I converted a Warajevo .Z80 file to a Warajevo .TAP file and then the
+   Warajevo .TAP file to a Lunter Z80 .TAP file, but when I load the Z80 .TAP
+   with the Z80 emulator 2.21 the program doesn't work and the emulator
+   crashes. Why?
+
+A: Oh, this is a problem in Lunter's emulator, not in ours. Lunter's tape
+   emulation routine is not as flexible as ours. The loader which is made when
+   the snapshot is converted to a TAP file has a dirty structure (to reducing
+   screen damaging as much as possible) which works fine on the original
+   Spectrum (and on our emulator), but not on Lunter's emulator due to a
+   not-so-well-emulated load routine in his emulator. This was a common
+   question, so we included an option which solves this problem. Before
+   conversion, activate the radio button 'Ready to convert to Z80 emulator'
+   which appears in the dialog for the conversion, and everything will be OK.
+
+----------------
+
+Q: OK, there is an option for conversion from Z80 -> TAP, but how I can
+   convert a TAP file into a Z80 file?
+
+A: These formats are essentially different, but in many cases there is one
+   simple possibility. Select the tape, type LOAD "", and when the loading
+   finishes, press F7. This will create a SNAP.Z80 file which is a rough
+   equivalent to the source of the TAP file.
+
+----------------
+
+Q: How I can view screen dump (SCR) files with the Warajevo emulator?
+
+A: Enter the environment, press the 'Start' button, and select the desired
+   SCR file.
+
+----------------
+
+Q: How I can make a screen dump (SCR) file from a program?
+
+A: Press F3 to enter the monitor. Give the command S16384 6912. This will
+   create a screen dump on the tape. Then enter the environment, use the
+   option 'Extract' in the 'Block' submenu in the 'Tape-files' menu to
+   extract the saved block onto a disk (check the radio button 'Flagbyte is
+   Extension'). This will create a file with the extension .255 on the disk.
+   Finaly, rename this file to the desired name and give it a .SCR extension.
+
+----------------
+
+Q: I load a snapshot file (for example, 'Dizzy-8'), but the sprite jumps
+   up and down non-stop, and the keyboard doesn't work. Why?
+
+A: Such snapshots are saved with the Kempston joystick active. In such cases,
+   run the emulator with the /JK switch (or switch on the option 'Kempston
+   joystick by cursor keys' in the environment).
+
+----------------
+
+Q: I have problems with the keyboard in some programs (some keys does not
+   work).
+
+A: Again, the problem is in the joystick settings. Try changing the joystick
+   settings in the environment, and everything should be OK.
+
+----------------
+
+Q: I have problems with conversion the "World of Spectrum" SGD database in the
+   Warajevo format.
+
+A: Oh, we know it. First, there was a bug which cause "Object not initialized"
+   error if the SGD.INI file is not present. This is fixed now. Second, and
+   more serious, the amount of the records in the Warajevo data base is
+   limited. Simply, we stored sorting indexes and some other data in the RAM
+   to speed up working with the database. But, the amount of the RAM under DOS
+   is limited (does anybody remember stupid Microsoft sentence: "640 KB will
+   be enough for everything"?). When we developed Warajevo, we simply didn't
+   expect databases with more than 3000 records! In release 2.51 we included
+   options which may ignore sorting and keeping of producer names and file
+   names in the RAM if the database is too huge, so the whole WOS database can
+   be converted. Of course, this is only a first aid, not an ideal solution.
+   We still searching for the better solution.
+
+----------------
+
+Q: I have problems with the Sinclair Network emulation in the Warajevo 2.0
+   emulator.
+
+A: First, check whether the shared interface net file is accessible to all
+   emulators which take part in the session. If everything is OK with the net
+   file, try changing the emulation parameters. Problems are very likely with
+   this, so read the manual very carefully if you want to use network
+   emulation.
+
+----------------
+
+Q: Why is network emulation so slow?
+
+A: Try to make it faster in your emulator...
+
+----------------
+
+Q: Why do you emulate the network on an I/O level? I think that much better
+   speed and reliability could be achieved using traps in the ZX Interface
+   ROM, or some similar method...
+
+A: Of course, but I/O level of the emulation is prefered for two reasons.
+   First, there are at least two versions of the ZX Interface 1 ROM, with
+   slightly different network routines (in the older version there is also
+   a bug) and which lay on different addresses, so traps must be located on
+   different addresses when different ROM files are used. Second, and more
+   importantly, some programs copy the ROM net input routine into RAM and
+   correct the bug which was present in the first release of the ZX
+   Interface 1 ROM. Using I/O level emulation, such programs work, but with
+   traps they will not work. Maybe the best solution is something like an
+   edge recognizer...
+
+----------------
+
+Q: I think that it is better idea to send every keystroke through the net
+   rather than emulating the Sinclair Network. This would allow you to play
+   any two-player arcade game through the net...
+
+A: Don't you think that you want a bit too much?
+
+----------------
+
+Q: I have a Sound Blaster with MIDI, and the MIDI emulation does not work
+   correctly. I use Warajevo 2.0. with the /SB switch. What's wrong?
+
+A: Be aware of the fact that we use General MIDI, not MPU-401. Also, check
+   whether your musical instruments are set up correctly.
+
+----------------
+
+Q: I have "even God doesn't know which" model of Sound Blaster compatible
+   sound card. The option /SB does not work on my card. Why?
+
+A: We have had very bad experiences with Sound Blaster clones. Any program
+   which does not use the full standard protocol to access the DSP processor
+   may fail on some clones but the full standard protocol is a bit slow for
+   some purposes. We use a method which is not tested on too many cards, so
+   we accept that it is possible that there are some models of sound card
+   which are not compatible with the Warajevo emulator.
+
+----------------
+
+Q: Why doesn't the WARAJEVO emulator work on my VGA card?
+
+A: There are many models of VGA cards which are not fully compatible with a
+   real VGA card. Due to bugs in some BIOS's (for example, the Trident VGA
+   BIOS), and the very non-standard video modes which are used in the
+   emulator, we use low-level I/O instructions to set up the video mode.
+   Unfortunately, it seems that this will not work on absolutely all VGA
+   cards (you can see that even Lunter's Z80 emulator has problems with the
+   Trident VGA card with which our emulator works fine). Starting from
+   release 1.5. we changed the routine for setting up the video mode, and
+   tested it on many computers, so we hope that there will not be any
+   problems.
+
+---------------
+
+Q: How good is the AY chip emulation on the PC beeper ?
+
+A: We thought that a noticeable improvement from Warajevo 1.5. wasn't
+   possible, i.e. we thought that our AY chip emulation is the best which can
+   be done with only the PC beeper. Some PC programs like 'Scream tracker',
+   'Visual player' etc. have much better sound, but the routines used in such
+   programs seemed (to us) to be impossible to implement into the emulator.
+   However, we got a 'Commodore 64' emulator (aarrgh!), which showed us
+   up.  It implemented near perfect emulation of the SID sound chip (which
+   is even more complex than the AY chip), using only a PC beeper! Starting
+   from release 2.5. we tried to make something similar (switch /SX). Try it
+   and see...
+
+----------------
+
+Q: I have problems with the ZX Printer emulation with some 24-pin printers
+   and even with some Epson printers. However, printing from a word processor
+   (for example from Tasword) works fine.
+
+A: The printer must be Epson FX-80 (or HP Laser Jet) compatible for ZX
+   Printer emulation. Using the Z command in the monitor requires an Epson
+   FX-80 compatible printer (HP Laser Jet support is not implemented for this
+   yet). Printing from a word processor is not ZX printer emulation, it uses
+   the RS-232 interface, and the transfer of standard ASCII codes. This is,
+   therefore, compatible with all printers, even inkjet printers.
+
+----------------
+
+Q: Why didn't you implement Ink Jet printer support (ZX Printer emulation,
+   and Z command in the monitor)?
+
+A: We will in the future.
+
+----------------
+
+Q: How well does the WARAJEVO emulator work on OS/2?
+
+A: Lunter's emulator locks the keyboard on OS/2, but it seems that the
+   WARAJEVO emulator works fine on OS/2.
+
+----------------
+
+Q: How I can use the RS232 socket on my Spectrum 128 to transfer programs to
+   the PC and how I can make an appropriate cable for connecting them?
+
+A: This is common question. But the only answer is: read the manual carefully.
+
+----------------
+
+Q: Does RS232 transfer work with the Spectrum +2A/+3 RS232/MIDI port?
+
+A: Of course, this is the same port as on an ordinary Spectrum 128.
+
+----------------
+
+Q: I read in the documentation for the Spanish Emulator by P. Gimeno that it
+   is very dangerous to plug anything with more than 5 volts into the
+   parallel socket of a PC. But my Spectrum +2's manual reports a voltage of
+   +12 volts in it's RS232/MIDI port. Does this affect me?
+
+A: No. You are correct, but RS232/MIDI must be connected to the serial, not
+   parallel, socket on a PC.
+
+----------------
+
+Q: Why you don't emulate the Multiface 128?
+
+A: This is not problem to implement, but the Multiface 128 ROM is copyright
+   protected, so we have no rights to do it.
+
+----------------
+
+Q: Why you don't emulate the Spectrum +3 or +2A?
+
+A: This is our great wish, but we don't have enough time to work on it. We
+   hope that it will be implemented in the future.
+
+----------------
+
+Q: Why must I press SYMBOL SHIFT (e.g. ALT) + O key to get the ';' sign ?
+   Why can't I press the ';' key on the keyboard?
+
+A: We were a bit too lazy to implement this. Also, the position of these
+   signs is not fully standardized. There are many keyboard layouts, and
+   these signs do not always have the same scan codes. For example, in Bosnia
+   and Herzegovina, many PC computers (including ours) have Croatian keybord
+   layout, on which these signs are located differently.
+
+----------------
+
+Q: Is it possible to convert a .Z80 file to a .COM file?
+
+A: The pseudo-compiler ZXCOMP included with the WARAJEVO package can convert
+   .Z80 files into standalone .EXE files. For users, there is no important
+   difference between .COM and .EXE files.
+
+----------------
+
+Q: Does ZXCOMP really convert Z80 machine code into 8086 machine code, or
+   does it use some trick?
+
+A: Of course it's a trick. If you have any knowledge about such things, you
+   must know that conversion is not possible for many reasons (self-modifying
+   code for example). So, ZXCOMP converts Z80 snapshots into a kind of P-code
+   (more precisely, packed Z80 code) and links it with a run time module
+   (which includes a P-coded ROM image too) which interprets it. This module
+   is about 32K long for 48K snapshots and about 48K for 128K snapshots.
+   P-code is usually about half size of the full snapshot length. We must say
+   that the well-known "compiler" CLIPPER is not a real compiler either. It
+   does a similar thing and nobody knows it. That's why ZXCOMP looks like a
+   real compiler!
+
+----------------
+
+Q: Saving and loading inside programs compiled with ZXCOMP is very limited.
+   Why?
+
+A: The answer is simple, this capability is limited to make the run-time
+   interpreter as small as possible. So, sometimes compiling with /TAPE
+   or even /TAPE! can fail, and then you must hack it using the built-in
+   monitor.
+
+-----------------
+
+Q: How I can convert Lunter's Z80 format to the Warajevo .Z80 format (for
+   example, for use with the compiler ZXCOMP)?
+
+A: There are many methods. We will describe the method which works with all
+   releases. First you must load the wanted (Lunter's) snapshot into
+   Warajevo, by typing command SPEC48 /R<snap_name> on the DOS prompt. To
+   convert this file to a Warajevo Z80 file press F7 in the emulator. This
+   will create the file SNAP.Z80 in Warajevo format. Starting from release
+   1.5. you also have options in the environment for doing such things: read
+   the next question (and answer of course).
+
+----------------
+
+Q: Why does the emulator say "Incorrect hardware version" or "Incorrect
+   snapshot file" with some snapshots?
+
+A: Snapshot files exist which contain features which are not implemented in
+   the Warajevo emulator (Lunter's SamRam, Disciple and PlusD, snapshots with
+   ROM images by Pedro M. R. Salas, etc.). To convert such snapshots into the
+   correct Warajevo snapshot format, use options 'Z80Snaps' -> 'Convert' ->
+   'Z80 (48K) <-> Z80 (128K)' -> 'Any Z80 to Z80 48K without interface 1'.
+   Read more about it in the manual.
+
+----------------
+
+Q: When I compiled Manic Miner or Jet Set Willy which have been snapshot'ed
+   from Lunter's emulator using ZXCOMP, jump was turned on non-stop. Why?
+
+A: This is due to the joystick emulation which is different on ours and
+   Lunter's emulators. Manic Miner (and JSW too) test for the presence of a
+   joystick only when the initial screen is displayed, then it only acts in
+   accordance to this first test. To correct this, load the snapshot into
+   Warajevo, press BREAK in these games to go to initial screen, then re-snap
+   the game again. This snapshot can then be compiled correctly.
+
+----------------
+
+Q: Warajevo does not correctly emulate Issue2/Issue3 effect. When I try to
+   detect which version of Spectrum Warajevo emulates, it seems that this is
+   not either Issue2 nor Issue3...
+
+A: Yes, you are right, but we think that this is just an advantage of the
+   Warajevo emulator. Except in the tape loading or the sample loading mode,
+   the EAR bit in port 254 is random, which will satisfie both the programs
+   which requires Issue2 and programs which requires Issue3 (because the
+   keyboard reading is always performed in the loop), so the user need not to
+   worry about issueness...
+
+----------------
+
+Q: I can not select any option from the "DockFiles" menu in the environment!
+
+A: These options work only in the Timex emulation mode. Use "Setup",
+   "Emulator" to set Timex mode.
+
+----------------
+
+Q: I have some LROS and AROS programs as binary files. How I can load them
+   into the Warajevo emulator?
+
+A: You must convert them into the DCK files, using options in the "DockFiles"
+   menu. For more informations, consult the manual, or the help file.
+
+----------------
+
+Q: How I can make a single DCK file which is loaded in both HOME and DOCK
+   banks?
+
+A: First make a DCK file which will be loaded into the DOCK bank (named for
+   example FIRST.DCK), and a DCK file which will be loaded into the HOME bank
+   (named for example SECOND.DCK). This may be done using options in
+   "DockFiles" menu. Then, use option "Merge Docks" in the same menu, or
+   simply concatenate these files using DOS:
+
+   COPY /B FIRST.DCK+SECOND.DCK /B FIRST.DCK
+
+----------------
+
+Q: How good is the political and economical situation in your country today?
+
+A: The political situation is not very stable, there are still some "critical"
+   zones (like the towns Mostar and Brcko). The economical situation is better
+   than two years ago, but it is still really terrible.
+
+----------------
+
+Q: If your country's economic situation is so bad, why the Warajevo is
+   freeware and not shareware?
+
+A: First, during the war any money transaction between Bosnia and other
+   countries was broken, so shareware concept was impossible. The money
+   transactions with a small amount of money are still very complicated
+   between Bosnia and other countries. Second, we think that if Warajevo was
+   shareware instead of freeware, it would not become so popular...

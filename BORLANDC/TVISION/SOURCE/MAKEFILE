@@ -1,0 +1,240 @@
+#
+# Borland C++ - (C) Copyright 1991 by Borland International
+# Makefile for building Turbo Vision library
+#
+
+.autodepend
+.swap
+
+MODEL = l
+
+!ifndef BCROOT
+BCROOT = ..\..
+!endif
+
+!ifndef TVDIR
+TVDIR = $(BCROOT)\tvision
+!endif
+
+OBJDIR = $(TVDIR)\object
+
+.path.obj = $(OBJDIR)
+
+INCLUDE = $(BCROOT)\include;$(TVDIR)\include
+LIBDIR = $(BCROOT)\lib
+TVLIBDIR = $(TVDIR)\lib
+
+TLIB = $(BCROOT)\bin\tlib /0
+
+CC = $(BCROOT)\bin\bcc
+
+ASM = $(BCROOT)\bin\tasm
+
+!ifdef OVERLAY
+CCOVYFLAGS = -Y -Vs -B
+AOVYFLAGS = /o
+NOOVERLAY = -*sysint -*tevent
+!endif
+
+CFLAGS = -c $(CCOVYFLAGS) -P -O1 -m$(MODEL) -I$(INCLUDE) -n$(OBJDIR) 
+AFLAGS = /ml $(AOVYFLAGS) 
+
+BCC = $(CC) $(CFLAGS)
+
+TASM = $(ASM) $(AFLAGS)
+
+OBJS = COLORSEL.OBJ \
+       DRIVERS.OBJ \
+       DRIVERS2.OBJ \
+       EDITS.OBJ \
+       EDITSTAT.OBJ \
+       FRAMELIN.OBJ \
+       GRP.OBJ \
+       HISTLIST.OBJ \
+       MAPCOLOR.OBJ \
+       MENU.OBJ \
+       MISC.OBJ \
+       MSGBOX.OBJ \
+       NEW.OBJ \
+       NEWSTR.OBJ \
+       NMBKGRND.OBJ \
+       NMBUTTON.OBJ \
+       NMCHDRDL.OBJ \
+       NMCHKBOX.OBJ \
+       NMCLRSEL.OBJ \
+       NMCLUSTR.OBJ \
+       NMCOLLCT.OBJ \
+       NMDIALOG.OBJ \
+       NMDIRBOX.OBJ \
+       NMDIRCOL.OBJ \
+       NMDSKTOP.OBJ \
+       NMEDITOR.OBJ \
+       NMFILCOL.OBJ \
+       NMFILDLG.OBJ \
+       NMFILLST.OBJ \
+       NMFRAME.OBJ \
+       NMGROUP.OBJ \
+       NMHIST.OBJ \
+       NMINPTLN.OBJ \
+       NMLABEL.OBJ \
+       NMLSTBOX.OBJ \
+       NMLSTVWR.OBJ \
+       NMMNUBAR.OBJ \
+       NMMNUBOX.OBJ \
+       NMMNUVW.OBJ \
+       NMPRMTXT.OBJ \
+       NMRBTNS.OBJ \
+       NMRESCOL.OBJ \
+       NMSCOLL.OBJ \
+       NMSCRBAR.OBJ \
+       NMSCROLL.OBJ \
+       NMSTCTXT.OBJ \
+       NMSTDDLG.OBJ \
+       NMSTLINE.OBJ \
+       NMSTRCOL.OBJ \
+       NMSTRLST.OBJ \
+       NMVIEW.OBJ \
+       NMWINDOW.OBJ \
+       PALETTE.OBJ \
+       SBKGRND.OBJ \
+       SBUTTON.OBJ \
+       SCHDRDLG.OBJ \
+       SCHECKBO.OBJ \
+       SCLRSEL.OBJ \
+       SCLUSTER.OBJ \
+       SDESKTOP.OBJ \
+       SDIALOG.OBJ \
+       SDIRCOLL.OBJ \
+       SDIRLIST.OBJ \
+       SEDITORS.OBJ \
+       SFILCOLL.OBJ \
+       SFILDLG.OBJ \
+       SFILELST.OBJ \
+       SFINFPNE.OBJ \
+       SFINPUTL.OBJ \
+       SFRAME.OBJ \
+       SGROUP.OBJ \
+       SHISTORY.OBJ \
+       SINPUTLI.OBJ \
+       SLABEL.OBJ \
+       SLISTBOX.OBJ \
+       SLSTVIEW.OBJ \
+       SMENUBAR.OBJ \
+       SMENUBOX.OBJ \
+       SMNUVIEW.OBJ \
+       SPARAMTE.OBJ \
+       SRADIOBU.OBJ \
+       SRESCOLL.OBJ \
+       SSCRLBAR.OBJ \
+       SSCROLLE.OBJ \
+       SSTATICT.OBJ \
+       SSTATUSL.OBJ \
+       SSTRCOLL.OBJ \
+       SSTRLST.OBJ \
+       STDDLG.OBJ \
+       STRMSTAT.OBJ \
+       SVIEW.OBJ \
+       SWAPST.OBJ \
+       SWINDOW.OBJ \
+       SYSERR.OBJ \
+       SYSINT.OBJ \
+       TAPPLICA.OBJ \
+       TBKGRND.OBJ \
+       TBUTTON.OBJ \
+       TCHDRDLG.OBJ \
+       TCHECKBO.OBJ \
+       TCLUSTER.OBJ \
+       TCMDSET.OBJ \
+       TCOLLECT.OBJ \
+       TDESKTOP.OBJ \
+       TDIALOG.OBJ \
+       TDIRCOLL.OBJ \
+       TDIRLIST.OBJ \
+       TEDITOR1.OBJ \
+       TEDITOR2.OBJ \
+       TEDITWND.OBJ \
+       TEVENT.OBJ \
+       TEXTVIEW.OBJ \
+       TFILDLG.OBJ \
+       TFILECOL.OBJ \
+       TFILEDTR.OBJ \
+       TFILLIST.OBJ \
+       TFRAME.OBJ \
+       TGRMV.OBJ \
+       TGROUP.OBJ \
+       THISTORY.OBJ \
+       THISTWIN.OBJ \
+       THSTVIEW.OBJ \
+       TINDICTR.OBJ \
+       TINPUTLI.OBJ \
+       TLABEL.OBJ \
+       TLISTBOX.OBJ \
+       TLSTVIEW.OBJ \
+       TMEMO.OBJ \
+       TMENUBAR.OBJ \
+       TMENUBOX.OBJ \
+       TMNUVIEW.OBJ \
+       TMOUSE.OBJ \
+       TOBJECT.OBJ \
+       TOBJSTRM.OBJ \
+       TPARAMTE.OBJ \
+       TPOINT.OBJ \
+       TPROGRAM.OBJ \
+       TRADIOBU.OBJ \
+       TRESCOLL.OBJ \
+       TRESFILE.OBJ \
+       TSCREEN.OBJ \
+       TSCRLBAR.OBJ \
+       TSCROLLE.OBJ \
+       TSORTCOL.OBJ \
+       TSTATICT.OBJ \
+       TSTATUSL.OBJ \
+       TSTRCOLL.OBJ \
+       TSTRLIST.OBJ \
+       TTPRVLNS.OBJ \
+       TVCURSOR.OBJ \
+       TVEXPOSD.OBJ \
+       TVIEW.OBJ \
+       TVTEXT1.OBJ \
+       TVTEXT2.OBJ \
+       TVWRITE.OBJ \
+       TWINDOW.OBJ
+
+
+.cpp.obj:
+     $(BCC) {$. }
+
+.asm.obj:
+     $(TASM) $&.asm, $(OBJDIR)\$&.obj
+
+all: $(TVLIBDIR)\tv.lib
+
+!ifdef OVERLAY
+
+sysint.obj : sysint.asm
+     $(ASM) /ml $&.asm, $(OBJDIR)\$&.obj
+
+tevent.obj : tevent.cpp
+     $(BCC) -Y- $&.cpp
+
+!endif
+
+*.asm : tvwrite.inc
+
+tvwrite.inc : geninc.exe
+     geninc > tvwrite.inc
+
+geninc.exe : geninc.obj
+     $(CC) -O1 -m$(MODEL) -L$(LIBDIR) -e$&.exe $(OBJDIR)\$&.obj
+
+$(TVLIBDIR)\tv.lib: $(OBJS)
+     del $(TVLIBDIR)\tv.lib
+     cd $(OBJDIR)
+     $(TLIB) $(TVLIBDIR)\tv.lib  @$(TVDIR)\source\tvlib.rsp
+     cd $(TVLIBDIR)
+!ifdef OVERLAY
+     $(TLIB) tv.lib $(NOOVERLAY)
+!endif
+
+clean:
+     del $(OBJDIR)\*.obj
