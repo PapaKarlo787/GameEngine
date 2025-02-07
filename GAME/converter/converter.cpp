@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <thread>
 #include <mutex>
 #include <stdint.h>
@@ -39,12 +39,11 @@ inline int findNearestElem(RGB const& color, vector<RGB> const& codeBook) {
 	return result;
 }
 
-template<typename T>
-void preGLA(int* cntMembers, RGB* newCodeBook, T const& codeBook, T::iterator& begin, T::iterator& end) {
+void preGLA(int* cntMembers, RGB* newCodeBook, vector<RGB>& codeBook, vector<RGB>::const_iterator begin, vector<RGB>::const_iterator end) {
 	for (auto it = begin; it != end; it++) {
 		int i = findNearestElem(*it, codeBook);
 		mtx.lock();
-		CodeBook[i] += color;
+		newCodeBook[i] += *it;
 		cntMembers[i]++;
 		mtx.unlock();
 	}
@@ -53,7 +52,7 @@ void preGLA(int* cntMembers, RGB* newCodeBook, T const& codeBook, T::iterator& b
 void gla(vector<RGB>& codeBook, vector<RGB> const& colors) {
 	RGB newCodeBook[PALETE_SIZE];
 	int cntMembers[PALETE_SIZE];
-	vector<thread> treads;
+	vector<thread> threads;
 	for (int i = 0; i < PALETE_SIZE; i++) {
 		newCodeBook[i] = RGB();
 		cntMembers[i] = 0;
@@ -63,12 +62,14 @@ void gla(vector<RGB>& codeBook, vector<RGB> const& colors) {
 	for (int i = 0; i < GLA_STEPS; i++) {
 		for (int i = 0; i < BUCKET_CNT; i++) {
 			auto bucketBegin = colors.begin() + i * bucketSize;
-			treads.push_back(thread(preGLA, cntMembers, newCodeBook, bucketBegin, bucketBegin + bucketSize));
+			//preGLA(cntMembers, newCodeBook, codeBook, bucketBegin, bucketBegin + bucketSize);
+			threads.push_back(thread(preGLA, cntMembers, newCodeBook, ref(codeBook), bucketBegin, bucketBegin + bucketSize));
 		}
-		preGLA(cntMembers, newCodeBook, bucketSize * BUCKET_CNT, colors.end());
-		for (auto const& th : treads) {
+		preGLA(cntMembers, newCodeBook, codeBook, colors.begin() + bucketSize * BUCKET_CNT, colors.end());
+		for (auto& th : threads) {
 			th.join();
 		}
+		threads.clear();
 		for (int i = 0; i < PALETE_SIZE; i++) {
 			codeBook[i] = cntMembers[i] ? newCodeBook[i] / cntMembers[i] : RGB();
 			newCodeBook[i] = RGB();
@@ -77,13 +78,12 @@ void gla(vector<RGB>& codeBook, vector<RGB> const& colors) {
 	}
 }
 
-template<typename T>
-RGB medianCut(T& result, T::iterator& begin, T::iterator& end, int floor) {
+void medianCut(vector<RGB>& result, vector<RGB>::iterator begin, vector<RGB>::iterator end, int floor) {
 	static function<bool(RGB const&, RGB const&)> r = [](RGB const& a, RGB const& b) {return a.r < b.r; };
 	static function<bool(RGB const&, RGB const&)> g = [](RGB const& a, RGB const& b) {return a.g < b.g; };
 	static function<bool(RGB const&, RGB const&)> b = [](RGB const& a, RGB const& b) {return a.b < b.b; };
 	static auto vSizePred = [](vector<RGB>* a, vector<RGB>* b) {return a->size() < b->size(); };
-	vector<thread> treads;
+	vector<thread> threads;
 	
 	for (int i = floor - 1; i >= 0; i--) {
 		uint32_t m = max_element(begin, end, r) - min_element(begin, end, r);
@@ -99,7 +99,8 @@ RGB medianCut(T& result, T::iterator& begin, T::iterator& end, int floor) {
 		int size = end - begin;
 		m = size / 2;
 		if (i) {
-			treads.push_back(thread(mediancut, result, begin + m, end, i));
+			//medianCut(ref(result), begin + m, end, i);
+			threads.push_back(thread(medianCut, ref(result), begin + m, end, i));
 			end = begin + m;
 		} else {
 			RGB res1, res2;
@@ -113,8 +114,8 @@ RGB medianCut(T& result, T::iterator& begin, T::iterator& end, int floor) {
 			mtx.unlock();
 		}
 	}
-	for (int i = 0; i < floor - 1; i++) {
-		threads[i].join();
+	for (auto& th : threads) {
+		th.join();
 	}
 }
 
@@ -122,6 +123,7 @@ RGB medianCut(T& result, T::iterator& begin, T::iterator& end, int floor) {
 int main(int n, const char** args) {
 	vector<RGB> colors;
 	vector<File> files;
+	vector<RGB> codeBook;
 
 	if (n < 3 || strcmp(args[1], "-o")) {
 		cerr << "invalid usage\nusage: " << args[0] << " -o filename [file.bmp [...]]" << endl;
@@ -129,7 +131,6 @@ int main(int n, const char** args) {
 	}
 
 	getColors(n - 3, args + 3, colors, files);
-	vector<RGB> codeBook;
 	medianCut(codeBook, colors.begin(), colors.end(), 8);
 	gla(codeBook, colors);
 
