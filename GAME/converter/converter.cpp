@@ -10,6 +10,7 @@ uint32_t err;
 #include "file.h"
 
 #define GLA_STEPS 8
+#define BUCKET_CNT 8
 #define PALETE_SIZE 256
 
 using namespace std;
@@ -38,18 +39,35 @@ inline int findNearestElem(RGB const& color, vector<RGB> const& codeBook) {
 	return result;
 }
 
+template<typename T>
+void preGLA(int* cntMembers, RGB* newCodeBook, T const& codeBook, T::iterator& begin, T::iterator& end) {
+	for (auto it = begin; it != end; it++) {
+		int i = findNearestElem(*it, codeBook);
+		mtx.lock();
+		CodeBook[i] += color;
+		cntMembers[i]++;
+		mtx.unlock();
+	}
+}
+
 void gla(vector<RGB>& codeBook, vector<RGB> const& colors) {
 	RGB newCodeBook[PALETE_SIZE];
 	int cntMembers[PALETE_SIZE];
+	vector<thread> treads;
 	for (int i = 0; i < PALETE_SIZE; i++) {
 		newCodeBook[i] = RGB();
 		cntMembers[i] = 0;
 	}
+	int bucketSize = colors.size() / BUCKET_CNT;
+	
 	for (int i = 0; i < GLA_STEPS; i++) {
-		for (auto& color : colors) {
-			int i = findNearestElem(color, codeBook);
-			newCodeBook[i] += color;
-			cntMembers[i]++;
+		for (int i = 0; i < BUCKET_CNT; i++) {
+			auto bucketBegin = colors.begin() + i * bucketSize;
+			treads.push_back(thread(preGLA, cntMembers, newCodeBook, bucketBegin, bucketBegin + bucketSize));
+		}
+		preGLA(cntMembers, newCodeBook, bucketSize * BUCKET_CNT, colors.end());
+		for (auto const& th : treads) {
+			th.join();
 		}
 		for (int i = 0; i < PALETE_SIZE; i++) {
 			codeBook[i] = cntMembers[i] ? newCodeBook[i] / cntMembers[i] : RGB();
