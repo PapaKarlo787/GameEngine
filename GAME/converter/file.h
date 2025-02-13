@@ -41,8 +41,10 @@ public:
 	}
 
 	void writef(int fd) {
-		err += write(fd, &h, 2);
-		err += write(fd, &w, 2);
+		if (!is_back()) {
+			err += write(fd, &h, 2);
+			err += write(fd, &w, 2);
+		}
 		err += write(fd, data, h * w);
 	}
 
