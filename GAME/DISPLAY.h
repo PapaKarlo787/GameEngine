@@ -37,7 +37,7 @@ void init_display(const char* resources) {
 	read(fd, &G_sprites_cnt, 2);
 	G_backs = (unsigned char far*)farmalloc(G_backs_cnt * H * W);
 	G_sprites = (SPRITE far*)farmalloc(sizeof(SPRITE) * G_sprites_cnt);
-	read(fd, &G_backs, G_backs_cnt * H * W);
+	read(fd, G_backs, G_backs_cnt * H * W);
 	for (i = 0; i < G_sprites_cnt; i++) {
 		read(fd, &G_sprites[i].w, 2);
 		read(fd, &G_sprites[i].h, 2);
@@ -85,7 +85,13 @@ void set_entity(ENTITY far* ent) {
 }
 
 void refresh_screen() {
-	memcpy(G_MEMORY, G_BUFFER, H * W);
+	static unsigned char skip;
+	if (skip == 0) {
+		memcpy(G_MEMORY, G_BUFFER, H * W);
+		skip = 30;
+	} else {
+		skip--;
+	}
 }
 
 int intersects(struct ENTITY* ent1, struct ENTITY* ent2) {

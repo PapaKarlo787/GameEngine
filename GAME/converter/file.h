@@ -53,7 +53,11 @@ public:
 			res.push_back(RGB(&data[i * 3], this, i));
 		}
 	}
-
+	
+	bool is_back() {
+		return h == 200 && w == 320;
+	}
+	
 private:
 	uint32_t h, w;
 	int fdr;

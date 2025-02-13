@@ -27,11 +27,16 @@ void interrupt timer_handler() {
 	for (i = 0; i < timer_sub_cnt; i++) {
 		timer_subscribers[i]();
 	}
+	outp(0x40, 1193 & 255);
+	outp(0x40, 1193 >> 8);
 	old_tim();
 }
 
 void init_irq() {
 	asm {cli};
+	outp(0x43, 0x30);
+	outp(0x40, 1193 & 255);
+	outp(0x40, 1193 >> 8);
 	old_tim = getvect(TIM_VECT);
 	setvect(TIM_VECT, timer_handler);
 	timer_sub_cnt = 0;

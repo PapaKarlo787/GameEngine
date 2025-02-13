@@ -10,27 +10,13 @@ short doom2[] = {82, 13, 82, 13, 165, 13, 82, 13, 82, 13, 147, 13, 82, 13, 82, 1
 
 short* mus[] = {doom, doom2};
 
-int j = 0;
-unsigned long far* kbd_p = (unsigned long far*)MK_FP(0xB800,0x0000);
-
-void kbd() {
-	kbd_p[j] = 0x35643564;
-	j += 1;
-} 
-
 int main() {
-	
-	asm {
-		mov ax, 0x0
-		int 10h
-	}
-	
 	init_irq();
 	//init_display();
 	timer_add_subscriber(M_handler);
 	timer_add_subscriber(refresh_screen);
+	init_display("res.pkg");
 	M_play(mus, 2);
-	keyb_add_subscriber(kbd);
 	while(1);
 	uninit_irq();
 	return 0;

@@ -140,11 +140,21 @@ int main(int n, const char** args) {
 	}
 
 	int fd = open(args[2], O_WRONLY | O_CREAT | O_TRUNC, 0777);
-	uint16_t size = files.size();
-	err += write(fd, &size, sizeof(size));
 	writeCodeBook(fd, codeBook);
-	for (int i = 0; i < size; i++) {
-		files[i].writef(fd);
+	uint16_t backs_cnt = 0;
+	for (auto &f : files) {
+		backs_cnt += f.is_back();
+	}
+	uint16_t sprites_cnt = files.size() - backs_cnt;
+	err += write(fd, &backs_cnt, sizeof(backs_cnt));
+	err += write(fd, &sprites_cnt, sizeof(sprites_cnt));
+	for (auto &f : files) {
+		if (f.is_back())
+			writef(fd);
+	}
+	for (auto &f : files) {
+		if (!f.is_back())
+			writef(fd);
 	}
 	return 0;
 }
