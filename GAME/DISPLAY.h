@@ -25,24 +25,33 @@ SPRITE far* G_sprites;
 unsigned short G_backs_cnt;
 unsigned short G_sprites_cnt;
 unsigned short G_back_rotation;
+unsigned char skip_frames = 50;
 
 void init_display(const char* resources) {
 	int i;
-	int fd = open(resources);
+	FILE* f = fopen(resources, "rb");
 	RGB palete[256];
-	G_BUFFER = (unsigned char far*)farmalloc(H * W);
-	G_MEMORY = (unsigned char far*)MK_FP(0xA000,0x0000);
-	read(fd, palete, sizeof(palete));
-	read(fd, &G_backs_cnt, 2);
-	read(fd, &G_sprites_cnt, 2);
-	G_backs = (unsigned char far*)farmalloc(G_backs_cnt * H * W);
-	G_sprites = (SPRITE far*)farmalloc(sizeof(SPRITE) * G_sprites_cnt);
-	read(fd, G_backs, G_backs_cnt * H * W);
+	G_BUFFER = (unsigned char far*)MK_FP(0xB000, 0x0000);
+	G_MEMORY = (unsigned char far*)MK_FP(0xA000, 0x0000);
+	fread(palete, sizeof(RGB), 256, f);
+	fread(&G_backs_cnt, 2, 1, f);
+	fread(&G_sprites_cnt, 2, 1, f);
+	G_backs = (unsigned char far*)malloc(G_backs_cnt * H * W);
+	G_sprites = (SPRITE far*)malloc(sizeof(SPRITE) * G_sprites_cnt);
+	
+	fread(G_backs, H * W, G_backs_cnt, f);
 	for (i = 0; i < G_sprites_cnt; i++) {
-		read(fd, &G_sprites[i].w, 2);
-		read(fd, &G_sprites[i].h, 2);
+		fread(&G_sprites[i].w, 2, 1, f);
+		fread(&G_sprites[i].h, 2, 1, f);
 		G_sprites[i].bmp = (unsigned char far*)farmalloc(G_sprites[i].w * G_sprites[i].h);
-		read(fd, G_sprites[i].bmp, 2);
+		fread(G_sprites[i].bmp, G_sprites[i].w, G_sprites[i].h, f);
+	}
+	
+	fclose(f);
+	
+	asm {
+		mov ax, 0x13
+		int 10h
 	}
 
 	outp(0x03C8, 0);
@@ -50,11 +59,6 @@ void init_display(const char* resources) {
 		outp(0x3C9, palete[i].r >> 2);
 		outp(0x3C9, palete[i].g >> 2);
 		outp(0x3C9, palete[i].b >> 2);
-	}
-	
-	asm {
-		mov ax, 0x13
-		int 10h
 	}
 }
 
@@ -85,12 +89,11 @@ void set_entity(ENTITY far* ent) {
 }
 
 void refresh_screen() {
-	static unsigned char skip;
-	if (skip == 0) {
+	if (skip_frames == 0) {
 		memcpy(G_MEMORY, G_BUFFER, H * W);
-		skip = 30;
+		skip_frames = 50;
 	} else {
-		skip--;
+		skip_frames--;
 	}
 }
 

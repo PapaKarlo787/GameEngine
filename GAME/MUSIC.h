@@ -33,7 +33,7 @@ void M_handler() {
 	M_melody.delay--;
 	if (M_melody.delay == 0) {
 		unsigned int freq = M_melody.tones[M_melody.n][M_melody.index];
-		M_melody.delay = M_melody.tones[M_melody.n][M_melody.index + 1];
+		M_melody.delay = M_melody.tones[M_melody.n][M_melody.index + 1] * 10;
 		M_melody.index += 2;
 		switch (freq) {
 			case 0:

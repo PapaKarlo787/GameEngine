@@ -1,3 +1,2 @@
-bcc -ml main.c
+bcc -w- -mh main.c
 del *.obj
-

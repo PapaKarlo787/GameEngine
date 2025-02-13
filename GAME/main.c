@@ -11,11 +11,11 @@ short doom2[] = {82, 13, 82, 13, 165, 13, 82, 13, 82, 13, 147, 13, 82, 13, 82, 1
 short* mus[] = {doom, doom2};
 
 int main() {
+	init_display("res.pkg");
 	init_irq();
-	//init_display();
 	timer_add_subscriber(M_handler);
 	timer_add_subscriber(refresh_screen);
-	init_display("res.pkg");
+	set_back(0);
 	M_play(mus, 2);
 	while(1);
 	uninit_irq();
