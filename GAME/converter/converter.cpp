@@ -150,11 +150,11 @@ int main(int n, const char** args) {
 	err += write(fd, &sprites_cnt, sizeof(sprites_cnt));
 	for (auto &f : files) {
 		if (f.is_back())
-			writef(fd);
+			f.writef(fd);
 	}
 	for (auto &f : files) {
 		if (!f.is_back())
-			writef(fd);
+			f.writef(fd);
 	}
 	return 0;
 }

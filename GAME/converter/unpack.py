@@ -16,18 +16,17 @@ if __name__ == "__main__":
 	if len(sys.argv) < 2:
 		raise Exception("usage: {} packagename".fromat(sys.argv[0]))
 	with open(sys.argv[1], 'rb') as f:
-		s = get_short(f.read(2))
 		palete = read_colors(f)
-		data = []
-		print(s)
-		for i in range(s):
+		sb = get_short(f.read(2))
+		ss = get_short(f.read(2))
+		print(sb+ss)
+		for i in range(sb+ss):
 			h = get_short(f.read(2))
 			w = get_short(f.read(2))
+			data = []
 			print(h, w)
 			for l in range(h * w):
-				i = f.read(1)[0]
-				indexes[i] += 1
-				data.append(palete[i])
+				data.append(palete[f.read(1)[0]])
 			image = Image.new('RGB', (w, h))
 			image.putdata(data)
 			image.save('{}.bmp'.format(i))
