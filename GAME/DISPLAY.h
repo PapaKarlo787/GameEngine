@@ -25,12 +25,13 @@ SPRITE far* G_sprites;
 unsigned short G_backs_cnt;
 unsigned short G_sprites_cnt;
 unsigned short G_back_rotation;
-unsigned char skip_frames = 50;
+unsigned char skip_frames;
 
 void init_display(const char* resources) {
 	int i;
 	FILE* f = fopen(resources, "rb");
 	RGB palete[256];
+	skip_frames = 50;
 	G_BUFFER = (unsigned char far*)MK_FP(0xB000, 0x0000);
 	G_MEMORY = (unsigned char far*)MK_FP(0xA000, 0x0000);
 	fread(palete, sizeof(RGB), 256, f);
@@ -43,7 +44,7 @@ void init_display(const char* resources) {
 	for (i = 0; i < G_sprites_cnt; i++) {
 		fread(&G_sprites[i].w, 2, 1, f);
 		fread(&G_sprites[i].h, 2, 1, f);
-		G_sprites[i].bmp = (unsigned char far*)farmalloc(G_sprites[i].w * G_sprites[i].h);
+		G_sprites[i].bmp = (unsigned char far*)malloc(G_sprites[i].w * G_sprites[i].h);
 		fread(G_sprites[i].bmp, G_sprites[i].w, G_sprites[i].h, f);
 	}
 	
