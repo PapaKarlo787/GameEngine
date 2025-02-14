@@ -21,7 +21,7 @@ typedef struct ENTITY{
 	unsigned short far* sprite_indexes;
 	void far(*step)(void far*);
 	char sx, sy;
-	unsigned char hp;
+	unsigned char hp, type;
 } ENTITY;
 
 unsigned char far *G_MEMORY;

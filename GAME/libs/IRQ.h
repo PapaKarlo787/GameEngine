@@ -19,7 +19,10 @@ void interrupt keyb_handler() {
 	for (i = 0; i < KBD_SUB_MAX && keyb_subscribers[i]; i++) {
 		keyb_subscribers[i]();
 	}
-	old_kbd();
+	asm {
+		mov al, 0x20
+		out 0x20, al
+	}
 }
 
 void interrupt timer_handler() {
@@ -29,7 +32,10 @@ void interrupt timer_handler() {
 	}
 	outp(0x40, 1193 & 255);
 	outp(0x40, 1193 >> 8);
-	old_tim();
+	asm {
+		mov al, 0x20
+		out 0x20, al
+	}
 }
 
 void init_irq() {
