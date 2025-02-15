@@ -21,8 +21,7 @@ if __name__ == "__main__":
 		ss = get_short(f.read(2))
 		print(sb+ss)
 		for i in range(sb+ss):
-			h = get_short(f.read(2))
-			w = get_short(f.read(2))
+			h, w = (get_short(f.read(2)), get_short(f.read(2))) if i >= sb else (200, 320)
 			data = []
 			print(h, w)
 			for l in range(h * w):

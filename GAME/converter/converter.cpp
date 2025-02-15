@@ -133,7 +133,8 @@ int main(int n, const char** args) {
 	getColors(n - 3, args + 3, colors, files);
 	medianCut(codeBook, colors.begin(), colors.end(), 8);
 	gla(codeBook, colors);
-
+	sort(codeBook.begin(), codeBook.end());
+	
 	for(auto color : colors) {
 		int ind = findNearestElem(color, codeBook);
 		color.f->addResData(ind, color.pos);
