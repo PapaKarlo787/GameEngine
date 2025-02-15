@@ -1,20 +1,17 @@
 #include "dos.h"
 #include "stdio.h"
 #include "stdlib.h"
-#include "libs/display.h"
 char on_game;
+#include "libs/display.h"
 #include "libs/music.h"
 #include "libs/irq.h"
-#include "crz_cat.h"
+#include "libs/tasks.h"
+#include "cat/cat.h"
 
 /* TODO
- * музыкальная очередь, чтобы проигрывать эффекты
  * взаимодействие конкурируюших персонажей
  * управление игроком
- * удаление персонажей из памяти
  * поддержка других видеорежимов
- * расширяемость свойств персонажей
- * нахождение вне экрана
 */
 
 int main() {
@@ -23,6 +20,7 @@ int main() {
 	init_irq();
 	timer_add_subscriber(M_handler);
 	timer_add_subscriber(refresh_screen);
+	keyb_add_subscriber(task_manager);
 	while (on_game)
 		loop();
 	uninit_irq();

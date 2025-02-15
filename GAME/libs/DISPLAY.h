@@ -17,7 +17,7 @@ typedef struct SPRITE {
 
 typedef struct ENTITY{
 	short x, y;
-	unsigned short cur_sprite, spr_cnt;
+	unsigned short cur_sprite, spr_cnt, id;
 	unsigned short far* sprite_indexes;
 	void far(*step)(void far*);
 	char sx, sy;
@@ -28,16 +28,19 @@ unsigned char far *G_MEMORY;
 unsigned char far *G_BUFFER;
 unsigned char far *G_backs[BG_CNT];
 SPRITE far* G_sprites;
-ENTITY far* G_entityes[ENT_CNT];
+ENTITY G_entityes[ENT_CNT];
+unsigned char G_ent_free[ENT_CNT];
 unsigned short G_sprites_cnt, G_backs_cnt, G_back_rotation;
-unsigned char G_skip_frames, G_cur_back, G_entityes_cnt;
+unsigned char G_skip_frames, G_cur_back;
 
 void init_display(const char* resources) {
 	int i;
 	FILE* f = fopen(resources, "rb");
 	RGB palete[256];
 	G_skip_frames = EMPTY_FRAMES;
-	G_entityes_cnt = 0;
+	for (i = 0; i < ENT_CNT; i++) {
+		G_ent_free[i] = 1;
+	}
 	G_cur_back = 0;
 	G_BUFFER = (unsigned char far*)MK_FP(0xB000, 0x0000);
 	G_MEMORY = (unsigned char far*)MK_FP(0xA000, 0x0000);
@@ -71,18 +74,37 @@ void init_display(const char* resources) {
 	}
 }
 
-void create_entity(short x, short y, char sx, char sy, unsigned short* sprite_indexes, unsigned short cnt, void (*step)(ENTITY far*)) {
-	G_entityes[G_entityes_cnt] = (ENTITY far*)malloc(sizeof(ENTITY));
-	G_entityes[G_entityes_cnt]->x = x;
-	G_entityes[G_entityes_cnt]->y = y;
-	G_entityes[G_entityes_cnt]->sx = sx;
-	G_entityes[G_entityes_cnt]->sy = sy;
-	G_entityes[G_entityes_cnt]->sprite_indexes = sprite_indexes;
-	G_entityes[G_entityes_cnt]->spr_cnt = cnt;
-	G_entityes[G_entityes_cnt]->cur_sprite = 0;
-	G_entityes[G_entityes_cnt]->step = step;
-	G_entityes[G_entityes_cnt]->hp = 255;
-	G_entityes_cnt++;
+ENTITY far* create_entity(short x, short y, 
+							char sx, char sy, 
+							unsigned char type, 
+							unsigned char size, 
+							unsigned short* sprite_indexes, 
+							unsigned short cnt, 
+							void (*step)(ENTITY far*)) {
+	int i;
+	for (i = 0; i < ENT_CNT; i++) {
+		if (G_ent_free[i]) {
+			G_ent_free[i] = 0;
+			break;
+		}
+	}
+	if (i == ENT_CNT) return 0;
+	G_entityes[i].x = x;
+	G_entityes[i].y = y;
+	G_entityes[i].sx = sx;
+	G_entityes[i].sy = sy;
+	G_entityes[i].sprite_indexes = sprite_indexes;
+	G_entityes[i].spr_cnt = cnt;
+	G_entityes[i].cur_sprite = 0;
+	G_entityes[i].step = step;
+	G_entityes[i].hp = 255;
+	G_entityes[i].type = type;
+	G_entityes[i].id = i;
+	return &G_entityes[i];
+}
+
+void delete_entity(ENTITY far* ent) {
+	G_ent_free[ent->id] = 1;
 }
 
 void set_back(unsigned char n) {
@@ -96,28 +118,32 @@ void set_back_rotation(unsigned short rotation) {
 void refresh_screen() {
 	int i, l, k, ind;
 	SPRITE far* spr;
+	ENTITY far* ent;
 	if (G_skip_frames == 0) {
 		for (i = 0; i < H; i++) {
 			for (l = 0; l < W; l++) {
 				G_BUFFER[i * W + (l + G_back_rotation) % W] = G_backs[G_cur_back][i * W + l];
 			}
 		}
-		for (k = 0; k < G_entityes_cnt; k++) {
-			if (!G_entityes[k]->hp) continue;
-			spr = &G_sprites[G_entityes[k]->sprite_indexes[G_entityes[k]->cur_sprite]];
-			for (i = 0; i < spr->h; i++) {
-				for (l = 0; l < spr->w; l++) {
+		for (k = 0; k < ENT_CNT; k++) {
+			if (G_ent_free[k]) continue;
+			ent = &G_entityes[k];
+			spr = &G_sprites[ent->sprite_indexes[ent->cur_sprite]];
+			for (i = 0; i < spr->h && ent->y + i < H; i++) {
+				for (l = 0; l < spr->w && ent->x + l < W; l++) {
 					if (spr->bmp[i * spr->w + l]) {
-						ind = (G_entityes[k]->y + i) * W + G_entityes[k]->x + l;
+						ind = (ent->y + i) * W + ent->x + l;
 						G_BUFFER[ind] = spr->bmp[i * spr->w + l];
 					}
 				}
 			}
-			G_entityes[k]->cur_sprite = (G_entityes[k]->cur_sprite + 1) % G_entityes[k]->spr_cnt;
-			G_entityes[k]->x += G_entityes[k]->sx;
-			G_entityes[k]->y += G_entityes[k]->sy;
-			if (G_entityes[k]->step)
-				G_entityes[k]->step(G_entityes[k]);
+			asm{cli}
+			ent->cur_sprite = (ent->cur_sprite + 1) % ent->spr_cnt;
+			ent->x += ent->sx;
+			ent->y += ent->sy;
+			if (ent->step)
+				ent->step(ent);
+			asm{sti}
 		}
 		memcpy(G_MEMORY, G_BUFFER, H * W);
 		G_skip_frames = EMPTY_FRAMES;

@@ -1,40 +1,43 @@
 #define STOP_PLAY		-1
 #define REPEATE_PLAY	-2
 #define NEXT_PLAY		-3
+#define M_QUEUE_SIZE	16
 
 typedef struct _MELODY {
 	unsigned short far** tones;
 	unsigned int index, total, n;
 	unsigned short delay;
-	char is_playing;
 } MELODY;
 
-MELODY M_melody;
+MELODY M_melody[M_QUEUE_SIZE];
+unsigned char cur_m = -1;
 
-void M_play(unsigned short far** tones, unsigned int n) {
-	M_melody.tones = tones;
-	M_melody.index = 0;
-	M_melody.n = 0;
-	M_melody.is_playing = 1;
-	M_melody.total = n;
-	M_melody.delay = 1;
+
+void M_play(unsigned short** tones, unsigned int n) {
+	cur_m++;
+	M_melody[cur_m].tones = tones;
+	M_melody[cur_m].index = 0;
+	M_melody[cur_m].n = 0;
+	M_melody[cur_m].total = n;
+	M_melody[cur_m].delay = 1;
 	outp(0x43, 0xB6);
 }
 
 void M_stop() {
+	if (cur_m == -1) return;
 	outp(0x61, inp(0x61) & 252);
-	M_melody.is_playing = 0;
+	cur_m--;
 }
 
 void M_handler() {
-	if (!M_melody.is_playing) {
+	if (cur_m == -1) {
 		return;
 	}
-	M_melody.delay--;
-	if (M_melody.delay == 0) {
-		unsigned int freq = M_melody.tones[M_melody.n][M_melody.index];
-		M_melody.delay = M_melody.tones[M_melody.n][M_melody.index + 1] * 10;
-		M_melody.index += 2;
+	M_melody[cur_m].delay--;
+	if (M_melody[cur_m].delay == 0) {
+		unsigned int freq = M_melody[cur_m].tones[M_melody[cur_m].n][M_melody[cur_m].index];
+		M_melody[cur_m].delay = M_melody[cur_m].tones[M_melody[cur_m].n][M_melody[cur_m].index + 1] * 10;
+		M_melody[cur_m].index += 2;
 		switch (freq) {
 			case 0:
 				outp(0x61, inp(0x61) & 252);
@@ -43,11 +46,11 @@ void M_handler() {
 				M_stop();
 				break;
 			case NEXT_PLAY:
-				M_melody.n = (M_melody.n + 1) % M_melody.total;
+				M_melody[cur_m].n = (M_melody[cur_m].n + 1) % M_melody[cur_m].total;
 			case REPEATE_PLAY:
-				freq = M_melody.tones[M_melody.n][0];
-				M_melody.delay = M_melody.tones[M_melody.n][1];
-				M_melody.index = 2;
+				freq = M_melody[cur_m].tones[M_melody[cur_m].n][0];
+				M_melody[cur_m].delay = M_melody[cur_m].tones[M_melody[cur_m].n][1];
+				M_melody[cur_m].index = 2;
 				break;
 			default:
 				freq = 1193180 / freq;
