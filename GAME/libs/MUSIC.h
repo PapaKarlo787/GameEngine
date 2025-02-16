@@ -24,9 +24,11 @@ void M_play(unsigned short** tones, unsigned int n) {
 }
 
 void M_stop() {
-	if (cur_m == -1) return;
-	outp(0x61, inp(0x61) & 252);
-	cur_m--;
+	if (cur_m == -1) {
+		outp(0x61, inp(0x61) & 252);
+	} else {
+		cur_m--;
+	}
 }
 
 void M_handler() {
@@ -36,7 +38,7 @@ void M_handler() {
 	M_melody[cur_m].delay--;
 	if (M_melody[cur_m].delay == 0) {
 		unsigned int freq = M_melody[cur_m].tones[M_melody[cur_m].n][M_melody[cur_m].index];
-		M_melody[cur_m].delay = M_melody[cur_m].tones[M_melody[cur_m].n][M_melody[cur_m].index + 1] * 10;
+		M_melody[cur_m].delay = M_melody[cur_m].tones[M_melody[cur_m].n][M_melody[cur_m].index + 1];
 		M_melody[cur_m].index += 2;
 		switch (freq) {
 			case 0:

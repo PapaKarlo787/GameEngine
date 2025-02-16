@@ -6,6 +6,8 @@ void bird(ENTITY far* ent) {
 		if (ent->y >= CAT_FLOOR) {
 			b_attacs = 0;
 			b_flyes_back = 1;
+			M_play(embient, 1);
+			ent->sx = 0;
 		}
 	}
 	else if (b_flyes_back) {
@@ -28,11 +30,13 @@ void bird(ENTITY far* ent) {
 		if (cat->x + 40 >= ent->x && cat->x <= ent->x + 40) {
 			if (cat->y -5 > ent->y) {
 				b_attacs = 1;
+				M_play(attack, 1);
 			} else {
 				ent->hp -= 20 - (cat->x - ent->x > 0 ? cat->x - ent->x : ent->x - cat->x);
 				if (ent->hp < 155) {
 					ent->spr_cnt = sizeof(b_death) >> 1;
 					ent->sprite_indexes = b_death;
+					M_play(bird_dies, 1);
 					ent->sx = 0;
 					ent->sy = 0;
 					ent->cur_sprite = 0;
@@ -55,6 +59,12 @@ void cat_handler(ENTITY far* ent) {
 	cat->sx = 0;
 	cat->sy = 0;
 	jumped = 0;
+	if (cat->x > 250 && display_pos > -32700) {
+		display_pos = display_pos - (cat->x - 250);
+	} else if (cat->x < 30 && display_pos < 0) {
+		display_pos = display_pos - (cat->x - 30);
+	}
+	set_back_rotation(display_pos);
 	if (!run_tasks()) cat->cur_sprite = 0;
 	if (!jumped && cat->y < CAT_FLOOR) cat->y += 2;
 }

@@ -6,6 +6,7 @@
 #define KBD_SUB_MAX 8
 #define TIM_VECT 8
 #define KBD_VECT 9
+#define TIM_TICKS 119318
 
 void (*timer_subscribers[TIM_SUB_MAX])(void);
 void (*keyb_subscribers[KBD_SUB_MAX])(void);
@@ -30,8 +31,8 @@ void interrupt timer_handler() {
 	for (i = 0; i < timer_sub_cnt; i++) {
 		timer_subscribers[i]();
 	}
-	outp(0x40, 1193 & 255);
-	outp(0x40, 1193 >> 8);
+	outp(0x40, TIM_TICKS & 255);
+	outp(0x40, TIM_TICKS >> 8);
 	asm {
 		mov al, 0x20
 		out 0x20, al
@@ -41,8 +42,8 @@ void interrupt timer_handler() {
 void init_irq() {
 	asm {cli};
 	outp(0x43, 0x30);
-	outp(0x40, 119 & 255);
-	outp(0x40, 119 >> 8);
+	outp(0x40, TIM_TICKS & 255);
+	outp(0x40, TIM_TICKS >> 8);
 	old_tim = getvect(TIM_VECT);
 	setvect(TIM_VECT, timer_handler);
 	timer_sub_cnt = 0;

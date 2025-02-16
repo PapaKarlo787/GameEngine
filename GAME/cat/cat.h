@@ -14,9 +14,9 @@ setup() {
 	
 	create_pool(cat_keys, cat_tasks, sizeof(cat_keys));
 	
-	M_play(embient, 2);
+	M_play(embient, 1);
 }
 
 loop() {
-	
+	draw_screen();
 }

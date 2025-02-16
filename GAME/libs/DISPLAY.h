@@ -2,7 +2,6 @@
 #define W 320
 #define BG_CNT 8
 #define ENT_CNT 32
-#define EMPTY_FRAMES 100
 
 typedef struct RGB {
 	unsigned char r;
@@ -30,19 +29,19 @@ unsigned char far *G_backs[BG_CNT];
 SPRITE far* G_sprites;
 ENTITY G_entityes[ENT_CNT];
 unsigned char G_ent_free[ENT_CNT];
-unsigned short G_sprites_cnt, G_backs_cnt, G_back_rotation;
-unsigned char G_skip_frames, G_cur_back;
+unsigned short G_sprites_cnt, G_backs_cnt;
+unsigned char G_cur_back;
+short G_back_rotation;
 
 void init_display(const char* resources) {
 	int i;
 	FILE* f = fopen(resources, "rb");
 	RGB palete[256];
-	G_skip_frames = EMPTY_FRAMES;
 	for (i = 0; i < ENT_CNT; i++) {
 		G_ent_free[i] = 1;
 	}
 	G_cur_back = 0;
-	G_BUFFER = (unsigned char far*)MK_FP(0xB000, 0x0000);
+	G_BUFFER = (unsigned char far*)malloc(W * H);
 	G_MEMORY = (unsigned char far*)MK_FP(0xA000, 0x0000);
 	fread(palete, sizeof(RGB), 256, f);
 	fread(&G_backs_cnt, 2, 1, f);
@@ -111,45 +110,47 @@ void set_back(unsigned char n) {
 	G_cur_back = n;
 }
 
-void set_back_rotation(unsigned short rotation) {
-	G_back_rotation = rotation % W;
+void set_back_rotation(short rotation) {
+	int i, new_back_rot = abs(rotation) % W * (rotation > 0 ? 1 : -1) + W;
+	short difference = (new_back_rot - G_back_rotation + W) % W;
+	short delta = difference < (W >> 1) ? difference : difference - W;
+	for (i = 0; i < ENT_CNT; i++) {
+		G_entityes[i].x += delta;
+	}
+	G_back_rotation = new_back_rot;
 }
 
 void refresh_screen() {
 	int i, l, k, ind;
 	SPRITE far* spr;
 	ENTITY far* ent;
-	if (G_skip_frames == 0) {
-		for (i = 0; i < H; i++) {
-			for (l = 0; l < W; l++) {
-				G_BUFFER[i * W + (l + G_back_rotation) % W] = G_backs[G_cur_back][i * W + l];
-			}
+	for (i = 0; i < H; i++) {
+		for (l = 0; l < W; l++) {
+			G_BUFFER[i * W + (l + G_back_rotation) % W] = G_backs[G_cur_back][i * W + l];
 		}
-		for (k = 0; k < ENT_CNT; k++) {
-			if (G_ent_free[k]) continue;
-			ent = &G_entityes[k];
-			spr = &G_sprites[ent->sprite_indexes[ent->cur_sprite]];
-			for (i = 0; i < spr->h && ent->y + i < H; i++) {
-				for (l = 0; l < spr->w && ent->x + l < W; l++) {
-					if (spr->bmp[i * spr->w + l]) {
-						ind = (ent->y + i) * W + ent->x + l;
-						G_BUFFER[ind] = spr->bmp[i * spr->w + l];
-					}
+	}
+	for (k = 0; k < ENT_CNT; k++) {
+		if (G_ent_free[k]) continue;
+		ent = &G_entityes[k];
+		spr = &G_sprites[ent->sprite_indexes[ent->cur_sprite]];
+		for (i = 0; i < spr->h && ent->y + i < H; i++) {
+			for (l = 0; l < spr->w && ent->x + l < W ; l++) {
+				if (spr->bmp[i * spr->w + l] && ent->x + l >= 0 && ent->y + i >= 0) {
+					ind = (ent->y + i) * W + ent->x + l;
+					G_BUFFER[ind] = spr->bmp[i * spr->w + l];
 				}
 			}
-			asm{cli}
-			ent->cur_sprite = (ent->cur_sprite + 1) % ent->spr_cnt;
-			ent->x += ent->sx;
-			ent->y += ent->sy;
-			if (ent->step)
-				ent->step(ent);
-			asm{sti}
 		}
-		memcpy(G_MEMORY, G_BUFFER, H * W);
-		G_skip_frames = EMPTY_FRAMES;
-	} else {
-		G_skip_frames--;
+		ent->cur_sprite = (ent->cur_sprite + 1) % ent->spr_cnt;
+		ent->x += ent->sx;
+		ent->y += ent->sy;
+		if (ent->step)
+			ent->step(ent);
 	}
+}
+
+void draw_screen() {
+	memcpy(G_MEMORY, G_BUFFER, H * W);
 }
 
 int intersects(struct ENTITY* ent1, struct ENTITY* ent2) {
