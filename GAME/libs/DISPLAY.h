@@ -1,6 +1,5 @@
 #define H 200
 #define W 320
-#define BG_CNT 8
 #define ENT_CNT 32
 
 typedef struct RGB {
@@ -25,7 +24,7 @@ typedef struct ENTITY{
 
 unsigned char far *G_MEMORY;
 unsigned char far *G_BUFFER;
-unsigned char far *G_backs[BG_CNT];
+unsigned char far **G_backs;
 SPRITE far* G_sprites;
 ENTITY G_entityes[ENT_CNT];
 unsigned char G_ent_free[ENT_CNT];
@@ -46,6 +45,7 @@ void init_display(const char* resources) {
 	fread(palete, sizeof(RGB), 256, f);
 	fread(&G_backs_cnt, 2, 1, f);
 	fread(&G_sprites_cnt, 2, 1, f);
+	G_backs = (unsigned char far**)malloc(G_backs_cnt * sizeof(unsigned char far*));
 	for (i = 0; i < G_backs_cnt; i++) {
 		G_backs[i] = (unsigned char far*)malloc(H * W);
 		fread(G_backs[i], W, H, f);

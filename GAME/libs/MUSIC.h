@@ -10,10 +10,11 @@ typedef struct _MELODY {
 } MELODY;
 
 MELODY M_melody[M_QUEUE_SIZE];
-unsigned char cur_m = -1;
+char cur_m = -1;
 
 
 void M_play(unsigned short** tones, unsigned int n) {
+	if (cur_m > M_QUEUE_SIZE) return;
 	cur_m++;
 	M_melody[cur_m].tones = tones;
 	M_melody[cur_m].index = 0;

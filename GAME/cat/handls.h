@@ -6,7 +6,7 @@ void bird(ENTITY far* ent) {
 		if (ent->y >= CAT_FLOOR) {
 			b_attacs = 0;
 			b_flyes_back = 1;
-			M_play(embient, 1);
+			M_stop();
 			ent->sx = 0;
 		}
 	}
