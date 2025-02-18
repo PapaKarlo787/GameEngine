@@ -111,25 +111,47 @@ void set_back(unsigned char n) {
 }
 
 void set_back_rotation(short rotation) {
-	int i, new_back_rot = abs(rotation) % W * (rotation > 0 ? 1 : -1) + W;
+	int i, new_back_rot = ((abs(rotation) % W) * (rotation > 0 ? 1 : -1) + W) % W;
 	short difference = (new_back_rot - G_back_rotation + W) % W;
 	short delta = difference < (W >> 1) ? difference : difference - W;
 	for (i = 0; i < ENT_CNT; i++) {
+		if (G_ent_free[i]) continue;
 		G_entityes[i].x += delta;
 	}
 	G_back_rotation = new_back_rot;
 }
 
 void refresh_screen() {
-	int i, l, k, ind;
+	int i;
+	ENTITY far* ent;
+	for (i = 0; i < ENT_CNT; i++) {
+		if (G_ent_free[i]) continue;
+		ent = &G_entityes[i];
+		ent->cur_sprite = (ent->cur_sprite + 1) % ent->spr_cnt;
+		ent->x += ent->sx;
+		ent->y += ent->sy;
+		if (ent->step)
+			ent->step(ent);
+	}
+}
+
+void draw_screen() {
+	int i, l, ind;
+	unsigned int k;
 	SPRITE far* spr;
 	ENTITY far* ent;
-	for (i = 0; i < H; i++) {
-		for (l = 0; l < W; l++) {
-			G_BUFFER[i * W + (l + G_back_rotation) % W] = G_backs[G_cur_back][i * W + l];
+	asm{cli};
+	if (G_back_rotation) {
+		for (k = 0; k < W * H; k += W) {
+			memcpy(&G_BUFFER[k], &G_backs[G_cur_back][W - G_back_rotation + k], G_back_rotation);
+			memcpy(&G_BUFFER[k + G_back_rotation], &G_backs[G_cur_back][k], W - G_back_rotation);
 		}
+	} else {
+		memcpy(G_BUFFER, G_backs[G_cur_back], W * H);
 	}
+	asm{sti};
 	for (k = 0; k < ENT_CNT; k++) {
+		asm{cli};
 		if (G_ent_free[k]) continue;
 		ent = &G_entityes[k];
 		spr = &G_sprites[ent->sprite_indexes[ent->cur_sprite]];
@@ -141,15 +163,8 @@ void refresh_screen() {
 				}
 			}
 		}
-		ent->cur_sprite = (ent->cur_sprite + 1) % ent->spr_cnt;
-		ent->x += ent->sx;
-		ent->y += ent->sy;
-		if (ent->step)
-			ent->step(ent);
+		asm{sti};
 	}
-}
-
-void draw_screen() {
 	memcpy(G_MEMORY, G_BUFFER, H * W);
 }
 

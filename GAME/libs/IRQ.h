@@ -6,10 +6,12 @@
 #define KBD_SUB_MAX 8
 #define TIM_VECT 8
 #define KBD_VECT 9
-#define TIM_TICKS 119318
+#define TIM_TICKS 50000
 
-void (*timer_subscribers[TIM_SUB_MAX])(void);
-void (*keyb_subscribers[KBD_SUB_MAX])(void);
+int ticks_cnt = 0;
+
+void (far*timer_subscribers[TIM_SUB_MAX])(void);
+void (far*keyb_subscribers[KBD_SUB_MAX])(void);
 void interrupt (*old_kbd)(void);
 void interrupt (*old_tim)(void);
 unsigned char timer_sub_cnt;
