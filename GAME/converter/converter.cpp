@@ -105,8 +105,8 @@ void medianCut(vector<RGB>& result, vector<RGB>::iterator begin, vector<RGB>::it
 		} else {
 			RGB res1, res2;
 			if (size) {
-				res1 = accumulate(begin, end - m, RGB()) / size;
-				res2 = accumulate(begin + m, end, RGB()) / size;
+				res1 = m < size ? accumulate(begin, end - m, RGB()) / (size - m) : RGB();
+				res2 = m ? accumulate(begin + m, end, RGB()) / (m) : RGB();
 			}
 			mtx.lock();
 			result.push_back(res1);
